@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2966e34-3d4c-4b35-868d-8101934c3535" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/bootstrap_node_modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/default.yaml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/development.yaml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/logger/logger.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/base.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/components.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/theme.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/lib/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/smoke.spec.js" />
-    </list>
+    <list default="true" id="a2966e34-3d4c-4b35-868d-8101934c3535" name="Default" comment="" />
     <ignored path="bootstrap.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -98,6 +76,9 @@
   </component>
   <component name="NamedScopeManager">
     <scope name="scope" pattern="file[bootstrap]:public/css/*||file[bootstrap]:public/css//*" />
+  </component>
+  <component name="NodeJsMochaPackageDirSetting">
+    <data>D:\dev\bootstrap\node_modules\mocha</data>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1912" />
@@ -187,7 +168,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fahrzuge" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
@@ -198,6 +179,8 @@
     <property name="javascript.nodejs.core.library.configured.version" value="5.0.0" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="nodejs.mocha.node_interpreter_path" value="C:\Program Files\nodejs\node.exe" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="D:\dev\bootstrap\node_modules\mocha" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -208,7 +191,7 @@
       <recent name="D:\dev\bootstrap\public\js" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.app-dev">
+  <component name="RunManager" selected="Mocha.tests">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -257,14 +240,27 @@
       <recursive>false</recursive>
       <method />
     </configuration>
+    <configuration default="false" name="tests" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory>$PROJECT_DIR$/test</test-directory>
+      <recursive>true</recursive>
+      <method />
+    </configuration>
     <configuration default="false" name="app-dev" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="index.js" working-dir="$PROJECT_DIR$">
       <envs>
         <env name="NODE_ENV" value="development" />
       </envs>
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.app-dev" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Mocha.tests" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.app-dev" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -279,6 +275,17 @@
       <updated>1448706800635</updated>
     </task>
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="tests - 2015.11.28 at 12h 17m 22s.xml">
+      <configuration name="tests" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="tests - 2015.11.28 at 12h 17m 44s.xml">
+      <configuration name="tests" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="tests - 2015.11.28 at 12h 18m 38s.xml">
+      <configuration name="tests" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1382" height="744" extended-state="6" />
