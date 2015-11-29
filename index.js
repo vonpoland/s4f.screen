@@ -50,6 +50,7 @@ app.get('/api/poll/:id', (req, res) => {
             return res.sendStatus(HttpStatus.BAD_REQUEST);
         }
 
+        res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
         res.json(data);
     });
 });
@@ -73,5 +74,5 @@ var server = http.listen(config.get('server.port'), function () {
     var host = server.address().address;
     var port = server.address().port;
 
-    logger.log('Bootstrap-app listening at http://%s:%s', host, port);
+    logger.info('Bootstrap-app listening at http://%s:%s', host, port);
 });
