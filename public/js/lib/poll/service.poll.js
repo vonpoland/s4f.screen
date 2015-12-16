@@ -1,14 +1,13 @@
 import PubSub from '../patterns/pubsub';
 import {getComponent} from '../di';
 
-class PollPubSub extends  PubSub
-{
+class PollPubSub extends PubSub {
     static get VOTED() {
         return 'on_voted';
     }
 
     onVoted(callback) {
-        this.on(PollPubSub.VOTED, callback);
+        return this.on(PollPubSub.VOTED, callback);
     }
 
     voted(data) {
@@ -19,7 +18,7 @@ class PollPubSub extends  PubSub
 export const pollPubSub = new PollPubSub();
 
 export function calculate(id, options, data) {
-    if(data.id !== id) {
+    if (data.id !== id) {
         return null;
     }
 
@@ -31,7 +30,7 @@ export function calculate(id, options, data) {
         return sum;
     }, 0);
 
-    var percentage = (current / all)*100;
+    var percentage = (current / all) * 100;
     var display = Math.round(percentage);
 
     percentage = isNaN(percentage) ? 'auto' : percentage + '%';
@@ -41,12 +40,21 @@ export function calculate(id, options, data) {
         display: display
     };
 }
+var cache = {};
 
 export function getPoll(id = null) {
     const stateParams = getComponent('stateParams');
     const restangular = getComponent('restangular');
 
-    return restangular.one('api/poll/' + (id || stateParams.id)).get();
+    id = id || stateParams.id;
+    var cached = cache[id];
+
+    if (cache[id]) {
+        return cached;
+    } else {
+        cache[id] = restangular.one('api/poll/' + (id || stateParams.id)).get();
+        return cache[id];
+    }
 }
 
 export function vote(option) {

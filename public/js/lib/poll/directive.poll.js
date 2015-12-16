@@ -9,7 +9,7 @@ function getPollResults(data) {
 
 export default class PollDirective {
     constructor() {
-        this.template = '<div class="poll" ng-style="{height: result.percentage}"><div class="padding-horizontal--small padding-vertical--small">{{result.display}}</div></div>';
+        this.template = '<div class="poll" ng-style="{height: result.percentage}"><div class="padding-horizontal--small padding-vertical--small ui-text--center">{{result.display}}</div></div>';
         this.scope = {
             poll: '@',
             options: '@'
@@ -21,9 +21,11 @@ export default class PollDirective {
         getPoll().then(getPollResults.bind(scope));
 
         scope.percentage = '0%';
-        pollPubSub.onVoted(data => {
+        var off = pollPubSub.onVoted(data => {
             getPollResults.bind(scope)(data);
             scope.$digest();
         });
+
+        scope.$on('$destroy', () => off());
     }
 }

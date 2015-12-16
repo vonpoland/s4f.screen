@@ -1,0 +1,5 @@
+<div  ng-controller="votePollCtrl as vote">
+    <div ng-repeat="player in poll.poll.data">
+        <div style="width:500px;height: 640px;"><button ng-click="vote.vote(player.option)"><img  ng-src="{{player.picture}}"></button></div>
+    </div>
+</div>

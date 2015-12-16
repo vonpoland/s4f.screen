@@ -1,10 +1,7 @@
-import {vote} from './service.poll';
-import {getComponent} from '../di';
+import {getPoll} from './service.poll';
 
-export default class VotePollCtrl {
-    vote(options) {
-        vote(options).then(() => {
-            getComponent('state').go('poll', {id: 'ksw33'});
-        });
+export default class PollCtrl {
+    constructor() {
+        getPoll().then(poll =>  this.poll = poll);
     }
 }

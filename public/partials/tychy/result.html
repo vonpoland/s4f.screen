@@ -1,0 +1,12 @@
+<div class="container screen-height--tychy">
+    <div class="tychy__players">
+        <div roller class="container">
+            <div ng-repeat="player in poll.poll.data">
+                <div class="tychy__player container container--space-between container--content-to-end">
+                    <img ng-src="{{player.picture}}">
+                    <div poll="tychy" options="{{player.option}}"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

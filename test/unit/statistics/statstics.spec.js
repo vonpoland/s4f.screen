@@ -20,8 +20,9 @@ describe('poll service tests', function () {
             option: 'option2'
         };
 
+        service.create(pollId);
+
         async.waterfall([
-            callback => service.create(pollId, callback),
             callback => service.add({
                 id: pollId,
                 user: user1,
@@ -45,8 +46,8 @@ describe('poll service tests', function () {
             callback => {
                 service.statistics(pollId, (err, statistics) => {
                     expect(err).to.be(null);
-                    expect(statistics.option1).to.be(1);
-                    expect(statistics.option2).to.be(1);
+                    expect(statistics.votes.option1).to.be(1);
+                    expect(statistics.votes.option2).to.be(1);
                     callback(null);
                 });
             }

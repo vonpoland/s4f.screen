@@ -1,11 +1,3 @@
 <div class="container container-column screen">
-    <div class="container container--space-around container--content-to-end screen-height">
-        <div poll="ksw33" options="materla"></div>
-        <img class="poll-image" src="img/materlavsmamedksw33.jpg">
-        <div poll="ksw33" options="mamed"></div>
-    </div>
-    <div class="container container--center">
-        <img src="img/qr.png">
-        <button class="button button--vote" ui-sref="vote({id: 'ksw33'})">Głosuj</button>
-    </div>
+  <div ng-include="poll.poll.templateResults"></div>
 </div>

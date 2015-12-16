@@ -15,6 +15,7 @@ app.use('/img', express.static(__dirname + '/public/img'));
 app.use('/js', express.static(__dirname + '/public/js'));
 app.use('/css', express.static(__dirname + '/public/css'));
 app.use('/partials', express.static(__dirname + '/public/partials'));
+
 app.post('/api/poll/:id/vote/:option', (req, res) => {
     var pollId = req.params.id;
     var option = req.params.option;
