@@ -4,3 +4,6 @@
 #http://milanos.pl/vid-141270-Masakra-Kalisza---zapomnial-o-swoim.html
 # https://www.youtube.com/watch?v=QZXc39hT8t4
 https://www.youtube.com/watch?v=iR9nE5JhdFQ
+
+#animations 
+https://github.com/daneden/animate.css

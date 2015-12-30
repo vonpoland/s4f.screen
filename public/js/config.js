@@ -15,6 +15,7 @@ System.config({
 
   map: {
     "angular": "github:angular/bower-angular@1.4.8",
+    "angular-animate": "github:angular/bower-angular-animate@1.4.8",
     "angular-sanitize": "github:angular/bower-angular-sanitize@1.4.8",
     "angular-ui-router": "github:angular-ui/ui-router@0.2.15",
     "babel": "npm:babel-core@5.8.34",
@@ -23,6 +24,9 @@ System.config({
     "restangular": "github:mgonto/restangular@1.5.1",
     "socket.io-client": "github:socketio/socket.io-client@1.3.7",
     "github:angular-ui/ui-router@0.2.15": {
+      "angular": "github:angular/bower-angular@1.4.8"
+    },
+    "github:angular/bower-angular-animate@1.4.8": {
       "angular": "github:angular/bower-angular@1.4.8"
     },
     "github:angular/bower-angular-sanitize@1.4.8": {

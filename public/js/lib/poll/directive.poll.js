@@ -1,7 +1,11 @@
 import {pollPubSub, calculate, getPoll} from './service.poll';
 
 function getPollResults(data) {
-    var result = calculate(this.poll, this.options, data);
+    var result = calculate({
+	    id: this.poll,
+	    option: this.option,
+	    orientation: this.orientation
+    }, data);
     if(result) {
         this.result = result;
     }
@@ -9,10 +13,12 @@ function getPollResults(data) {
 
 export default class PollDirective {
     constructor() {
-        this.template = '<div class="poll" ng-style="{height: result.percentage}"><div class="padding-horizontal--small padding-vertical--small ui-text--center">{{result.display}}</div></div>';
+        this.template = '<div class="poll" ng-style="{height: result.percentageHeight, width: result.percentageWidth}"><div><span ng-transclude></span>{{result.display}}</div></div>';
+        this.transclude = true;
         this.scope = {
             poll: '@',
-            options: '@'
+            option: '@',
+	        orientation: '@'
         };
         this.replace = true;
     }
@@ -20,7 +26,6 @@ export default class PollDirective {
     link(scope) {
         getPoll().then(getPollResults.bind(scope));
 
-        scope.percentage = '0%';
         var off = pollPubSub.onVoted(data => {
             getPollResults.bind(scope)(data);
             scope.$digest();

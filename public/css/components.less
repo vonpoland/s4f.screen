@@ -1,7 +1,7 @@
 @poll: #100d67;
 
 .poll {
-  transition: height 2s;
+  transition: height, width 2s;
   background-color: @poll;
   width: 50px;
   color: white;
@@ -15,8 +15,15 @@
   }
 }
 
-.screen-height--tychy {
-  height: 500px;
+.screen--tychy {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #0ac2d2;
+  font-family: 'Oswald';
+  width: 256px;
+  height: 144px;
+  overflow: hidden;
 
   img {
     height: 500px;

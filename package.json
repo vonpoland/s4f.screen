@@ -28,6 +28,7 @@
     },
     "dependencies": {
       "angular": "github:angular/bower-angular@^1.4.8",
+      "angular-animate": "github:angular/bower-angular-animate@^1.4.8",
       "angular-sanitize": "github:angular/bower-angular-sanitize@^1.4.8",
       "angular-ui-router": "github:angular-ui/ui-router@^0.2.15",
       "restangular": "github:mgonto/restangular@^1.5.1",
