@@ -56,7 +56,11 @@ app.get('/api/poll/:id', (req, res) => {
     });
 });
 
-app.all('/*', function (req, res) {
+app.all('/projector/*', function (req, res) {
+    res.sendFile('index-projector.html', {root: __dirname + '/public'});
+});
+
+app.all('*', function (req, res) {
     res.sendFile('index.html', {root: __dirname + '/public'});
 });
 

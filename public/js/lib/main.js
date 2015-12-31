@@ -3,56 +3,50 @@ import 'angular-sanitize';
 import 'angular-ui-router';
 import 'angular-animate';
 import bootstrapSocketChannel from './socket/channel';
-import PollDirective from './poll/directive.poll';
 import Roller from './poll/directive.roller';
 import VotePollCtrl from './poll/ctrl.vote';
 import PollCtrl from './poll/ctrl.poll';
-import StepCtrl from './poll/ctrl.step';
 import 'restangular';
 import setComponents from './di';
 
 angular
-    .module('app.main', ['ngSanitize', 'ui.router', 'restangular', 'ngAnimate'])
-    .directive('poll', () => new PollDirective())
-    .directive('roller', () => new Roller())
-    .controller('votePollCtrl', VotePollCtrl)
-	.controller('stepCtrl', StepCtrl)
-    .controller('pollCtrl', PollCtrl)
-    .config(['$stateProvider', '$locationProvider', '$urlRouterProvider',
-        ($stateProvider, $locationProvider,$urlRouterProvider) => {
-        $locationProvider.html5Mode(true);
-        $stateProvider
-            .state('poll', {
-                url: '/poll/:id',
-                controller: 'pollCtrl as poll',
-                templateUrl: 'partials/vote-result.html'
-            })
-            .state('pollStep', {
-                url: '/poll/:id/:step',
-	            templateUrl: 'partials/vote-step.html',
-	            controller: 'stepCtrl as step'
-            })
-            .state('vote', {
-                url: '/vote/:id',
-                controller: 'pollCtrl as poll',
-                templateUrl: 'partials/vote.html'
-            });
+	.module('app.main', ['ngSanitize',
+		'ui.router',
+		'restangular',
+		'ngAnimate',
+		'mobile-angular-ui',
+		'mobile-angular-ui.gestures'])
+	.directive('roller', () => new Roller())
+	.controller('votePollCtrl', VotePollCtrl)
+	.controller('pollCtrl', PollCtrl)
+	.config(['$stateProvider', '$locationProvider',
+		($stateProvider, $locationProvider) => {
+			$locationProvider.html5Mode(true);
+			$stateProvider
+				.state('main', {
+					url:'/',
+					templateUrl: 'partials/pages/main.html'
+				})
+				.state('vote', {
+					url: '/vote/:id',
+					controller: 'pollCtrl as poll',
+					templateUrl: 'partials/vote.html'
+				});
+		}])
+	.run((Restangular, $stateParams, $state, $timeout) => {
+		setComponents({
+			restangular: Restangular,
+			stateParams: $stateParams,
+			state: $state,
+			timeout: $timeout
+		});
 
-        $urlRouterProvider.when('/','/poll/ksw33');
-    }])
-    .run((Restangular, $stateParams, $state) => {
-        setComponents({
-            restangular: Restangular,
-            stateParams: $stateParams,
-            state: $state
-        });
-
-        console.info('app run');
-    });
+		console.info('app run - main');
+	});
 
 angular
-    .element(document)
-    .ready(() => {
-        bootstrapSocketChannel();
-        angular.bootstrap(document, ['app.main']);
-    });
+	.element(document)
+	.ready(() => {
+		bootstrapSocketChannel();
+		angular.bootstrap(document.querySelector('body'), ['app.main']);
+	});

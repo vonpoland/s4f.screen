@@ -19,6 +19,10 @@ class PollPubSub extends PubSub {
 
 export const pollPubSub = new PollPubSub();
 
+pollPubSub.onVoted(data => {
+	cache[data.id] =  Promise.resolve(data);
+});
+
 export function calculate(options, data) {
 	if (data.id !== options.id) {
 		return null;
@@ -54,16 +58,19 @@ export function getPoll(id = null) {
 	id = id || stateParams.id;
 	var cached = cache[id];
 
-	if (cache[id]) {
+	if (false && cached) {
+		console.info('cached', cached)
 		return cached;
 	} else {
+		console.info('not cached')
 		cache[id] = restangular.one('api/poll/' + (id || stateParams.id)).get();
 		return cache[id];
 	}
 }
 
 export function goToNextStep($state, params, options = {}) {
-	setTimeout(() => $state.go('pollStep', params), options.timeout || STEP_TIMEOUT);
+	const timeout = getComponent('timeout');
+	timeout(() => $state.go('pollStep', params), options.timeout || STEP_TIMEOUT);
 }
 export function vote(option) {
 	const stateParams = getComponent('stateParams');

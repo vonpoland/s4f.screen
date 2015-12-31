@@ -1,7 +1,7 @@
 import {getPoll, goToNextStep} from './service.poll';
 
 export default class StepCtrl {
-	constructor($stateParams, $state, $location) {
+	constructor($scope, $stateParams, $state, $location) {
 		getPoll()
 			.then(poll =>  this.poll = poll)
 			.then(() => {
@@ -20,5 +20,11 @@ export default class StepCtrl {
 					timeout: step.timeout
 				});
 			});
+
+		$scope.$on('$destroy', () => {
+			this.poll = null;
+			this.template = null;
+			console.info('destroy!!!!')
+		})
 	}
 }

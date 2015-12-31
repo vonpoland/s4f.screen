@@ -21,6 +21,7 @@ System.config({
     "babel": "npm:babel-core@5.8.34",
     "babel-runtime": "npm:babel-runtime@5.8.34",
     "core-js": "npm:core-js@1.2.6",
+    "mcasimir/mobile-angular-ui": "github:mcasimir/mobile-angular-ui@1.2.0-rc.3",
     "restangular": "github:mgonto/restangular@1.5.1",
     "socket.io-client": "github:socketio/socket.io-client@1.3.7",
     "github:angular-ui/ui-router@0.2.15": {
@@ -64,6 +65,9 @@ System.config({
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
     "npm:lodash@3.10.1": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:mobile-angular-ui@0.0.0": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:path-browserify@0.0.0": {
