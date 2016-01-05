@@ -1,7 +1,9 @@
 import PubSub from '../patterns/pubsub';
 import {getComponent} from '../di';
+import {getLocal, saveLocal} from '../storage/storage';
 
 const STEP_TIMEOUT = 5000;
+var cache = {};
 
 class PollPubSub extends PubSub {
 	static get VOTED() {
@@ -49,7 +51,6 @@ export function calculate(options, data) {
 		display: display
 	};
 }
-var cache = {};
 
 export function getPoll(id = null) {
 	const stateParams = getComponent('stateParams');
@@ -59,10 +60,8 @@ export function getPoll(id = null) {
 	var cached = cache[id];
 
 	if (false && cached) {
-		console.info('cached', cached)
 		return cached;
 	} else {
-		console.info('not cached')
 		cache[id] = restangular.one('api/poll/' + (id || stateParams.id)).get();
 		return cache[id];
 	}
@@ -72,10 +71,42 @@ export function goToNextStep($state, params, options = {}) {
 	const timeout = getComponent('timeout');
 	timeout(() => $state.go('pollStep', params), options.timeout || STEP_TIMEOUT);
 }
-export function vote(option) {
-	const stateParams = getComponent('stateParams');
-	const restangular = getComponent('restangular');
-	var id = stateParams.id;
 
-	return restangular.one('api/poll/' + id + '/vote/' + option).post();
+export function vote(pollId, option) {
+	const restangular = getComponent('restangular');
+
+	return restangular.one('api/poll/' + pollId + '/vote/' + option).post();
+}
+
+export function register(pollId, tempVoteId, accessToken) {
+	const restangular = getComponent('restangular');
+
+	return restangular.one('api/poll/' + pollId + '/register/' + tempVoteId + '?access_token=' + accessToken).post();
+}
+
+export function voted(pollName) {
+	var users = getLocal('users');
+	var user = getLocal('lastUserId');
+
+	if(!users || !user || !user.userId) {
+		return false;
+	}
+
+	var userVotes = users[user.userId] || [];
+
+	return userVotes.indexOf(pollName) >= 0;
+}
+
+export function addLocalVote(poll) {
+	var users = getLocal('users');
+	var user = getLocal('lastUserId');
+
+	if(!users) {
+		users = {};
+		users[user.userId] = [];
+	}
+
+	users[user.userId].push(poll.name);
+
+	saveLocal('users', users);
 }

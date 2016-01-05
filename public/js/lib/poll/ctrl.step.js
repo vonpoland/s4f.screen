@@ -5,7 +5,7 @@ export default class StepCtrl {
 		getPoll()
 			.then(poll =>  this.poll = poll)
 			.then(() => {
-				let step = this.poll.stepTemplates[$stateParams.step];
+				let step = this.poll.data.stepTemplates[$stateParams.step];
 				let pollId = $stateParams.id;
 
 				this.template = step.template;
@@ -24,7 +24,6 @@ export default class StepCtrl {
 		$scope.$on('$destroy', () => {
 			this.poll = null;
 			this.template = null;
-			console.info('destroy!!!!')
-		})
+		});
 	}
 }

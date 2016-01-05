@@ -2,21 +2,28 @@ import angular from 'angular';
 import 'angular-sanitize';
 import 'angular-ui-router';
 import 'angular-animate';
+import 'cornflourblue/angulike';
+import 'jquery';
 import bootstrapSocketChannel from './socket/channel';
 import Roller from './poll/directive.roller';
 import VotePollCtrl from './poll/ctrl.vote';
 import PollCtrl from './poll/ctrl.poll';
 import 'restangular';
 import setComponents from './di';
+import facebook from './auth/facebook.service';
 
 angular
 	.module('app.main', ['ngSanitize',
 		'ui.router',
 		'restangular',
 		'ngAnimate',
-		'mobile-angular-ui',
-		'mobile-angular-ui.gestures'])
+		'ngMaterial',
+		'angulike'])
 	.directive('roller', () => new Roller())
+	.controller('AppCtrl', function ($scope, $mdSidenav) {
+		this.onSwipeLeft = () => $mdSidenav('left').toggle();
+		this.onSwipeRight = () => $mdSidenav('left').toggle();
+	})
 	.controller('votePollCtrl', VotePollCtrl)
 	.controller('pollCtrl', PollCtrl)
 	.config(['$stateProvider', '$locationProvider',
@@ -24,7 +31,7 @@ angular
 			$locationProvider.html5Mode(true);
 			$stateProvider
 				.state('main', {
-					url:'/',
+					url: '/',
 					templateUrl: 'partials/pages/main.html'
 				})
 				.state('vote', {
@@ -41,7 +48,7 @@ angular
 			timeout: $timeout
 		});
 
-		console.info('app run - main');
+		facebook.init();
 	});
 
 angular

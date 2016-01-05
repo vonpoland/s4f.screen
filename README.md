@@ -7,3 +7,7 @@ https://www.youtube.com/watch?v=iR9nE5JhdFQ
 
 #animations 
 https://github.com/daneden/animate.css
+#watch
+
+z folderu public
+browser-sync start --files="*.html,*.js"

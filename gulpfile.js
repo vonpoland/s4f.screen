@@ -1,7 +1,15 @@
+var browserSync = require('browser-sync').create();
 var gulp = require('gulp');
 var mocha = require('gulp-mocha');
 var less = require('gulp-less-sourcemap');
 var templateCache = require('gulp-angular-templatecache');
+
+// Static server
+gulp.task('browser-sync', function() {
+	browserSync({
+		proxy: "localhost:8085"
+	});
+});
 
 gulp.task('test:unit', function () {
     return gulp.src('test/unit/**/*.spec.js', {read: false})
