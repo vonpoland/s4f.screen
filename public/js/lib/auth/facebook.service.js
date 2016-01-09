@@ -1,23 +1,6 @@
-import PubSub from '../patterns/pubsub';
 import {saveLocal} from '../storage/storage';
 
 var cachedResponse = null;
-
-class FacebookPubSub extends PubSub {
-	static get AUTH() {
-		return 'on_auth_change';
-	}
-
-	onAuth(callback) {
-		return this.on(FacebookPubSub.AUTH, callback);
-	}
-
-	authChange(data) {
-		this.emit(FacebookPubSub.AUTH, data);
-	}
-}
-
-const facebookPubSub = new FacebookPubSub();
 
 window.fbAsyncInit = function () {
 	FB.init({
@@ -30,7 +13,6 @@ window.fbAsyncInit = function () {
 	FB.Event.subscribe('auth.login', function(response) {
 		if(response.status === 'connected') {
 			cachedResponse = response;
-			facebookPubSub.authChange(response.authResponse.accessToken);
 			saveLocal('lastUserId',  { userId : response.authResponse.userID });
 		}
 	});
@@ -41,6 +23,13 @@ window.fbAsyncInit = function () {
 
 	FB.Event.subscribe('auth.authResponseChange', (status) => {
 		console.info('ssss authResponseChange', status);
+	});
+
+	FB.getLoginStatus(function(response) {
+		console.info(response);
+		if (response.status === 'connected') {
+			cachedResponse = response;
+		}
 	});
 };
 
@@ -56,21 +45,7 @@ function init() {
 	}(document, 'script', 'facebook-jssdk'));
 }
 
-function getUser(token) {
-	FB.api(
-		'/me',
-		'GET',
-		{"fields":"name,email,favorite_teams,first_name,last_name,picture"},
-		function(response) {
-			console.info(response.last_name);
-			console.info(response.picture);
-			console.info(response.email);
-		}
-	);
-}
-
 function login() {
-	facebookPubSub.events[FacebookPubSub.AUTH] = [];
 	if(cachedResponse) {
 		return Promise.resolve(cachedResponse.authResponse.accessToken);
 	}
@@ -78,6 +53,7 @@ function login() {
 	return new Promise((resolve, reject) => {
 		FB.login(function (response) {
 			if (response.authResponse) {
+				saveLocal('lastUserId',  { userId : response.authResponse.userID });
 				return resolve(response.authResponse.accessToken);
 			} else {
 				return reject('no access');
@@ -88,8 +64,7 @@ function login() {
 
 const facebook = {
 	init : init,
-	login: login,
-	pubSub: facebookPubSub
+	login: login
 };
 
 export default facebook;

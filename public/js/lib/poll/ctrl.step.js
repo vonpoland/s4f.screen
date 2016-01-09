@@ -1,19 +1,19 @@
-import {getPoll, goToNextStep} from './service.poll';
+import {getPoll, goToNextStep, pollPubSub, cancelNextStep} from './service.poll';
 
 export default class StepCtrl {
 	constructor($scope, $stateParams, $state, $location) {
-		getPoll()
+		getPoll(null, true)
 			.then(poll =>  this.poll = poll)
 			.then(() => {
 				let step = this.poll.data.stepTemplates[$stateParams.step];
 				let pollId = $stateParams.id;
-
 				this.template = step.template;
 
-				if($location.search().skip) {
+				if ($location.search().stay) {
 					return;
 				}
-				goToNextStep($state, {
+
+				this.goToNextStep = goToNextStep($state, {
 					id: pollId,
 					step: step.next
 				}, {
@@ -21,9 +21,22 @@ export default class StepCtrl {
 				});
 			});
 
+		var changeScreenOff = pollPubSub.onChangeScreen(step => {
+			cancelNextStep(this.goToNextStep);
+			goToNextStep($state, {
+				id: $stateParams.id,
+				step: step.screen,
+				stay: step.stay
+			}, {
+				timeout: 1
+			});
+			$scope.$digest();
+		});
+
 		$scope.$on('$destroy', () => {
 			this.poll = null;
 			this.template = null;
+			changeScreenOff();
 		});
 	}
 }

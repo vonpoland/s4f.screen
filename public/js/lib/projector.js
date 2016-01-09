@@ -8,6 +8,7 @@ import Roller from './poll/directive.roller';
 import VotePollCtrl from './poll/ctrl.vote';
 import PollCtrl from './poll/ctrl.poll';
 import StepCtrl from './poll/ctrl.step';
+import ParticipantsCtrl from './poll/ctrl.participants';
 import 'restangular';
 import setComponents from './di';
 import './templates';
@@ -19,6 +20,7 @@ angular
     .controller('votePollCtrl', VotePollCtrl)
 	.controller('stepCtrl', StepCtrl)
     .controller('pollCtrl', PollCtrl)
+    .controller('participantsCtrl', ParticipantsCtrl)
     .config(['$stateProvider', '$locationProvider', '$urlRouterProvider',
         ($stateProvider, $locationProvider, $urlRouterProvider) => {
         $locationProvider.html5Mode(true);
@@ -29,7 +31,7 @@ angular
                 templateUrl: 'partials/vote-result.html'
             })
             .state('pollStep', {
-                url: '/projector/poll/:id/:step',
+                url: '/projector/poll/:id/:step?stay',
 	            templateUrl: 'partials/vote-step.html',
 	            controller: 'stepCtrl as step'
             });

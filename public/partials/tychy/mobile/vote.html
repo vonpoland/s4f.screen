@@ -1,38 +1,46 @@
 <div layout="column" ng-controller="votePollCtrl as Vote">
-    <md-toolbar class="md-warn">
-            <div  layout="column">
-                <h2>Weź udział w konkursie i wygraj bilety!</h2>
-                <div style="min-height: 20px;">
+    <md-toolbar>
+            <div layout="column" class="layout-padding">
+                <div class="md-flex">Weź udział w konkursie i wygraj bilety!</div>
+                <!--<div style="min-height: 20px;">-->
                     <!--<div fb-like="'https://www.facebook.com/GKS-Big-Screen-704066083027136'">fblike</div>-->
-                </div>
+                <!--</div>-->
             </div>
     </md-toolbar>
     <md-content class="md-padding">
-        <section ng-if="Vote.phase === 'vote'">
-            <div layout class="layout-align-center-stretch">
-                <p>Kto wygra mecz ?</p>
-            </div>
+        <section ng-if="Vote.phase === 'vote'" layout="column" layout-align="center center" class="layout-padding">
+            <md-subheader class="md-primary">
+                    Kto wygra mecz ?
+            </md-subheader>
             <div layout class="layout-align-center-stretch">
                 <md-radio-group ng-model="Vote.selection" >
                     <md-radio-button value="tychy" class="md-primary">GKS Tychy</md-radio-button>
                     <md-radio-button value="kluczbork">MKS Kluczbork</md-radio-button>
                 </md-radio-group>
             </div>
-            <div layout="row" layout-align="center center" layout-wrap>
-                <md-button class="md-raised md-primary" ng-click="Vote.vote(poll.poll.id, Vote.selection)">Głosuj!</md-button>
+            <div>
+                <md-button class="md-raised md-primary" ng-click="Vote.vote(poll.poll.name, Vote.selection)">Głosuj!</md-button>
             </div>
         </section>
-        <section ng-if="Vote.phase === 'voteDone'">
-            <md-subheader class="md-primary">Dziękujemy za oddanie głosu!</md-subheader>
+        <section ng-if="Vote.phase === 'voteDone'" layout="column" layout-align="center center" class="layout-padding">
+            <md-subheader class="md-primary">
+                Dziękujemy za oddanie głosu!
+            </md-subheader>
             <div>
-                Aby wziąć udział w konkursie zaloguj się przez  <md-button class="md-raised md-primary" ng-click="Vote.registerVote(poll.poll.id, Vote.lastVoteId)">Facebooka</md-button>
+                Użyj Facebooka aby wziąć udziął w konkursie <md-button class="md-raised md-primary" ng-click="Vote.registerVote(poll.poll.name, Vote.selection)">Facebooka</md-button>
             </div>
         </section>
-        <section ng-if="Vote.phase === 'voteRegistered'">
-            <md-subheader class="md-primary">Dziękujemy za wzięcie udział w konkursie!</md-subheader>
+        <section ng-if="Vote.phase === 'voteRegistered'" layout="column" layout-align="center center" class="layout-padding">
+            <md-subheader class="md-primary">
+                    Dziękujemy za wzięcie udział w konkursie!
+            </md-subheader>
             <div>
-                Śledź naszego Facebooka aby zobaczyć zwyciężcę!
+                Śledź naszego <a href="https://www.facebook.com/gkstychy.oficjalny"><md-button class="md-raised md-primary">Facebooka</md-button></a>
+                aby zobaczyć zwyciężcę!
             </div>
+        </section>
+        <section layout="column" layout-align="center center" class="layout-padding">
+            <img src="partials/tychy/img/tyski_sport.png">
         </section>
     </md-content>
 </div>

@@ -1,7 +1,6 @@
 import {pollPubSub, calculate, getPoll} from './service.poll';
 
 function getPollResults(data) {
-	data = angular.copy(data);
     var result = calculate({
 	    id: this.poll,
 	    option: this.option,

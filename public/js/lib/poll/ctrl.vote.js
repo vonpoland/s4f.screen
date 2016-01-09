@@ -8,20 +8,17 @@ export default class VotePollCtrl {
 		this.phase = voted(this.id) ? 'voteRegistered' : 'vote';
 	}
 
-	vote(pollId, option) {
-		vote(pollId, option).then((result) => {
-			this.phase = 'voteDone';
-			this.lastVoteId = result.voteId;
-		});
+	vote(pollName, option) {
+		vote(pollName, option).then(() => this.phase = 'voteDone');
 	}
 
-	registerVote(pollId, voteId) {
+	registerVote(pollName, vote) {
 		facebook
 			.login()
-			.then(register.bind(null, pollId, voteId))
-			.then(poll => {
+			.then(register.bind(null, pollName, vote))
+			.then(() => {
 				this.phase = 'voteRegistered';
-				addLocalVote(poll);
+				addLocalVote({ name : pollName});
 				this.$scope.$digest();
 			})
 			.then(() => {},

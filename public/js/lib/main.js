@@ -4,7 +4,6 @@ import 'angular-ui-router';
 import 'angular-animate';
 import 'cornflourblue/angulike';
 import 'jquery';
-import bootstrapSocketChannel from './socket/channel';
 import Roller from './poll/directive.roller';
 import VotePollCtrl from './poll/ctrl.vote';
 import PollCtrl from './poll/ctrl.poll';
@@ -29,6 +28,9 @@ angular
 	.config(['$stateProvider', '$locationProvider',
 		($stateProvider, $locationProvider) => {
 			$locationProvider.html5Mode(true);
+			//$mdThemingProvider.theme('default')
+			//	.primaryPalette('blue')
+			//	.accentPalette('teal');
 			$stateProvider
 				.state('main', {
 					url: '/',
@@ -54,6 +56,5 @@ angular
 angular
 	.element(document)
 	.ready(() => {
-		bootstrapSocketChannel();
 		angular.bootstrap(document.querySelector('body'), ['app.main']);
 	});

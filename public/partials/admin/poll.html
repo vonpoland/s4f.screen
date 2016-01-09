@@ -1,0 +1,18 @@
+<md-content flex layout-padding>
+    <div>
+        <md-subheader class="md-primary">{{admin.poll.name}}</md-subheader>
+        <p>ustaw stronę</p>
+        <md-radio-group ng-model="admin.currentScreen">
+            <md-radio-button value="{{key}}" class="md-primary"
+                             ng-repeat="(key,value) in admin.poll.data.stepTemplates">{{value.name}}</md-radio-button>
+        </md-radio-group>
+        <md-button class="md-raised md-primary" ng-disabled="admin.saving" ng-click="admin.changeScreen(admin.currentScreen)">Send</md-button>
+        <md-button class="md-raised md-primary" ng-disabled="admin.saving" ng-click="admin.changeScreen(admin.currentScreen, true)">Send and stay</md-button>
+        <p>losuj zwycięzcę</p>
+        <md-button class="md-raised md-primary" ng-disabled="admin.winnerLot" ng-click="admin.lotWinner(admin.currentScreen)">Losuj</md-button>
+        <div ng-if="admin.winner">
+            <img ng-src="{{admin.winner.picture}}">
+            <div>{{admin.winner.firstName}} {{admin.winner.lastName}}</div>
+        </div>
+    </div>
+</md-content>

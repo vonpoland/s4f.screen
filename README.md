@@ -10,4 +10,14 @@ https://github.com/daneden/animate.css
 #watch
 
 z folderu public
-browser-sync start --files="*.html,*.js"
+browser-sync start --files="*.html,*.js,**/.*html,**/*.js"
+
+
+	var getVotesWithUsers = callback => Poll
+		.aggregate([
+			{$match: {name: pollName}},
+			{$unwind: '$votes'},
+			{$match: {'votes.userId': {$exists: true}}},
+			{$group: {_id: '$_id', votes: {$push: '$votes.userId'}}}
+		])
+		.exec(callback);
