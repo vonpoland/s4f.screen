@@ -126,6 +126,17 @@ export function voted(pollName) {
 	return userVotes.indexOf(pollName) >= 0;
 }
 
+export function saveLastVote(poll, vote) {
+	saveLocal('lastUserVote', {
+		poll: poll,
+		vote: vote
+	});
+}
+
+export function getLastVote() {
+	return getLocal('lastUserVote');
+}
+
 export function addLocalVote(poll) {
 	var users = getLocal('users');
 	var user = getLocal('lastUserId');

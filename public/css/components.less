@@ -35,13 +35,42 @@
   }
 
   img.participants {
-    max-width: 40px;
+    max-width: 45px;
     width:auto;
-    height: 30px;
+    height: 40px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
   }
 
   .poll_result__text {
     text-align: left;
+  }
+
+  .participant {
+    position: absolute;
+  }
+
+  .participant:nth-child(1) {
+    left: 105px;
+    top: 37px;
+  }
+
+  .participant:nth-child(2) {
+    top: -38px;
+    left: 201px;
+  }
+
+  .participant:nth-child(3) {
+    left: 191px;
+    top: 32px;
+  }
+
+  .winner {
+    position: absolute;
+    top: 12px;
+    left: 156px;
+    font-size: 12px;
   }
 }
 

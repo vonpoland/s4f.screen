@@ -1,0 +1,12 @@
+<div class="screen--tychy ui-text--center" ng-controller="participantsCtrl as Participants">
+    <img class="step__image" src="partials/tychy/img/voted.png">
+    <div style="position:absolute; top: 50px"  ng-if="Participants.users.length > 0">
+        <div class="container container-row container--space-around">
+            <div ng-repeat="user in Participants.users" class="participant">
+                <div>
+                    <img class="participants" ng-src="{{user.picture}}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

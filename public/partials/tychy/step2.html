@@ -1,14 +1,3 @@
-<div class="screen--tychy ui-text--center" ng-controller="participantsCtrl as Participants">
-    <img class="step__image" src="partials/tychy/img/slajd1noText.png">
-    <div style="position:absolute; top: 50px"  ng-if="Participants.users.length > 0">
-        <div>Uczestnicy:</div>
-        <div class="container container-row container--space-around">
-            <div ng-repeat="user in Participants.users">
-                <div>
-                    <img class="participants" ng-src="{{user.picture}}">
-                </div>
-                <div class="font1">{{user.firstName}} {{user.lastName}}</div>
-            </div>
-        </div>
-    </div>
+<div class="container container-column container--space-around screen--tychy ui-text--center">
+    <img class="step__image" src="partials/tychy/img/takePart.png">
 </div>

@@ -1,15 +1,41 @@
-import {vote, register, voted, addLocalVote} from './service.poll';
+import {vote, register, voted, addLocalVote, saveLastVote, getLastVote} from './service.poll';
 import facebook from '../auth/facebook.service';
 
+function isFromLoginRedirect($location) {
+	var accessToken = /access_token=(.+)&/;
+	var tokens = $location.hash().match(accessToken);
+
+	return tokens && tokens.length === 2;
+}
+
 export default class VotePollCtrl {
-	constructor($state, $scope) {
+	constructor($state, $scope, $location) {
 		this.$scope = $scope;
 		this.id = $state.params.id;
-		this.phase = voted(this.id) ? 'voteRegistered' : 'vote';
+		var lastVote = getLastVote();
+
+		if (lastVote && isFromLoginRedirect($location)) {
+			var off = facebook.pubSub.onAuthChange(() => {
+				this
+					.registerVote(lastVote.poll, lastVote.vote)
+					.then(() => {},
+						() => {
+							this.phase = 'vote';
+							$scope.$digest();
+						});
+				off();
+			});
+		} else {
+			this.phase = voted(this.id) ? 'voteRegistered' : 'vote';
+		}
 	}
 
 	vote(pollName, option) {
-		vote(pollName, option).then(() => this.phase = 'voteDone');
+		vote(pollName, option)
+			.then(() => {
+				this.phase = 'voteDone';
+				saveLastVote(pollName, option);
+			});
 	}
 
 	registerVote(pollName, vote) {
@@ -18,12 +44,13 @@ export default class VotePollCtrl {
 			.then(register.bind(null, pollName, vote))
 			.then(() => {
 				this.phase = 'voteRegistered';
-				addLocalVote({ name : pollName});
+				addLocalVote({name: pollName});
 				this.$scope.$digest();
 			})
-			.then(() => {},
+			.then(() => {
+				},
 				error => {
-				console.info(error);
-			});
+					console.info(error);
+				});
 	}
 }

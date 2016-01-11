@@ -37,5 +37,5 @@ var server = http.listen(config.get('server.port'), function () {
 	var host = server.address().address;
 	var port = server.address().port;
 
-	logger.info('Bootstrap-app listening at http://%s:%s', host, port);
+	logger.info('Big-screen listening at http://%s:%s', host, port);
 });

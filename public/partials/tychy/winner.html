@@ -1,10 +1,7 @@
-<div class="container container-column container--space-around screen--tychy ui-text--center">
-    <div>Zwyciężcą konkursu został:</div>
-    <div>
+<div class="screen--tychy ui-text--center">
+    <img  class="step__image" src="partials/tychy/img/winner.png">
+    <div class="winner">
         <img class="participants" ng-src="{{step.poll.winner.picture}}">
-        {{step.poll.winner.firstName}} {{step.poll.winner.lastName}}
-    </div>
-    <div>
-        Gratulujemy!!!!
+        <div>{{step.poll.winner.firstName}} {{step.poll.winner.lastName}}</div>
     </div>
 </div>
