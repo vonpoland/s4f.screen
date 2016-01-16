@@ -68,13 +68,35 @@ export function calculate(options, poll) {
 	var display = Math.round(percentage);
 
 	percentage = isNaN(percentage) ? '0%' : percentage + '%';
-	display = isNaN(display) ? '0%' : display + '%';
 
 	return {
 		percentageWidth: horizontalOrientation ? percentage : 'auto',
 		percentageHeight: !horizontalOrientation ? percentage : 'auto',
-		display: display
+		display: isNaN(display) ? '0%' : display + '%',
+		percentage: display
 	};
+}
+
+export function calculateStats(poll = {}) {
+	if (!poll && !poll.data || !poll.data.votes) {
+		return;
+	}
+
+	var options = Object.keys(poll.data.votes);
+	var votesSum = options.reduce((sum, key) => sum + poll.data.votes[key], 0);
+
+	options.forEach(key => {
+		var value = poll.data.votes[key];
+		var percentage = Math.round((value / votesSum) * 100);
+
+		poll.data.votes[key] = {
+			option: key,
+			value: value,
+			percentage: percentage
+		};
+	});
+
+	return poll.data.votes;
 }
 
 export function getPoll(id = null, cacheOk = false) {

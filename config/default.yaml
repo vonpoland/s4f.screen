@@ -7,3 +7,6 @@ facebook:
   secret: '4987654a1357b15f1eda1e4bf770769a'
   validateToken: 'https://graph.facebook.com/app?access_token='
   userInfo: 'https://graph.facebook.com/me?fields=name,email,first_name,last_name,picture&access_token='
+user:
+   storePhotoPath: 'public/img/users/{{id}}'
+   webPhotoPath: 'img/users/{{id}}/profile.png'

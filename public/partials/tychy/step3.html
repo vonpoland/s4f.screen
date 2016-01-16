@@ -1,6 +1,22 @@
-<div class="container container-column container--space-around screen--tychy ui-text--center">
-    <div>Kto wygra dzisiejszy mecz ?</div>
-    <div><div poll="tychy-konkurs" option="tychy" orientation="horizontal"><span class="ui-word--no-break">GKS Tychy </span></div></div>
-    <div><div poll="tychy-konkurs" option="kluczbork" orientation="horizontal"><span class="ui-word--no-break">MKS Kluczbork </span></div></div>
-    <div>Głosuj teraz!</div>
+<div class="container container-column container--space-around screen--tychy ui-text--center" style="background-color:#CC2F2F;">
+    <div>Aktualne wyniki</div>
+    <div class="container ui-text-shadow" ng-controller="voteResultCtrl as result" ng-init="result.initStats(step.poll)">
+        <div class="width-1-3" style="color:#ccc822;">
+            <div>{{result.stats.tychy.percentage}}%</div>
+            <div>GKS Tychy</div>
+        </div>
+        <div class="width-1-3">
+            <div class="c100 p{{result.stats.kluczbork.percentage}} small" apply-results>
+                <span></span>
+                <div class="slice">
+                    <div class="bar"></div>
+                    <div class="fill"></div>
+                </div>
+            </div>
+        </div>
+        <div class="width-1-3" style="color:#307bbb;">
+            <div>{{result.stats.kluczbork.percentage}}%</div>
+            <div>MKS Kluczbork</div>
+        </div>
+    </div>
 </div>

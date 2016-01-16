@@ -18,16 +18,14 @@ class FacebookPubSub extends PubSub {
 const facebookPubSub = new FacebookPubSub();
 var cachedResponse = null;
 var requireFullRedirect = false;
-var fullRedirectUrl = 'https://www.facebook.com/dialog/oauth/?scope=PERMISSIONS&client_id=CLIENT_ID&redirect_uri=MY_CANVAS_URL&response_type=token';
+var fullRedirectUrl = 'https://www.facebook.com/dialog/oauth?scope=PERMISSIONS&client_id=CLIENT_ID&redirect_uri=MY_CANVAS_URL&response_type=token';
 const appId = '538291453008493';
 
 function fullFacebookRedirect() {
-	setTimeout(() => {
-		window.location.href = fullRedirectUrl
-			.replace('PERMISSIONS', 'email')
-			.replace('CLIENT_ID', appId)
-			.replace('MY_CANVAS_URL', 'http://192.168.1.207:8085/vote/tychy-konkurs');
-	});
+	window.location.href = fullRedirectUrl
+		.replace('PERMISSIONS', 'email')
+		.replace('CLIENT_ID', appId)
+		.replace('MY_CANVAS_URL', 'http://192.168.1.207:8085/vote/tychy-konkurs');
 
 }
 window.fbAsyncInit = function () {
@@ -82,20 +80,23 @@ function login() {
 		return Promise.resolve(cachedResponse.authResponse.accessToken);
 	}
 
-	if(requireFullRedirect) {
-		fullFacebookRedirect();
-		return Promise.reject();
-	}
-	return new Promise((resolve, reject) => {
-		FB.login(function (response) {
-			if (response.authResponse) {
-				saveLocal('lastUserId',  { userId : response.authResponse.userID });
-				return resolve(response.authResponse.accessToken);
-			} else {
-				return reject('no access');
-			}
-		}, {scope: 'email', display : 'touch', redirect_url: 'http://192.168.1.207:8085/vote/tychy-konkurs'});
-	});
+	fullFacebookRedirect();
+
+	//if(true || requireFullRedirect) {
+	//	fullFacebookRedirect();
+	//	return Promise.reject();
+	//}
+	//
+	//return new Promise((resolve, reject) => {
+	//	FB.login(function (response) {
+	//		if (response.authResponse) {
+	//			saveLocal('lastUserId',  { userId : response.authResponse.userID });
+	//			return resolve(response.authResponse.accessToken);
+	//		} else {
+	//			return reject('no access');
+	//		}
+	//	}, {scope: 'email', display : 'touch', redirect_url: 'http://192.168.1.207:8085/vote/tychy-konkurs'});
+	//});
 }
 
 const facebook = {

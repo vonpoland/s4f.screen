@@ -12,15 +12,19 @@ import ParticipantsCtrl from './poll/ctrl.participants';
 import 'restangular';
 import setComponents from './di';
 import './templates';
+import PollClassDirective from './poll/directive.pollClass';
+import VoteResultCtrl from './poll/ctrl.voteResult';
 
 angular
     .module('app.projector', ['ngSanitize', 'ui.router', 'restangular', 'ngAnimate', 'templates'])
     .directive('poll', () => new PollDirective())
     .directive('roller', () => new Roller())
     .controller('votePollCtrl', VotePollCtrl)
+	.controller('voteResultCtrl', VoteResultCtrl)
 	.controller('stepCtrl', StepCtrl)
     .controller('pollCtrl', PollCtrl)
     .controller('participantsCtrl', ParticipantsCtrl)
+    .directive('pollClass', () => new PollClassDirective())
     .config(['$stateProvider', '$locationProvider', '$urlRouterProvider',
         ($stateProvider, $locationProvider, $urlRouterProvider) => {
         $locationProvider.html5Mode(true);

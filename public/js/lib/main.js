@@ -1,4 +1,3 @@
-import angular from 'angular';
 import 'angular-sanitize';
 import 'angular-ui-router';
 import 'angular-animate';
