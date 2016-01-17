@@ -25,7 +25,7 @@ function fullFacebookRedirect() {
 	window.location.href = fullRedirectUrl
 		.replace('PERMISSIONS', 'email')
 		.replace('CLIENT_ID', appId)
-		.replace('MY_CANVAS_URL', 'http://192.168.1.207:8085/vote/tychy-konkurs');
+		.replace('MY_CANVAS_URL', 'http://mueller-nutzfahrzeuge.eu:1111/vote/tychy-konkurs');
 
 }
 window.fbAsyncInit = function () {
