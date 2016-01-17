@@ -22,7 +22,7 @@ app.use('/content/channel.html', function (req, res) {
 });
 
 app.all('/projector/*', function (req, res) {
-	res.sendFile('index-projector.html', {root: __dirname + '/public'});
+	res.sendFile(config.get('index.projector'), {root: __dirname + '/public'});
 });
 
 app.all('/admin/*', function (req, res) {
@@ -30,7 +30,7 @@ app.all('/admin/*', function (req, res) {
 });
 
 app.all('*', function (req, res) {
-	res.sendFile('index.html', {root: __dirname + '/public'});
+	res.sendFile(config.get('index.mobile'), {root: __dirname + '/public'});
 });
 
 var server = http.listen(config.get('server.port'), function () {

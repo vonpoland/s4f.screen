@@ -1,5 +1,8 @@
 server:
   port: 8085
+index:
+  projector: 'index-projector.html'
+  mobile: 'index.html'
 database:
   connection: mongodb://localhost:27017/bigScreen
 facebook:
