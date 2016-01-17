@@ -68,7 +68,8 @@ gulp.task('concatMobileScripts', function () {
 	return gulp.src(['./public/js/jspm_packages/github/angular/bower-angular@1.4.8/angular.min.js',
 			'./public/js/jspm_packages/system.js',
 			'./public/js/config.js',
-			'./public/js/external/*.js'])
+			'./public/js/external/*.js',
+			'./public/js/lib/main.bundle.js'])
 		.pipe(concat('vendor.min.js'))
 		.pipe(gulp.dest('./public/js'));
 });
@@ -76,7 +77,8 @@ gulp.task('concatMobileScripts', function () {
 gulp.task('concatProjectorScripts', function () {
 	return gulp.src(['./public/js/external/lodash.min.js',
 			'./public/js/jspm_packages/system.js',
-			'./public/js/config.js'])
+			'./public/js/config.js',
+			'./public/js/lib/projector.bundle.js'])
 		.pipe(concat('projector.min.js'))
 		.pipe(gulp.dest('./public/js'));
 });
