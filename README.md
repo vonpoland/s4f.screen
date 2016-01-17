@@ -21,3 +21,8 @@ browser-sync start --files="*.html,*.js,**/.*html,**/*.js"
 			{$group: {_id: '$_id', votes: {$push: '$votes.userId'}}}
 		])
 		.exec(callback);
+		
+		
+		
+npm run gulp 
+npm run jspm install
