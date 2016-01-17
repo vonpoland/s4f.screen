@@ -2,7 +2,7 @@ import {getPoll, goToNextStep, pollPubSub, cancelNextStep} from './service.poll'
 
 export default class StepCtrl {
 	constructor($scope, $stateParams, $state, $location) {
-		getPoll(null, true)
+		getPoll(null, !$location.search().stay)
 			.then(poll =>  this.poll = poll)
 			.then(() => {
 				let step = this.poll.data.stepTemplates[$stateParams.step];

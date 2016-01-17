@@ -8,6 +8,7 @@ var minifyCss = require('gulp-minify-css');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var htmlreplace = require('gulp-html-replace');
+var runSequence = require('run-sequence');
 
 // Static server
 gulp.task('browser-sync', function () {
@@ -27,6 +28,21 @@ gulp.task('less', function () {
 		.pipe(gulp.dest('./public/css'));
 });
 
+gulp.task('cssMobile', function () {
+	return gulp.src(['./public/css/external/*.css'])
+		.pipe(minifyCss())
+		.pipe(concat('mobile.min.css'))
+		.pipe(gulp.dest('./public/css/dist'));
+});
+
+
+gulp.task('cssApp', function () {
+	return gulp.src(['./public/css/*.css'])
+		.pipe(minifyCss())
+		.pipe(concat('app.min.css'))
+		.pipe(gulp.dest('./public/css/dist'));
+});
+
 gulp.task('cacheTemplates', function () {
 	return gulp.src('public/partials/**/*.html')
 		.pipe(templateCache({
@@ -36,20 +52,19 @@ gulp.task('cacheTemplates', function () {
 		.pipe(gulp.dest('public/js/lib'));
 });
 
-gulp.task('bundleScripts', function () {
+gulp.task('bundleScriptsMobileApp', function () {
 	return gulp.src('./public/js/lib/main.js')
 		.pipe(gulp_jspm())
 		.pipe(gulp.dest('./public/js/lib'));
 });
 
-gulp.task('css', function () {
-	return gulp.src(['./public/css/external/*.css'])
-		.pipe(minifyCss())
-		.pipe(concat('style.min.css'))
-		.pipe(gulp.dest('./public/css/external'));
+gulp.task('bundleScriptsProjector', function () {
+	return gulp.src('./public/js/lib/projector.js')
+		.pipe(gulp_jspm())
+		.pipe(gulp.dest('./public/js/lib'));
 });
 
-gulp.task('concatVendor', function () {
+gulp.task('concatMobileScripts', function () {
 	return gulp.src(['./public/js/jspm_packages/github/angular/bower-angular@1.4.8/angular.min.js',
 			'./public/js/jspm_packages/system.js',
 			'./public/js/config.js',
@@ -58,13 +73,46 @@ gulp.task('concatVendor', function () {
 		.pipe(gulp.dest('./public/js'));
 });
 
+gulp.task('concatAppScripts', function () {
+	return gulp.src(['./public/js/external/lodash.min.js',
+			'./public/js/jspm_packages/system.js',
+			'./public/js/config.js'])
+		.pipe(concat('vendor.min.js'))
+		.pipe(gulp.dest('./public/js'));
+});
 
-gulp.task('buildIndex', function () {
+gulp.task('buildMobileIndex', function () {
 	gulp.src('./public/index.html')
 		.pipe(htmlreplace({
-			'css': 'css/external/style.min.css',
+			'css': 'css/dist/mobile.min.css',
 			'js': 'js/vendor.min.js'
 		}))
 		.pipe(rename('index-prod.html'))
 		.pipe(gulp.dest('./public'));
 });
+
+gulp.task('buildAppIndex', function () {
+	gulp.src('./public/index.html')
+		.pipe(htmlreplace({
+			'css': 'css/dist/app.min.css',
+			'js': 'js/vendor.min.js'
+		}))
+		.pipe(rename('index-prod.html'))
+		.pipe(gulp.dest('./public'));
+});
+
+gulp.task('buildMobileIndex', function () {
+	gulp.src('./public/index.html')
+		.pipe(htmlreplace({
+			'css': 'css/dist/mobile.min.css',
+			'js': 'js/vendor.min.js'
+		}))
+		.pipe(rename('index-prod.html'))
+		.pipe(gulp.dest('./public'));
+});
+
+
+gulp.task('css', ['cssApp', 'cssMobile']);
+gulp.task('bundleScripts', done => runSequence('bundleScriptsMobileApp', 'bundleScriptsProjector', done));
+gulp.task('concatScripts', ['concatMobileScripts', 'concatAppScripts']);
+gulp.task('buildIndex', ['buildMobileIndex', 'buildAppIndex']);

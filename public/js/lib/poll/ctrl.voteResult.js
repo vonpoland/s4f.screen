@@ -13,6 +13,5 @@ export default class VoteResultCtrl {
 
 	initStats(poll) {
 		this.stats = calculateStats(poll);
-		console.info(this.stats);
 	}
 }

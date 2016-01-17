@@ -84,29 +84,30 @@ export function calculateStats(poll = {}) {
 
 	var options = Object.keys(poll.data.votes);
 	var votesSum = options.reduce((sum, key) => sum + poll.data.votes[key], 0);
+	var votes = {};
 
 	options.forEach(key => {
 		var value = poll.data.votes[key];
 		var percentage = Math.round((value / votesSum) * 100);
 
-		poll.data.votes[key] = {
+		votes[key] = {
 			option: key,
 			value: value,
 			percentage: percentage
 		};
 	});
 
-	return poll.data.votes;
+	return votes;
 }
 
-export function getPoll(id = null, cacheOk = false) {
+export function getPoll(id = null, fromCache = false) {
 	const stateParams = getComponent('stateParams');
 	const restangular = getComponent('restangular');
 
 	id = id || stateParams.id;
 	var cached = cache[id];
 
-	if (cacheOk && cached) {
+	if (fromCache && cached) {
 		return cached;
 	} else {
 		cache[id] = restangular.one('api/poll/' + (id || stateParams.id)).get();
