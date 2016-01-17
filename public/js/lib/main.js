@@ -9,6 +9,7 @@ import PollCtrl from './poll/ctrl.poll';
 import 'restangular';
 import setComponents from './di';
 import facebook from './auth/facebook.service';
+import './templates';
 
 angular
 	.module('app.main', ['ngSanitize',
@@ -16,7 +17,8 @@ angular
 		'restangular',
 		'ngAnimate',
 		'ngMaterial',
-		'angulike'])
+		'angulike',
+		'templates'])
 	.directive('roller', () => new Roller())
 	.controller('AppCtrl', function ($scope, $mdSidenav) {
 		this.onSwipeLeft = () => $mdSidenav('left').toggle();

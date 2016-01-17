@@ -93,7 +93,7 @@ export function calculateStats(poll = {}) {
 		votes[key] = {
 			option: key,
 			value: value,
-			percentage: percentage
+			percentage: isNaN(percentage) ? 0 : percentage
 		};
 	});
 
