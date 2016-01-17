@@ -73,11 +73,11 @@ gulp.task('concatMobileScripts', function () {
 		.pipe(gulp.dest('./public/js'));
 });
 
-gulp.task('concatAppScripts', function () {
+gulp.task('concatProjectorScripts', function () {
 	return gulp.src(['./public/js/external/lodash.min.js',
 			'./public/js/jspm_packages/system.js',
 			'./public/js/config.js'])
-		.pipe(concat('vendor.min.js'))
+		.pipe(concat('projector.min.js'))
 		.pipe(gulp.dest('./public/js'));
 });
 
@@ -91,13 +91,13 @@ gulp.task('buildMobileIndex', function () {
 		.pipe(gulp.dest('./public'));
 });
 
-gulp.task('buildAppIndex', function () {
-	gulp.src('./public/index.html')
+gulp.task('buildProjectorIndex', function () {
+	gulp.src('./public/index-projector.html')
 		.pipe(htmlreplace({
 			'css': 'css/dist/app.min.css',
-			'js': 'js/vendor.min.js'
+			'js': 'js/projector.min.js'
 		}))
-		.pipe(rename('index-prod.html'))
+		.pipe(rename('index-projector-production.html'))
 		.pipe(gulp.dest('./public'));
 });
 
@@ -107,12 +107,13 @@ gulp.task('buildMobileIndex', function () {
 			'css': 'css/dist/mobile.min.css',
 			'js': 'js/vendor.min.js'
 		}))
-		.pipe(rename('index-prod.html'))
+		.pipe(rename('index-mobile-production.html'))
 		.pipe(gulp.dest('./public'));
 });
 
 
 gulp.task('css', ['cssApp', 'cssMobile']);
 gulp.task('bundleScripts', done => runSequence('bundleScriptsMobileApp', 'bundleScriptsProjector', done));
-gulp.task('concatScripts', ['concatMobileScripts', 'concatAppScripts']);
-gulp.task('buildIndex', ['buildMobileIndex', 'buildAppIndex']);
+gulp.task('concatScripts', ['concatMobileScripts', 'concatProjectorScripts']);
+gulp.task('buildIndex', ['buildMobileIndex', 'buildProjectorIndex']);
+gulp.task('default', done => runSequence('less', 'css', 'cacheTemplates', 'bundleScripts', 'concatScripts', 'buildIndex', done));

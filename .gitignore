@@ -3,3 +3,9 @@ public/js/jspm_packages/**/*.*
 node_modules/**
 *.css
 public/css/*.map
+public/js/projector.min.js
+public/js/lib/projector.bundle.js
+public/js/lib/main.bundle.js
+public/index-projector-production.html
+public/index-mobile-production.html
+public/img/users/**
