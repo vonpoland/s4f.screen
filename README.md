@@ -26,3 +26,5 @@ browser-sync start --files="*.html,*.js,**/.*html,**/*.js"
 		
 npm run gulp 
 npm run jspm install
+
+ NODE_ENV=production node node_modules/pm2/bin/pm2 start index.js --name 'fun' 
