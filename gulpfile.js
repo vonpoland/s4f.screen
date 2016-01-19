@@ -97,7 +97,7 @@ gulp.task('buildProjectorIndex', function () {
 	gulp.src('./public/index-projector.html')
 		.pipe(htmlreplace({
 			'css': 'css/dist/app.min.css',
-			'js': 'js/projector.min.js'
+			'js': 'js/lib/projector.bundle.js'
 		}))
 		.pipe(rename('index-projector-production.html'))
 		.pipe(gulp.dest('./public'));
@@ -116,6 +116,6 @@ gulp.task('buildMobileIndex', function () {
 
 gulp.task('css', ['cssApp', 'cssMobile']);
 gulp.task('bundleScripts', done => runSequence('bundleScriptsMobileApp', 'bundleScriptsProjector', done));
-gulp.task('concatScripts', ['concatMobileScripts', 'concatProjectorScripts']);
+gulp.task('concatScripts', ['concatMobileScripts']);
 gulp.task('buildIndex', ['buildMobileIndex', 'buildProjectorIndex']);
 gulp.task('default', done => runSequence('less', 'css', 'cacheTemplates', 'bundleScripts', 'concatScripts', 'buildIndex', done));
