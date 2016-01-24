@@ -31,6 +31,7 @@
     "gulp-mocha": "^2.2.0",
     "gulp-rename": "^1.2.2",
     "jspm": "^0.16.23",
+    "pm2": "^1.0.0",
     "run-sequence": "^1.1.5"
   },
   "jspm": {

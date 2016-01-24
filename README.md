@@ -24,7 +24,41 @@ browser-sync start --files="*.html,*.js,**/.*html,**/*.js"
 		
 		
 		
+		npm run jspm install
 npm run gulp 
-npm run jspm install
 
  NODE_ENV=production node node_modules/pm2/bin/pm2 start index.js --name 'fun' 
+ 
+ 
+ http://screen4fans.com:1111/projector/poll/tychy-konkurs/info?stay=true
+ http://screen4fans.com:1111/admin/tychy-konkurs
+ http://screen4fans.com:1111/vote/tychy-konkurs
+  NODE_ENV=production node node_modules/pm2/bin/pm2 start index.js --name 'fun' 
+ 
+ 
+  http://bit.ly/238TcAx
+  http://bit.ly/238TcAx
+ 
+  http://tinyurl.com/j5huh2r
+ 
+ 
+ 
+  0 1 * * *  NODE_ENV=production node node_modules/pm2/bin/pm2 start  /home/nutzfahzeugue/domains/mueller-nutzfahrzeuge.eu/scrapper/app.js --name 'scrapper'
+ 
+ @hourly 
+ 
+ 
+ cd /home/nutzfahzeugue/domains/mueller-nutzfahrzeuge.eu/scrapper && NODE_ENV=production node /home/nutzfahzeugue/domains/mueller-nutzfahrzeuge.eu/scrapper/node_modules/pm2/bin/pm2 start  app.js --name 'scrapper'
+ 
+ 
+ <!-- build:js -->
+ <script type='text/javascript' id="__bs_script__">//<![CDATA[
+ document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.10.1.js'><\/script>".replace("HOST", location.hostname));
+ //]]></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+ <script src="js/jspm_packages/system.js"></script>
+ <script src="js/config.js"></script>
+ <!-- endbuild -->
+ 
+ 
+ https://w3layouts.com/mobile-application-templates/page/4/
