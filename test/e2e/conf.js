@@ -1,7 +1,7 @@
 exports.config = {
 	//seleniumAddress: 'http://localhost:4444/wd/hub',
 	specs: ['smoke.js'],
-	baseUrl: 'http://192.168.1.207:8085',
+	baseUrl: 'http://screen4fans.com:1111',
 	suites: {
 		vote: 'specs/vote/*.js',
 		smoke: 'smoke.js',

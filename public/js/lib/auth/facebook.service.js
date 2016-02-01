@@ -25,7 +25,7 @@ function fullFacebookRedirect() {
 	window.location.href = fullRedirectUrl
 		.replace('PERMISSIONS', 'email')
 		.replace('CLIENT_ID', appId)
-		.replace('MY_CANVAS_URL', 'http://91.185.185.211:1111/vote/tychy-konkurs');
+		.replace('MY_CANVAS_URL', 'http://screen4fans.com/:1111/vote/tychy-konkurs');
 
 }
 window.fbAsyncInit = function () {
