@@ -7,9 +7,9 @@ const config = require('config');
 const logger = require('./lib/logger/logger');
 const bodyParser = require('body-parser');
 const poll = require('./lib/poll/router');
+const HttpStatus = require('http-status-codes');
 
 require('./lib/channel/bootstrap').bootstrap(http);
-require('./lib/auth/auth').setupPassport(app);
 
 app.use(bodyParser.json());
 app.use('/api/poll', poll);
@@ -30,7 +30,7 @@ app.all('/admin/*', function (req, res) {
 });
 
 app.all('*', function (req, res) {
-	res.sendFile(config.get('index.mobile'), {root: __dirname + '/public'});
+	res.sendStatus(HttpStatus.BAD_REQUEST);
 });
 
 var server = http.listen(config.get('server.port'), function () {

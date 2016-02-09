@@ -9,6 +9,5 @@ export default function bootstrapSocketChannel() {
     socket.on('vote', pollPubSub.voted.bind(pollPubSub));
     socket.on('changeScreen', pollPubSub.changeScreen.bind(pollPubSub));
 	socket.on('newParticipant', pollPubSub.newParticipant.bind(pollPubSub));
-
 }
 

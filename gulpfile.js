@@ -28,14 +28,6 @@ gulp.task('less', function () {
 		.pipe(gulp.dest('./public/css'));
 });
 
-gulp.task('cssMobile', function () {
-	return gulp.src(['./public/css/external/*.css'])
-		.pipe(minifyCss())
-		.pipe(concat('mobile.min.css'))
-		.pipe(gulp.dest('./public/css/dist'));
-});
-
-
 gulp.task('cssApp', function () {
 	return gulp.src(['./public/css/*.css'])
 		.pipe(minifyCss())
@@ -52,26 +44,10 @@ gulp.task('cacheTemplates', function () {
 		.pipe(gulp.dest('public/js/lib'));
 });
 
-gulp.task('bundleScriptsMobileApp', function () {
-	return gulp.src('./public/js/lib/main.js')
-		.pipe(gulp_jspm())
-		.pipe(gulp.dest('./public/js/lib'));
-});
-
 gulp.task('bundleScriptsProjector', function () {
 	return gulp.src('./public/js/lib/projector.js')
 		.pipe(gulp_jspm())
 		.pipe(gulp.dest('./public/js/lib'));
-});
-
-gulp.task('concatMobileScripts', function () {
-	return gulp.src(['./public/js/jspm_packages/github/angular/bower-angular@1.4.8/angular.min.js',
-			'./public/js/jspm_packages/system.js',
-			'./public/js/config.js',
-			'./public/js/external/*.js',
-			'./public/js/lib/main.bundle.js'])
-		.pipe(concat('vendor.min.js'))
-		.pipe(gulp.dest('./public/js'));
 });
 
 gulp.task('concatProjectorScripts', function () {
@@ -81,16 +57,6 @@ gulp.task('concatProjectorScripts', function () {
 			'./public/js/lib/projector.bundle.js'])
 		.pipe(concat('projector.min.js'))
 		.pipe(gulp.dest('./public/js'));
-});
-
-gulp.task('buildMobileIndex', function () {
-	gulp.src('./public/index.html')
-		.pipe(htmlreplace({
-			'css': 'css/dist/mobile.min.css',
-			'js': 'js/vendor.min.js'
-		}))
-		.pipe(rename('index-prod.html'))
-		.pipe(gulp.dest('./public'));
 });
 
 gulp.task('buildProjectorIndex', function () {
@@ -103,19 +69,7 @@ gulp.task('buildProjectorIndex', function () {
 		.pipe(gulp.dest('./public'));
 });
 
-gulp.task('buildMobileIndex', function () {
-	gulp.src('./public/index.html')
-		.pipe(htmlreplace({
-			'css': 'css/dist/mobile.min.css',
-			'js': 'js/vendor.min.js'
-		}))
-		.pipe(rename('index-mobile-production.html'))
-		.pipe(gulp.dest('./public'));
-});
-
-
-gulp.task('css', ['cssApp', 'cssMobile']);
-gulp.task('bundleScripts', done => runSequence('bundleScriptsMobileApp', 'bundleScriptsProjector', done));
-gulp.task('concatScripts', ['concatMobileScripts']);
-gulp.task('buildIndex', ['buildMobileIndex', 'buildProjectorIndex']);
-gulp.task('default', done => runSequence('less', 'css', 'cacheTemplates', 'bundleScripts', 'concatScripts', 'buildIndex', done));
+gulp.task('css', ['cssApp']);
+gulp.task('bundleScripts', ['bundleScriptsProjector']);
+gulp.task('buildIndex', ['buildProjectorIndex']);
+gulp.task('default', done => runSequence('less', 'css', 'cacheTemplates', 'bundleScripts', 'buildIndex', done));
