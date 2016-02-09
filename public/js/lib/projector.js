@@ -8,6 +8,7 @@ import Roller from './poll/directive.roller';
 import PollCtrl from './poll/ctrl.poll';
 import StepCtrl from './poll/ctrl.step';
 import ParticipantsCtrl from './poll/ctrl.participants';
+import VoteResultCtrl from './poll/ctrl.voteResult';
 import 'restangular';
 import setComponents from './di';
 import PollClassDirective from './poll/directive.pollClass';
@@ -20,6 +21,7 @@ angular
 	.controller('stepCtrl', StepCtrl)
     .controller('pollCtrl', PollCtrl)
     .controller('participantsCtrl', ParticipantsCtrl)
+	.controller('voteResultCtrl', VoteResultCtrl)
     .directive('pollClass', () => new PollClassDirective())
     .config(['$stateProvider', '$locationProvider', '$urlRouterProvider',
         ($stateProvider, $locationProvider) => {
