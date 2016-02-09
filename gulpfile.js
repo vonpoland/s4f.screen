@@ -46,7 +46,10 @@ gulp.task('cacheTemplates', function () {
 
 gulp.task('bundleScriptsProjector', function () {
 	return gulp.src('./public/js/lib/projector.js')
-		.pipe(gulp_jspm())
+		.pipe(gulp_jspm({
+			minify: true,
+			mangle: false
+		}))
 		.pipe(gulp.dest('./public/js/lib'));
 });
 
@@ -63,7 +66,7 @@ gulp.task('buildProjectorIndex', function () {
 	gulp.src('./public/index-projector.html')
 		.pipe(htmlreplace({
 			'css': 'css/dist/app.min.css',
-			'js': 'js/lib/projector.bundle.js'
+			'js': 'js/projector.min.js'
 		}))
 		.pipe(rename('index-projector-production.html'))
 		.pipe(gulp.dest('./public'));
@@ -71,5 +74,6 @@ gulp.task('buildProjectorIndex', function () {
 
 gulp.task('css', ['cssApp']);
 gulp.task('bundleScripts', ['bundleScriptsProjector']);
+gulp.task('concatScripts', ['concatProjectorScripts']);
 gulp.task('buildIndex', ['buildProjectorIndex']);
-gulp.task('default', done => runSequence('less', 'css', 'cacheTemplates', 'bundleScripts', 'buildIndex', done));
+gulp.task('default', done => runSequence('less', 'css', 'cacheTemplates', 'bundleScripts', 'concatScripts', 'buildIndex', done));
