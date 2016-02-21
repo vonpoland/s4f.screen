@@ -4,15 +4,16 @@ const express = require('express');
 const app = express();
 const http = require('http').Server(app);
 const config = require('config');
-const logger = require('./lib/logger/logger');
+const logger = require('bigscreen-logger');
 const bodyParser = require('body-parser');
 const poll = require('./lib/poll/router');
 const HttpStatus = require('http-status-codes');
-
+const path = require('path');
 require('./lib/channel/bootstrap').bootstrap(http);
 
 app.use(bodyParser.json());
 app.use('/api/poll', poll);
+app.use('/img/users', express.static(path.join(__dirname, config.get('user.storePhotoPath'))));
 app.use('/img', express.static(__dirname + '/public/img'));
 app.use('/js', express.static(__dirname + '/public/js'));
 app.use('/css', express.static(__dirname + '/public/css'));

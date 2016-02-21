@@ -4,7 +4,7 @@
         <div class="container container-row container--space-around">
             <div ng-repeat="user in Participants.users" class="participant">
                 <div>
-                    <img class="participants" ng-src="{{user.picture}}">
+                    <img class="participants" ng-src="{{ 'img/users/' + user._id + '/profile.png'}}">
                 </div>
             </div>
         </div>
