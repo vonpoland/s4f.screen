@@ -55,6 +55,7 @@ gulp.task('bundleScriptsProjector', function () {
 
 gulp.task('concatProjectorScripts', function () {
 	return gulp.src(['./public/js/external/lodash.min.js',
+			'./public/js/system-polyfills.js',
 			'./public/js/jspm_packages/system.js',
 			'./public/js/config.js',
 			'./public/js/lib/projector.bundle.js'])

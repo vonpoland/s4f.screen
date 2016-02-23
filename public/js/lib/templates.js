@@ -1,1 +1,1 @@
-angular.module("templates", []);
+angular.module("templates", [])
