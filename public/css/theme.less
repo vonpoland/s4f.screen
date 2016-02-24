@@ -37,13 +37,6 @@ body {
   height: 300px;
 }
 
-.image-background {
-  z-index:-1;
-  position:absolute;
-  left:0;
-  top:0px;
-}
-
 @first_tychy: #00923F;
 @second_tychy: #080606;
 @second_tychy_web: #282828;
@@ -75,4 +68,12 @@ body {
 
 .tychy__logo__third {
   color: @third_tychy;
+}
+
+.fadeable {
+  transition: opacity 1s;
+
+  &.opacity--off {
+    opacity: 0;
+  }
 }

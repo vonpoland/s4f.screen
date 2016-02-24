@@ -5,6 +5,10 @@ import {getLocal, saveLocal} from '../storage/storage';
 const STEP_TIMEOUT = 5000;
 var cache = {};
 
+function getRandomInt(min, max) {
+	return Math.floor(Math.random() * (max - min)) + min;
+}
+
 class PollPubSub extends PubSub {
 	static get VOTED() {
 		return 'on_voted';
@@ -192,5 +196,18 @@ export function getParticipants() {
 	const stateParams = getComponent('stateParams');
 	const restangular = getComponent('restangular');
 
-	return restangular.all('api/poll/' + stateParams.id + '/participants').getList();
+	return restangular.all('api/poll/' + stateParams.id + '/participant').getList();
+}
+
+export function getAnswers() {
+	const stateParams = getComponent('stateParams');
+	const restangular = getComponent('restangular');
+
+	return restangular.all('api/poll/' + stateParams.id + '/answer').getList();
+}
+
+export function rotateAnswers(answers) {
+	var index = getRandomInt(0, answers.length);
+
+	return answers[index];
 }

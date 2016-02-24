@@ -1,25 +1,50 @@
-import {getParticipants, pollPubSub} from './service.poll';
+import {getAnswers, pollPubSub, rotateAnswers} from './service.poll';
+
+const ROTATE_TIME = 12000;
 
 export default class ParticipantsCtrl {
-	constructor($scope) {
-		getParticipants()
-			.then(participants => {
-				this.users = participants.slice(0, 3);
-			}, () => {
-				this.votes = [];
-			});
-
-		pollPubSub.onNewParticipant(participant => {
-			var user = this.users.filter(user => user._id === participant._id).pop();
-
-			if (!user) {
-				if(this.users.length >= 3) {
-					this.users.pop();
+	constructor($scope, $timeout) {
+		var answerContent = angular.element(document.querySelector('.fadeable'));
+		var intervalId;
+		var newAnswers = [];
+		getAnswers()
+			.then(answers => {
+				if (!answers) {
+					return;
 				}
+				this.answers = answers.map(answer => {
+					answer.user.photo = 'img/users/' + answer.user._id + '/profile.png';
+					return answer;
+				});
+				this.answer = rotateAnswers(this.answers);
+				intervalId = setInterval(() => {
+					answerContent.addClass('opacity--off');
 
-				this.users.push(participant);
-				$scope.$digest();
-			}
+					$timeout(() => {
+						var newAnswer = newAnswers.pop();
+
+						if (newAnswer) {
+							this.answer = newAnswer;
+							this.answers.push(newAnswer);
+						} else {
+							this.answer = rotateAnswers(this.answers);
+						}
+
+						answerContent.removeClass('opacity--off');
+					}, 1000);
+
+				}, ROTATE_TIME);
+			}, () => this.answers = []);
+
+		var pubSubOff = pollPubSub.onNewParticipant(data => {
+			data.vote.user = data.user;
+			newAnswers.push(data.vote);
+		});
+
+		$scope.$on('$destroy', () => {
+			window.clearInterval(intervalId);
+			answerContent = null;
+			pubSubOff();
 		});
 	}
 }

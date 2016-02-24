@@ -1,4 +1,4 @@
-<div class="container container-column screen--tychy screen--tychy__background container--space-between ui-text--center">
+<div class="container container-column screen--tychy container--space-between screen--tychy__background ui-text--center" ng-controller="participantsCtrl as Answers">
     <div class="container container-column toolbar__container--tychy">
         <div class="container container-row toolbar--top--tychy container--space-between" style="height:25px">
             <img src="partials/tychy/img/s4f-poziom.png">
@@ -12,14 +12,14 @@
             </div>
         </div>
     </div>
-    <div class="container container-column">
-        <div class="ui-text--white ui-text-shadow font--large">
-            Opisz za co lubisz najbardziej stadion
-            <div class="font--huge">
-                <span class="tychy__logo__first">G</span><span class="tychy__logo__second--web">K</span><span
-                    class="tychy__logo__third">S</span> Tychy
-            </div>
+    <div class="ui-text--white content container container-row fadeable">
+        <div class="container container-column container--vertical-center container--center">
+            <img class="screen-answer--tychy__avatar" width="40" height="40" ng-src="{{Answers.answer.user.photo}}">
+            <div><span>@</span><span ng-bind="Answers.answer.user.firstName"></span></div>
         </div>
+        <div><span class="font--large margin-horizontal--small">#</span><span ng-bind="Answers.answer.option"></span></div>
+    </div>
+    <div class="container container-column">
         <div style="height: 2px;" class="container container-row container--space-between">
             <div class="width-1-3 backgrouny--tychy__first">
             </div>

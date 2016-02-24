@@ -24,9 +24,9 @@
   height: 144px;
   overflow: hidden;
 
-  .step__image {
-    width: 256px;
-    height: 144px;
+  .content {
+    max-height: 115px;
+    overflow: hidden;
   }
 
   img.participants {
@@ -99,12 +99,28 @@
 }
 
 
-.toolbar--top--tychy {
-  background-color: rgba(8,6,6, 0.66)
+.toolbar__container--tychy {
+  height: 27px;
+
+  .toolbar--top--tychy {
+    background-color: rgba(8, 6, 6, 0.66)
+  }
 }
 
 .tychy__logo--small {
   margin-right: 10px;
   height: 22px;
   margin-top: 2px;
+}
+
+.screen--tychy__background {
+  background-image: url('/partials/tychy/img/tlo-konkurs.jpg');
+  background-size: 256px 144px;
+}
+
+.screen-answer--tychy__avatar {
+  -ms-interpolation-mode: bicubic;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
 }
