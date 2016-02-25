@@ -35,6 +35,7 @@ export default class ParticipantsCtrl {
 
 		var pubSubOff = pollPubSub.onNewParticipant(data => {
 			data.vote.user = data.user;
+			data.vote.user.user.photo  = 'img/users/' + answer.user._id + '/profile.png';
 			newAnswers.push(data.vote);
 		});
 
