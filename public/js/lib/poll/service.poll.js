@@ -208,6 +208,8 @@ export function getAnswers() {
 
 export function rotateAnswers(answers) {
 	var index = getRandomInt(0, answers.length);
+	var answer = answers[index];
 
+	answer.user.photo = 'img/users/' + answer.user._id + '/profile.png';
 	return answers[index];
 }

@@ -12,10 +12,7 @@ export default class ParticipantsCtrl {
 				if (!answers) {
 					return;
 				}
-				this.answers = answers.map(answer => {
-					answer.user.photo = 'img/users/' + answer.user._id + '/profile.png';
-					return answer;
-				});
+				this.answers = answers;
 				this.answer = rotateAnswers(this.answers);
 				intervalId = setInterval(() => {
 					answerContent.addClass('opacity--off');
