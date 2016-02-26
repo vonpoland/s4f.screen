@@ -33,6 +33,11 @@ app.all('/admin/*', secure, function (req, res) {
 	res.sendFile('partials/admin/index.html', {root: __dirname + '/public'});
 });
 
+app.all('/favicon.ico', function (req, res) {
+	res.sendFile('favicon.ico', {root: __dirname + '/'});
+});
+
+
 app.all('*', function (req, res) {
 	res.sendStatus(HttpStatus.BAD_REQUEST);
 });
