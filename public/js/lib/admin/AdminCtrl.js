@@ -16,7 +16,7 @@ export default class AdminCtrl {
 		this.winnerLot = true;
 		lotWinner()
 		.then(winner =>  {
-			this.winner = winner;
+			this.poll.winner = winner;
 			this.winnerLot = false;
 		});
 	}

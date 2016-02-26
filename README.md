@@ -62,3 +62,6 @@ npm run gulp
  
  
  https://w3layouts.com/mobile-application-templates/page/4/
+
+
+# remove index db.polls.dropIndex('winner.email_1')

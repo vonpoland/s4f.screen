@@ -14,10 +14,12 @@
     </div>
     <div class="ui-text--white content container container-row fadeable">
         <div class="container container-column container--vertical-center container--center">
-            <img class="screen-answer--tychy__avatar" width="40" height="40" ng-src="{{Answers.answer.user.photo}}">
-            <div><span>@</span><span ng-bind="Answers.answer.user.firstName"></span></div>
+            <img class="screen-answer--tychy__avatar" width="40" height="40">
+            <div class="ui-text-ellipsis ui-overflow--hidden screen-answer--tychy__avatar__user-firstname" ng-bind="Answers.answer.user.firstName"></div>
         </div>
-        <div><span class="font--large margin-horizontal--small">#</span><span ng-bind="Answers.answer.option"></span></div>
+        <div><span class="font--large margin-horizontal--small">#</span>
+            <span ng-bind="Answers.answer.option"></span>
+        </div>
     </div>
     <div class="container container-column">
         <div style="height: 2px;" class="container container-row container--space-between">

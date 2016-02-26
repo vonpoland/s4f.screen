@@ -10,9 +10,9 @@
         <md-button class="md-raised md-primary" ng-disabled="admin.saving" ng-click="admin.changeScreen(admin.currentScreen, true)">Send and stay</md-button>
         <p>losuj zwycięzcę</p>
         <md-button class="md-raised md-primary" ng-disabled="admin.winnerLot" ng-click="admin.lotWinner(admin.currentScreen)">Losuj</md-button>
-        <div ng-if="admin.winner">
-            <img ng-src="{{admin.winner.picture}}">
-            <div>{{admin.winner.firstName}} {{admin.winner.lastName}}</div>
+        <div ng-if="admin.poll.winner">
+            <img style="width:100px;height:100px" ng-src="{{'img/users/' + admin.poll.winner._id + '/profile.png';}}">
+            <div>{{admin.poll.winner.firstName}} {{admin.poll.winner.lastName}}</div>
         </div>
     </div>
 </md-content>

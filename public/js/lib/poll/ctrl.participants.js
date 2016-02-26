@@ -2,6 +2,26 @@ import {getAnswers, pollPubSub, rotateAnswers} from './service.poll';
 
 const ROTATE_TIME = 12000;
 
+function handleIntervalChange($timeout, answerContent, newAnswers) {
+		answerContent.addClass('opacity--off');
+		var image = answerContent.find('img');
+
+		$timeout(() => {
+			var newAnswer = newAnswers.pop();
+
+			if (newAnswer) {
+				this.answer = newAnswer;
+				this.answers.push(newAnswer);
+			} else {
+				this.answer = rotateAnswers(this.answers);
+			}
+
+			image.removeAttr('src');
+			image.attr('src', this.answer.user.photo);
+			answerContent.removeClass('opacity--off');
+		}, 1000);
+}
+
 export default class ParticipantsCtrl {
 	constructor($scope, $timeout) {
 		var answerContent = angular.element(document.querySelector('.fadeable'));
@@ -13,24 +33,11 @@ export default class ParticipantsCtrl {
 					return;
 				}
 				this.answers = answers;
-				this.answer = rotateAnswers(this.answers);
-				intervalId = setInterval(() => {
-					answerContent.addClass('opacity--off');
 
-					$timeout(() => {
-						var newAnswer = newAnswers.pop();
+				var onAnswerChange = handleIntervalChange.bind(this, $timeout, answerContent, newAnswers);
 
-						if (newAnswer) {
-							this.answer = newAnswer;
-							this.answers.push(newAnswer);
-						} else {
-							this.answer = rotateAnswers(this.answers);
-						}
-
-						answerContent.removeClass('opacity--off');
-					}, 1000);
-
-				}, ROTATE_TIME);
+				onAnswerChange();
+				intervalId = setInterval(onAnswerChange, ROTATE_TIME);
 			}, () => this.answers = []);
 
 		var pubSubOff = pollPubSub.onNewParticipant(data => {

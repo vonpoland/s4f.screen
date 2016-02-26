@@ -9,8 +9,11 @@ const bodyParser = require('body-parser');
 const poll = require('./lib/poll/router');
 const HttpStatus = require('http-status-codes');
 const path = require('path');
+const auth = require('./lib/auth/service');
+const secure = require('./lib/auth/service').basicAuth;
 require('./lib/channel/bootstrap').bootstrap(http);
 
+auth.setupAuth(app);
 app.use(bodyParser.json());
 app.use('/api/poll', poll);
 app.use('/img/users', express.static(path.join(__dirname, config.get('user.storePhotoPath'))));
@@ -26,7 +29,7 @@ app.all('/projector/*', function (req, res) {
 	res.sendFile(config.get('index.projector'), {root: __dirname + '/public'});
 });
 
-app.all('/admin/*', function (req, res) {
+app.all('/admin/*', secure, function (req, res) {
 	res.sendFile('partials/admin/index.html', {root: __dirname + '/public'});
 });
 
