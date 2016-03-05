@@ -104,17 +104,23 @@ export function calculateStats(poll = {}) {
 	return votes;
 }
 
+export function getPolls(parent) {
+	const restangular = getComponent('restangular');
+
+	return restangular.all('api/poll').getList({parent : parent});
+}
+
 export function getPoll(id = null, fromCache = false) {
 	const stateParams = getComponent('stateParams');
 	const restangular = getComponent('restangular');
 
-	id = id || stateParams.id;
+	id = id || stateParams.pollName;
 	var cached = cache[id];
 
 	if (fromCache && cached) {
 		return cached;
 	} else {
-		cache[id] = restangular.one('api/poll/' + (id || stateParams.id)).get();
+		cache[id] = restangular.one('api/poll/' + (id || stateParams.pollName)).get();
 		return cache[id];
 	}
 }
@@ -209,6 +215,10 @@ export function getAnswers() {
 export function rotateAnswers(answers) {
 	var index = getRandomInt(0, answers.length);
 	var answer = answers[index];
+
+	if(!answer) {
+		return null;
+	}
 
 	answer.user.photo = 'img/users/' + answer.user._id + '/profile.png';
 	return answers[index];

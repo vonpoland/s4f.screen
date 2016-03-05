@@ -1,18 +1,18 @@
 <md-content flex layout-padding>
-    <div>
-        <md-subheader class="md-primary">{{admin.poll.name}}</md-subheader>
+    <div ng-repeat="poll in Admin.polls">
+        <md-subheader class="md-primary">{{poll.name}}</md-subheader>
         <p>ustaw stronę</p>
-        <md-radio-group ng-model="admin.currentScreen">
+        <md-radio-group ng-model="Admin.currentScreen" ng-change="Admin.pollName = poll.name">
             <md-radio-button value="{{key}}" class="md-primary"
-                             ng-repeat="(key,value) in admin.poll.data.stepTemplates">{{value.name}}</md-radio-button>
+                             ng-repeat="(key,value) in poll.data.stepTemplates">{{value.name}}</md-radio-button>
         </md-radio-group>
-        <md-button class="md-raised md-primary" ng-disabled="admin.saving" ng-click="admin.changeScreen(admin.currentScreen)">Send</md-button>
-        <md-button class="md-raised md-primary" ng-disabled="admin.saving" ng-click="admin.changeScreen(admin.currentScreen, true)">Send and stay</md-button>
-        <p>losuj zwycięzcę</p>
-        <md-button class="md-raised md-primary" ng-disabled="admin.winnerLot" ng-click="admin.lotWinner(admin.currentScreen)">Losuj</md-button>
-        <div ng-if="admin.poll.winner">
-            <img style="width:100px;height:100px" ng-src="{{'img/users/' + admin.poll.winner._id + '/profile.png';}}">
-            <div>{{admin.poll.winner.firstName}} {{admin.poll.winner.lastName}}</div>
-        </div>
+    </div>
+    <md-button class="md-raised md-primary" ng-disabled="Admin.saving" ng-click="Admin.changeScreen(Admin.currentScreen)">Send</md-button>
+    <md-button class="md-raised md-primary" ng-disabled="Admin.saving" ng-click="Admin.changeScreen(Admin.currentScreen, true)">Send and stay</md-button>
+    <p>losuj zwycięzcę</p>
+    <md-button class="md-raised md-primary" ng-disabled="Admin.winnerLot" ng-click="Admin.lotWinner(Admin.currentScreen)">Losuj</md-button>
+    <div ng-if="poll.winner">
+        <img style="width:100px;height:100px" ng-src="{{'img/users/' + poll.winner._id + '/profile.png';}}">
+        <div>{{poll.winner.firstName}} {{poll.winner.lastName}}</div>
     </div>
 </md-content>

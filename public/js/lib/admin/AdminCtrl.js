@@ -1,14 +1,15 @@
-import {getPoll} from '../poll/service.poll';
+import {getPolls} from '../poll/service.poll';
 import {changeScreen, lotWinner} from './service';
 
 export default class AdminCtrl {
-	constructor() {
-		getPoll().then(poll => this.poll = poll);
+	constructor($stateParams) {
+		this.parent = $stateParams.parent;
+		getPolls($stateParams.parent).then(polls => this.polls = polls);
 	}
 
 	changeScreen(screen, stay) {
 		this.saving = true;
-		changeScreen(screen, stay)
+		changeScreen(this.parent, this.pollName, screen, stay)
 			.then(() => this.saving = false);
 	}
 

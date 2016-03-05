@@ -3,11 +3,15 @@ import {pollPubSub} from '../poll/service.poll';
 
 let socket = null;
 
-export default function bootstrapSocketChannel() {
+export default function bootstrapSocketChannel(pollId) {
+	if(socket !== null) {
+		return;
+	}
+
     socket = new IO();
 
-    socket.on('vote', pollPubSub.voted.bind(pollPubSub));
-    socket.on('changeScreen', pollPubSub.changeScreen.bind(pollPubSub));
-	socket.on('newParticipant', pollPubSub.newParticipant.bind(pollPubSub));
+    socket.on(pollId + ':vote', pollPubSub.voted.bind(pollPubSub));
+    socket.on(pollId + ':changeScreen', pollPubSub.changeScreen.bind(pollPubSub));
+	socket.on(pollId + ':newParticipant', pollPubSub.newParticipant.bind(pollPubSub));
 }
 

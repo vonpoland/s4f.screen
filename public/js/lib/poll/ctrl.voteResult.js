@@ -3,8 +3,7 @@ import {calculateStats, pollPubSub} from './service.poll';
 export default class VoteResultCtrl {
 	constructor($scope) {
 		var off = pollPubSub.onVoted(data => {
-			console.info('pubsub');
-			this.initStats(data);
+			this.stats = calculateStats(data.poll);
 			$scope.$digest();
 		});
 

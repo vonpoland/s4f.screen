@@ -118,6 +118,13 @@ body * {
   align-items: flex-end;
 }
 
+.container--transition {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 .container--wrap {
   flex-wrap: wrap;
 }
@@ -195,4 +202,12 @@ body * {
 
 .no-margin--left {
   margin-left: 0;
+}
+
+.animation {
+  transition: all 1s;
+}
+
+.animation--rotate {
+  transform: rotateY(360deg);
 }

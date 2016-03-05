@@ -37,7 +37,6 @@ app.all('/favicon.ico', function (req, res) {
 	res.sendFile('favicon.ico', {root: __dirname + '/'});
 });
 
-
 app.all('*', function (req, res) {
 	res.sendStatus(HttpStatus.BAD_REQUEST);
 });

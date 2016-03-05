@@ -1,13 +1,5 @@
 @poll: #100d67;
 
-.poll {
-  transition: height, width 2s;
-  background-color: @poll;
-  width: 50px;
-  color: white;
-  font-size: 20px;
-}
-
 .vote {
   position: relative;
   button {
@@ -47,6 +39,10 @@
 
   .poll_result__text {
     text-align: left;
+  }
+
+  .poll_result {
+    height: 115px
   }
 
   .participant {
@@ -90,12 +86,6 @@
     width: 500px;
     height: 500px;
   }
-
-  .poll {
-    width: 110px;
-    font-size: 30px;
-    font-weight: bold;
-  }
 }
 
 
@@ -103,6 +93,10 @@
   height: 27px;
 
   .toolbar--top--tychy {
+    .toolbar--top--tychy__title {
+      margin-left: -23px;
+    }
+
     background-color: rgba(8, 6, 6, 0.66)
   }
 }
@@ -128,4 +122,5 @@
 .screen-answer--tychy__avatar__user-firstname {
   max-width: 60px;
 }
+
 

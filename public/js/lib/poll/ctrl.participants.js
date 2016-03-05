@@ -16,6 +16,10 @@ function handleIntervalChange($timeout, answerContent, newAnswers) {
 				this.answer = rotateAnswers(this.answers);
 			}
 
+			if(!this.answer) {
+				return;
+			}
+
 			image.removeAttr('src');
 			image.attr('src', this.answer.user.photo);
 			answerContent.removeClass('opacity--off');

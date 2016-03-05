@@ -18,12 +18,9 @@ angular
 		($stateProvider, $locationProvider) => {
 			$locationProvider.html5Mode(true);
 			$stateProvider
-				.state('main', {
-					url: '/admin'
-				})
 				.state('poll', {
-					url: '/admin/:id',
-					controller: 'adminCtrl as admin',
+					url: '/admin/:parent',
+					controller: 'adminCtrl as Admin',
 					templateUrl: 'partials/admin/poll.html'
 				});
 		}])
@@ -40,6 +37,4 @@ angular
 
 angular
 	.element(document)
-	.ready(() => {
-		angular.bootstrap(document, ['bigScreen.admin']);
-	});
+	.ready(() => angular.bootstrap(document, ['bigScreen.admin']));
