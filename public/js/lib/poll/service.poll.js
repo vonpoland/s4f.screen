@@ -81,29 +81,6 @@ export function calculate(options, poll) {
 	};
 }
 
-export function calculateStats(poll = {}) {
-	if (!poll && !poll.data || !poll.data.votes) {
-		return;
-	}
-
-	var options = Object.keys(poll.data.votes);
-	var votesSum = options.reduce((sum, key) => sum + poll.data.votes[key], 0);
-	var votes = {};
-
-	options.forEach(key => {
-		var value = poll.data.votes[key];
-		var percentage = Math.round((value / votesSum) * 100);
-
-		votes[key] = {
-			option: key,
-			value: value,
-			percentage: isNaN(percentage) ? 0 : percentage
-		};
-	});
-
-	return votes;
-}
-
 export function getPolls(parent) {
 	const restangular = getComponent('restangular');
 

@@ -1,4 +1,5 @@
-import {calculateStats, pollPubSub} from './service.poll';
+import {pollPubSub} from './service.poll';
+import {calculateStats} from '../stats/service';
 
 export default class VoteResultCtrl {
 	constructor($scope) {

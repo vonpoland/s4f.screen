@@ -9,6 +9,7 @@ var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var htmlreplace = require('gulp-html-replace');
 var runSequence = require('run-sequence');
+var exec = require('child_process').exec;
 
 // Static server
 gulp.task('browser-sync', function () {
@@ -17,10 +18,20 @@ gulp.task('browser-sync', function () {
 	});
 });
 
-gulp.task('test:unit', function () {
-	return gulp.src('test/unit/**/*.spec.js', {read: false})
+gulp.task('test:unit:frontend', function (cb) {
+	exec('mocha test/unit/frontend/**/*.spec.js --compilers js:babel-core/register --reporter nyan', function (err, stdout, stderr) {
+		console.log(stdout);
+		console.log(stderr);
+		cb();
+	});
+});
+
+
+gulp.task('test:unit:backend', function () {
+	return gulp.src('test/unit/backend/**/*.spec.js', {read: false})
 		.pipe(mocha({reporter: 'nyan'}));
 });
+
 
 gulp.task('less', function () {
 	gulp.src('./public/css/*.less')

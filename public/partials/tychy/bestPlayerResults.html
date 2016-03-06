@@ -2,6 +2,7 @@
     <div class="container container-column toolbar__container--tychy">
         <div class="container container-row toolbar--top--tychy container--space-between" style="height:25px">
             <img src="partials/tychy/img/s4f-poziom.png">
+            <span class="tychy__logo__first ui-text-shadow toolbar--top--tychy__title">ZAWODNIK MECZU</span>
             <img class="tychy__logo--small" src="partials/tychy/img/gkstychy.png">
         </div>
         <div style="height: 2px;" class="container container-row container--space-between">
@@ -12,9 +13,11 @@
             </div>
         </div>
     </div>
-    <div class="container container-column">
-        <div class="ui-text--white ui-text-shadow font--large ccontainer container--middle container container--vertical-center">
-            GŁOSUJ TERAZ na najlepszego zawodnika meczu!
+    <div class="container container-column" ng-controller="voteResultCtrl as Result">
+        <div ng-init="Result.initStats(step.poll)">
+            <poll data-options="step.poll.data.options" data-stats="Result.stats"
+                  data-width="57" data-height="80"
+                  class="poll_result container--vertical-center padding-horizontal--small"></poll>
         </div>
         <div style="height: 2px;" class="container container-row container--space-between">
             <div class="width-1-3 backgrouny--tychy__first">
