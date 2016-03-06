@@ -26,12 +26,10 @@ gulp.task('test:unit:frontend', function (cb) {
 	});
 });
 
-
 gulp.task('test:unit:backend', function () {
 	return gulp.src('test/unit/backend/**/*.spec.js', {read: false})
 		.pipe(mocha({reporter: 'nyan'}));
 });
-
 
 gulp.task('less', function () {
 	gulp.src('./public/css/*.less')
@@ -88,4 +86,4 @@ gulp.task('css', ['cssApp']);
 gulp.task('bundleScripts', ['bundleScriptsProjector']);
 gulp.task('concatScripts', ['concatProjectorScripts']);
 gulp.task('buildIndex', ['buildProjectorIndex']);
-gulp.task('default', done => runSequence('less', 'css', 'cacheTemplates', 'bundleScripts', 'concatScripts', 'buildIndex', done));
+gulp.task('default', done => runSequence('less', 'cacheTemplates', 'bundleScripts', 'concatScripts', 'css', 'buildIndex', done));
