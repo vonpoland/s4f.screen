@@ -36,8 +36,8 @@ export class PollDirective {
 	constructor() {
 		this.template = `<div class="container container-row container--space-between">
                 <div class="container container-row container--content-to-end ui-relative">
-                    <span class="ui-position--absolute ui-text--white font2 ui-text-shadow">{{Poll.option1.name}}</span>
-                    <span class="ui-position--absolute ui-text--white font--big ui-text-shadow" style="bottom:0px;left:3px;top:0px;">{{Poll.option1.number}}</span>
+                    <span class="ui-position--absolute ui-text--white font2 ui-text-shadow" style="top:0px;">{{Poll.option1.name}}</span>
+                    <span class="ui-position--absolute ui-text--white font--big ui-text-shadow" style="bottom:0px;left:3px">{{Poll.option1.number}}</span>
                     <img width="{{Poll.width}}" height="{{Poll.height}}" ng-src="{{Poll.option1.picture}}" class="image--option1 animation" />
                     <div style="height:100px;" class="container container--content-to-end">
                         <div class="margin-horizontal--small  ui-text--white poll__option poll__option--first container container--content-to-end container--center container--transition"
@@ -48,8 +48,8 @@ export class PollDirective {
                 </div>
 
                 <div class="container container-row container--content-to-end ui-relative">
-                    <span class="ui-position--absolute ui-text--white font2" style="right:0px;">{{Poll.option2.name}}</span>
-                                        <span class="ui-position--absolute ui-text--white font--big ui-text-shadow" style="bottom:0px;right:3px;top:0px">{{Poll.option2.number}}</span>
+                    <span class="ui-position--absolute ui-text--white font2" style="right:0px;top:0px;">{{Poll.option2.name}}</span>
+                                        <span class="ui-position--absolute ui-text--white font--big ui-text-shadow" style="bottom:0px;right:3px">{{Poll.option2.number}}</span>
                     <div style="height:100px;" class="container container--content-to-end">
                         <div class="margin-horizontal--small ui-text--white poll__option poll__option--second container container--content-to-end container--center container--transition"
                         ng-style="{ height: Poll.percentage2 + '%'}">
