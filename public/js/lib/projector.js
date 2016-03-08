@@ -2,7 +2,7 @@ import angular from 'angular';
 import 'angular-sanitize';
 import 'angular-ui-router';
 import 'angular-animate';
-import PollDirective from './poll/directive.poll';
+import {BestTeamPollDirective, PollDirective} from './poll/directive.poll';
 import Roller from './poll/directive.roller';
 import PollCtrl from './poll/ctrl.poll';
 import StepCtrl from './poll/ctrl.step';
@@ -15,6 +15,7 @@ import './templates';
 
 angular
     .module('app.projector', ['ngSanitize', 'ui.router', 'restangular', 'ngAnimate', 'templates'])
+	.directive('bestTeamPoll', () => new BestTeamPollDirective())
     .directive('poll', () => new PollDirective())
     .directive('roller', () => new Roller())
 	.directive('pollClass', () => new PollClassDirective())
