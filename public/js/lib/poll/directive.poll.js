@@ -48,7 +48,7 @@ export class PollDirective {
                 </div>
 
                 <div class="container container-row container--content-to-end ui-relative">
-                    <span class="ui-position--absolute ui-text--white font2" style="right:7px;">{{Poll.option2.name}}</span>
+                    <span class="ui-position--absolute ui-text--white font2" style="right:0px;">{{Poll.option2.name}}</span>
                                         <span class="ui-position--absolute ui-text--white font--big ui-text-shadow" style="bottom:0px;right:3px">{{Poll.option2.number}}</span>
                     <div style="height:100px;" class="container container--content-to-end">
                         <div class="margin-horizontal--small ui-text--white poll__option poll__option--second container container--content-to-end container--center container--transition"
