@@ -1,6 +1,6 @@
 'use strict';
 
-var voteService = require('./functional/vote/voteService');
+var voteService = require('./.././voteService');
 
 var limit = parseInt(process.argv[2]);
 
