@@ -56,7 +56,7 @@
   },
   "dependencies": {
     "async": "^1.5.1",
-    "bigscreen-db": "^1.0.10",
+    "bigscreen-db": "^1.0.11",
     "bigscreen-logger": "^1.0.1",
     "body-parser": "^1.14.1",
     "config": "^1.17.1",
