@@ -1,0 +1,26 @@
+<md-content flex layout-padding class="layout-fill">
+    <h1>Wyniki {{Results.pollName}}</h1>
+    <div ng-repeat="vote in Results.votes" layout="row" >
+        <span>{{vote.option}} - {{vote.value}}</span>
+    </div>
+    <h1>Odpowiedzi {{Results.answers.length}}</h1>
+    <div layout="row" layout-align="space-around center">
+        <span>Numer</span>
+        <span>Odpowiedź</span>
+        <span>Użytkownik</span>
+        <span>Data</span>
+    </div>
+    <md-virtual-repeat-container id="vertical-container" class="layout-fill">
+        <div md-virtual-repeat="answer in Results.answers"
+             class="repeated-item">
+            <div layout="row" layout-align="space-around center" style="padding: 10px 0">
+                <span>{{$index + 1}}</span>
+                <span>
+                    {{answer.option.option}} - {{answer.option.answer}}
+                </span>
+                <span>{{answer.user.firstName}}  {{answer.user.lastName}}</span>
+                <span>{{answer.date}}</span>
+            </div>
+        </div>
+    </md-virtual-repeat-container>
+</md-content>

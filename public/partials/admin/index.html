@@ -25,31 +25,10 @@
             -ms-user-select: none;
             user-select: none; }
     </style>
+
 </head>
 <body ng-cloak>
-<md-toolbar layout="row">
-    <div class="md-toolbar-tools">
-        <h2 class="md-flex">Big-screen - admin</h2>
-    </div>
-</md-toolbar>
-<md-sidenav class="md-whiteframe-z2" md-component-id="left" md-swipe-left="app.onSwipeLeft()">
-    <md-list>
-        <md-item >
-            <md-button>
-                <!--<md-icon md-svg-src="./assets/svg/avatar-1.svg" class="avatar"></md-icon>-->
-                Lia Luogo
-            </md-button>
-        </md-item>
-
-        <md-item >
-            <md-button>
-                <!--<md-icon md-svg-src="./assets/svg/avatar-4.svg" class="avatar"></md-icon>-->
-                Lawrence Ray
-            </md-button>
-        </md-item>
-    </md-list>
-</md-sidenav>
-<div ui-view></div>
+<div ui-view class="layout-fill"></div>
 <script type='text/javascript' id="__bs_script__">//<![CDATA[
 document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.10.1.js'><\/script>".replace("HOST", location.hostname));
 //]]></script>

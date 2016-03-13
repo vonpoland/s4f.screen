@@ -91,7 +91,7 @@ export function getPoll(id = null, fromCache = false) {
 	const stateParams = getComponent('stateParams');
 	const restangular = getComponent('restangular');
 
-	id = id || stateParams.pollName;
+	id = id || (stateParams.pollName || stateParams.id);
 	var cached = cache[id];
 
 	if (fromCache && cached) {

@@ -1,7 +1,6 @@
 <md-content flex layout-padding>
     <div ng-repeat="poll in Admin.polls">
-        <md-subheader class="md-primary">{{poll.name}}</md-subheader>
-        <p>ustaw stronę</p>
+        <md-subheader class="md-primary">{{poll.name}} <a ui-sref="results({id: poll.name})">wyniki</a> </md-subheader>
         <md-radio-group ng-model="Admin.currentScreen" ng-change="Admin.pollName = poll.name">
             <md-radio-button value="{{key}}" class="md-primary"
                              ng-repeat="(key,value) in poll.data.stepTemplates">{{value.name}}</md-radio-button>
