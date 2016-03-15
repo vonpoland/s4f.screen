@@ -42,18 +42,18 @@ export class PollDirective {
                     <div style="height:100px; margin-left:8px;" class="container container--content-to-end">
                         <div class="margin-horizontal--small  ui-text--white poll__option poll__option--first container container--content-to-end container--center container--transition"
                              ng-style="{ height: Poll.percentage1 + '%'}">
-                             <span class="font--large">{{Poll.percentage1}}<br/>%</span>
+                             <span class="font--large ui-text-shadow">{{Poll.percentage1}}<br/>%</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="container container-row container--content-to-end ui-relative">
-                    <span class="ui-position--absolute ui-text--white font2 ui-text--uppercase" style="right:0px;top:0px;">{{Poll.option2.displayName}}</span>
+                    <span class="ui-position--absolute ui-text--white font2 ui-text-shadow ui-text--uppercase" style="right:0px;top:0px;">{{Poll.option2.displayName}}</span>
                                         <span class="ui-position--absolute ui-text--white font--big ui-text-shadow ui-bring-to-top" style="bottom:0px;right:3px">{{Poll.option2.number}}</span>
                     <div style="height:100px; margin-left:-8px;" class="container container--content-to-end">
                         <div class="margin-horizontal--small ui-text--white poll__option poll__option--second container container--content-to-end container--center container--transition"
                         ng-style="{ height: Poll.percentage2 + '%'}">
-                        <span class="font--large">{{Poll.percentage2}}<br/>%</span>
+                        <span class="font--large ui-text-shadow">{{Poll.percentage2}}<br/>%</span>
                         </div>
                     </div>
                     <img width="{{Poll.width}}" height="{{Poll.height}}" class="animation image--option2" ng-src="{{Poll.option2.picture}}" />
@@ -81,7 +81,7 @@ export class BestTeamPollDirective extends PollDirective {
                     <div style="height:100px;" class="container container--content-to-end">
                         <div class="ui-text--white poll__option poll__option--first container container--content-to-end container--center container--transition"
                         ng-style="{ height: Poll.percentage1 + '%'}">
-                        <span class="font--large">{{Poll.percentage1}}<br/>%</span>
+                        <span class="font--large ui-text-shadow">{{Poll.percentage1}}<br/>%</span>
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@ export class BestTeamPollDirective extends PollDirective {
                     <div style="height:100px;" class="container container--content-to-end">
                         <div class="margin-horizontal--small ui-text--white poll__option poll__option--second container container--content-to-end container--center container--transition"
                         ng-style="{ height: Poll.percentage2 + '%'}">
-                        <span class="font--large">{{Poll.percentage2}}<br/>%</span>
+                        <span class="font--large ui-text-shadow">{{Poll.percentage2}}<br/>%</span>
                         </div>
                     </div>
                     <img width="{{Poll.width}}" height="{{Poll.height}}" class="margin-vertical--small animation image--option2" ng-src="{{Poll.option2.picture}}" />
