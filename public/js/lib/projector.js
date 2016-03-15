@@ -12,6 +12,7 @@ import 'restangular';
 import setComponents from './di';
 import PollClassDirective from './poll/directive.pollClass';
 import './templates';
+import TychyTopBanner from './UI/tychyTopBanner';
 
 angular
     .module('app.projector', ['ngSanitize', 'ui.router', 'restangular', 'ngAnimate', 'templates'])
@@ -19,6 +20,7 @@ angular
     .directive('poll', () => new PollDirective())
     .directive('roller', () => new Roller())
 	.directive('pollClass', () => new PollClassDirective())
+    .directive('tychyTopBanner', () => new TychyTopBanner())
 	.controller('stepCtrl', StepCtrl)
     .controller('pollCtrl', PollCtrl)
     .controller('participantsCtrl', ParticipantsCtrl)
