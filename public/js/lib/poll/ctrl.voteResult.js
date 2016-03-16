@@ -5,6 +5,7 @@ export default class VoteResultCtrl {
 	constructor($scope) {
 		var off = pollPubSub.onVoted(data => {
 			this.stats = calculateStats(data.poll);
+			this.statsEmpty = Object.keys(this.stats).length < 2;
 			$scope.$digest();
 		});
 
@@ -13,5 +14,6 @@ export default class VoteResultCtrl {
 
 	initStats(poll) {
 		this.stats = calculateStats(poll);
+		this.statsEmpty = Object.keys(this.stats).length < 2;
 	}
 }

@@ -18,10 +18,15 @@ export function calculatePollOptions() {
 	if (this.options.length === 2) {
 		this.option1 = this.options[0];
 		this.option2 = this.options[1];
-		var percentage1 = this.stats[this.option1.option].percentage;
-		var percentage2 = this.stats[this.option2.option].percentage;
-		var value1 = this.stats[this.option1.option].value;
-		var value2 = this.stats[this.option2.option].value;
+
+		var option1Stats = this.stats[this.option1.option];
+		var options2Stats = this.stats[this.option2.option];
+
+		var percentage1 = option1Stats ? option1Stats.percentage : 0;
+		var percentage2 = options2Stats ? options2Stats.percentage : 0;
+
+		var value1 = option1Stats ? option1Stats.value : 0;
+		var value2 = options2Stats ? options2Stats.percentage.value : 0;
 
 		if (this.value1 && (this.value1 !== value1)) {
 			this.rotate('first');

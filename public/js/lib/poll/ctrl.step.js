@@ -4,7 +4,7 @@ import bootstrapSocketChannel from '../socket/channel';
 export default class StepCtrl {
 	constructor($scope, $stateParams, $state) {
 		bootstrapSocketChannel($stateParams.parent);
-		getPoll(null, $stateParams.stay !== 'true')
+		getPoll()
 			.then(poll => this.poll = poll)
 			.then(() => {
 				let step = this.poll.data.stepTemplates[$stateParams.step];
