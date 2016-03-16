@@ -2,8 +2,12 @@ import {pollPubSub} from './service.poll';
 import {calculateStats} from '../stats/service';
 
 export default class VoteResultCtrl {
-	constructor($scope) {
+	constructor($scope, $stateParams) {
 		var off = pollPubSub.onVoted(data => {
+            if(data.poll.name !== $stateParams.pollName) {
+                return;
+            }
+
 			this.stats = calculateStats(data.poll);
 			this.statsEmpty = Object.keys(this.stats).length < 2;
 			$scope.$digest();
