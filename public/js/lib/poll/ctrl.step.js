@@ -7,7 +7,14 @@ export default class StepCtrl {
 		getPoll()
 			.then(poll => this.poll = poll)
 			.then(() => {
-				let step = this.poll.data.stepTemplates[$stateParams.step];
+                let stepName = $stateParams.step;
+
+                if(!stepName) {
+                    stepName = this.poll.last;
+                    $state.go('pollNameStep', Object.assign($stateParams, { step : stepName }));
+                }
+
+				let step = this.poll.data.stepTemplates[stepName];
 				this.template = step.template;
 
 				if ($stateParams.stay === 'true') {

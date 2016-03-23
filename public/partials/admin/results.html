@@ -4,22 +4,23 @@
         <span>{{vote.option}} - {{vote.value}}</span>
     </div>
     <h1>Odpowiedzi {{Results.answers.length}}</h1>
-    <div layout="row" layout-align="space-around center">
-        <span>Numer</span>
-        <span>Odpowiedź</span>
-        <span>Użytkownik</span>
-        <span>Data</span>
+
+    <div layout="row" layout-align="start center">
+        <div style="width: 100px;">Numer</div>
+        <div style="width: 500px;">Odpowiedź</div>
+        <div style="width: 150px">Użytkownik</div>
+        <div style="width: 100px">Data</div>
     </div>
-    <md-virtual-repeat-container id="vertical-container" class="layout-fill">
+    <md-virtual-repeat-container id="vertical-container" class="layout-fill" style="margin-left:10px">
         <div md-virtual-repeat="answer in Results.answers"
              class="repeated-item">
-            <div layout="row" layout-align="space-around center" style="padding: 10px 0">
-                <span>{{$index + 1}}</span>
-                <span>
+            <div layout="row" layout-align="start center" style="padding: 10px 0">
+                <div style="width: 100px;">{{$index + 1}}</div>
+                <div style="width: 500px;word-wrap: break-word;">
                     {{answer.option.option}} - {{answer.option.answer}}
-                </span>
-                <span>{{answer.user.firstName}}  {{answer.user.lastName}}</span>
-                <span>{{answer.date}}</span>
+                </div>
+                <div style="width: 150px">{{answer.user.firstName}}  {{answer.user.lastName}}</div>
+                <divan style="width: 100px">{{answer.date | date: 'medium'}}</divan>
             </div>
         </div>
     </md-virtual-repeat-container>

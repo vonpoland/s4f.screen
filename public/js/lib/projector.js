@@ -34,10 +34,15 @@ angular
                 controller: 'pollCtrl as poll',
                 templateUrl: 'partials/vote-result.html'
             })
-            .state('pollStep', {
-                url: '/projector/:parent/:pollName/:step?stay',
-	            templateUrl: 'partials/vote-step.html',
-	            controller: 'stepCtrl as step'
+            .state('pollName', {
+                templateUrl: 'partials/vote-step.html',
+                controller: 'stepCtrl as step',
+                url: '/projector/:parent/:pollName?stay'
+            })
+            .state('pollNameStep', {
+                templateUrl: 'partials/vote-step.html',
+                controller: 'stepCtrl as step',
+                url: '/projector/:parent/:pollName/:step?stay'
             });
     }])
     .run((Restangular, $stateParams, $state, $timeout) => {
