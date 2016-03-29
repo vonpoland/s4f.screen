@@ -1,4 +1,4 @@
-import {calculcateSimplePollOptions} from '../stats/service';
+import {calculcateSimplePollOptions, updateResults} from '../stats/service';
 
 class SimplePollController {
     constructor($element) {
@@ -17,7 +17,8 @@ class SimplePollController {
         this._stats = data;
 
         if (this.sorted) {
-            this.results = calculcateSimplePollOptions(this.options, this.stats);
+            var results = calculcateSimplePollOptions(this.options, this.stats);
+            updateResults(this.results, results);
         }
     }
 }
