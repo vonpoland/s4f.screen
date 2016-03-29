@@ -26,7 +26,7 @@ export function calculatePollOptions() {
 		var percentage2 = options2Stats ? options2Stats.percentage : 0;
 
 		var value1 = option1Stats ? option1Stats.value : 0;
-		var value2 = options2Stats ? options2Stats.percentage.value : 0;
+		var value2 = options2Stats ? options2Stats.value : 0;
 
 		if (this.value1 && (this.value1 !== value1)) {
 			this.rotate('first');
@@ -41,6 +41,22 @@ export function calculatePollOptions() {
 		this.percentage1 = percentage1;
 		this.percentage2 = percentage2;
 	}
+}
+
+function createStat(stat, answer) {
+    return {
+        displayName: answer.name,
+        order: answer.order,
+        percentageCss: stat ? stat.percentage + '%' : '0%',
+        percentage: stat ? stat.percentage : 0
+    };
+}
+export function calculcateSimplePollOptions(options, stats) {
+    return options.map(answer => {
+        let stat = stats[answer.option];
+
+        return createStat(stat, answer);
+    });
 }
 
 export function calculateStats(poll = {}) {
