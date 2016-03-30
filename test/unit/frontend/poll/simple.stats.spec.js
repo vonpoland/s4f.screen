@@ -21,7 +21,7 @@ const OPTIONS = [
     }
 ];
 
-describe('#calculate stats tests', function () {
+describe('#simple poll logic stats tests', function () {
     it('#calculateStats1', function () {
         var stats = {
             '30': {'option': '30', 'value': 2, 'percentage': 25},
@@ -34,19 +34,19 @@ describe('#calculate stats tests', function () {
             {
                 displayName: '30 lat',
                 order: 1,
-                percentageCss: '25%;',
+                percentageCss: '25%',
                 percentage: 25
             },
             {
                 displayName: '45 lat',
                 order: 2,
-                percentageCss: '38%;',
+                percentageCss: '38%',
                 percentage: 38
             },
             {
                 displayName: '50 lat',
                 order: 3,
-                percentageCss: '38%;',
+                percentageCss: '38%',
                 percentage: 38
             }
         ]);

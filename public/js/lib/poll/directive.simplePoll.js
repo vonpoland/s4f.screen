@@ -26,14 +26,14 @@ class SimplePollController {
 export default class SimplePollDirective {
     constructor() {
         this.template = `<div class="container container-row container--space-between">
-                <div class="container container-column container--vertical-center" ng-repeat="result in Poll.results">
-                    <div style="height:80px;" class="container container--content-to-end">
+                <div class="container container-column container--vertical-center radio-question__container" ng-repeat="result in Poll.results">
+                    <div style="height:80px;" class="container container--content-to-end ">
                         <div class="ui-text--white poll__option poll__option--first container container--content-to-end container--center container--transition"
                         ng-style="{ height: result.percentageCss}">
-                        <span class="font--big ui-text-shadow ui-text--white  radio-question__percentage">{{result.percentage}}</br>%</span>
+                        <span class="font--big ui-text-shadow ui-text--white radio-question__percentage">{{result.percentage}}</br>%</span>
                         </div>
                     </div>
-                    <span class="font--big ui-text-shadow ui-text--white">{{result.displayName}}</span>
+                    <span class="font--big ui-text-shadow ui-text--white radio-question__displayName">{{result.displayName}}</span>
                 </div>
             </div>`;
         this.scope = {
