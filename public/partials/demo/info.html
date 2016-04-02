@@ -1,0 +1,8 @@
+<div class="demo" ng-controller="voteResultCtrl as Result">
+    <div class="container container-column" ng-init="Result.initStats(step.poll)">
+        <div class="ui-text--center font--huge margin-vertical--small">WHO IS A MORE NATURALLY GIFTED DRIVER?</div>
+        <div class="ui-text--center">VOTE ON DEMO.GLOSUJ.MOBI </div>
+        <simple-poll data-options="step.poll.data.options" data-stats="Result.stats"
+                     class="poll_result container--vertical-center padding-horizontal--small"></simple-poll>
+    </div>
+</div>

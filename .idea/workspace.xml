@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2966e34-3d4c-4b35-868d-8101934c3535" name="Default" comment="fixed bug on change screen">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/lib/poll/directive.simplePoll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/frontend/poll/simple.stats.spec.js" />
+    <list default="true" id="a2966e34-3d4c-4b35-868d-8101934c3535" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/demo/f1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/partials/demo/info.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/partials/tychy/bukowiec.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/partials/tychy/florek.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/partials/tychy/galnowski.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/partials/tychy/rutkowski.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/partials/tychy/szumilas.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/production.yaml" afterPath="$PROJECT_DIR$/config/production.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/tychyKonkurs.yaml" afterPath="$PROJECT_DIR$/config/tychyKonkurs.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/theme.less" afterPath="$PROJECT_DIR$/public/css/theme.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/lib/projector.js" afterPath="$PROJECT_DIR$/public/js/lib/projector.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/lib/stats/service.js" afterPath="$PROJECT_DIR$/public/js/lib/stats/service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/partials/tychy/takePartWhoWin.html" afterPath="$PROJECT_DIR$/public/partials/tychy/takePartWhoWin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/partials/tychy/voteResults.html" afterPath="$PROJECT_DIR$/public/partials/tychy/voteResults.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/components.less" afterPath="$PROJECT_DIR$/public/css/components.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index-projector.html" afterPath="$PROJECT_DIR$/public/index-projector.html" />
     </list>
     <ignored path="bootstrap.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,51 +32,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="directive.simplePoll.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/lib/poll/directive.simplePoll.js">
+      <file leaf-file-name="info.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/partials/demo/info.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="129" selection-start-line="31" selection-start-column="129" selection-end-line="31" selection-end-column="129" />
-              <folding>
-                <marker date="1459274464593" expanded="true" signature="790:1574" placeholder="..." />
-                <marker date="1459274464593" expanded="true" signature="943:955" placeholder="..." />
-                <marker date="1459274464593" expanded="true" signature="1000:1428" placeholder="..." />
-                <marker date="1459274464593" expanded="true" signature="1162:1401" placeholder="..." />
-                <marker date="1459274464593" expanded="true" signature="1428:1555" placeholder="..." />
-                <marker date="1459274464593" expanded="true" signature="1428:1574" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="theme.less" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/css/theme.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24955116">
-              <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
+            <state vertical-scroll-proportion="-0.65384614">
+              <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="simple.stats.spec.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/unit/frontend/poll/simple.stats.spec.js">
+      <file leaf-file-name="components.less" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/css/components.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="75" column="27" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.38825756">
+              <caret line="157" column="22" selection-start-line="157" selection-start-column="22" selection-end-line="157" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="takePartWhoWin.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/partials/tychy/takePartWhoWin.html">
+      <file leaf-file-name="base.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/base.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3076923">
-              <caret line="2" column="60" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-4.4363637">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,30 +65,18 @@
       <file leaf-file-name="voteResults.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/partials/tychy/voteResults.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3076923">
-              <caret line="2" column="85" selection-start-line="2" selection-start-column="85" selection-end-line="2" selection-end-column="85" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="projector.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/lib/projector.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+            <state vertical-scroll-proportion="-0.92727274">
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="service.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/lib/stats/service.js">
+      <file leaf-file-name="index-projector.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index-projector.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="57" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="57" />
+            <state vertical-scroll-proportion="-1.9615384">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -120,8 +89,8 @@
       <list>
         <option value="Less File" />
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -131,8 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config/default.yaml" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/lib/auth/service.js" />
         <option value="$PROJECT_DIR$/public/js/lib/socket/channel.js" />
         <option value="$PROJECT_DIR$/index.js" />
@@ -145,10 +112,8 @@
         <option value="$PROJECT_DIR$/.babelrc" />
         <option value="$PROJECT_DIR$/test/unit/smoke.spec.js" />
         <option value="$PROJECT_DIR$/test/unit/frontend/poll/stats.spec.js" />
-        <option value="$PROJECT_DIR$/public/index-projector.html" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/public/css/theme.css" />
-        <option value="$PROJECT_DIR$/public/css/components.less" />
         <option value="$PROJECT_DIR$/../screenForFans/test/stress/vote/voteService.js" />
         <option value="$PROJECT_DIR$/test/vote.js" />
         <option value="$PROJECT_DIR$/public/js/lib/admin.js" />
@@ -159,7 +124,6 @@
         <option value="$PROJECT_DIR$/public/partials/tychy/topBanner.html" />
         <option value="$PROJECT_DIR$/public/js/lib/UI/tychyTopBanner.js" />
         <option value="$PROJECT_DIR$/public/css/base.css" />
-        <option value="$PROJECT_DIR$/public/css/base.less" />
         <option value="$PROJECT_DIR$/public/partials/tychy/question.html" />
         <option value="$PROJECT_DIR$/public/partials/tychy/voteBestPlayer.html" />
         <option value="$PROJECT_DIR$/public/partials/tychy/engageSponsor.html" />
@@ -176,12 +140,17 @@
         <option value="$PROJECT_DIR$/public/js/lib/poll/directive.poll.js" />
         <option value="$PROJECT_DIR$/test/unit/frontend/poll/simple.stats.js" />
         <option value="$PROJECT_DIR$/public/js/lib/projector.js" />
-        <option value="$PROJECT_DIR$/test/unit/frontend/poll/simple.stats.spec.js" />
-        <option value="$PROJECT_DIR$/public/js/lib/stats/service.js" />
-        <option value="$PROJECT_DIR$/public/partials/tychy/voteResults.html" />
         <option value="$PROJECT_DIR$/public/partials/tychy/takePartWhoWin.html" />
+        <option value="$PROJECT_DIR$/public/js/lib/stats/service.js" />
+        <option value="$PROJECT_DIR$/test/unit/frontend/poll/simple.stats.spec.js" />
+        <option value="$PROJECT_DIR$/public/partials/tychy/voteResults.html" />
         <option value="$PROJECT_DIR$/public/js/lib/poll/directive.simplePoll.js" />
         <option value="$PROJECT_DIR$/public/css/theme.less" />
+        <option value="$PROJECT_DIR$/public/partials/tychy/adFitPoint.html" />
+        <option value="$PROJECT_DIR$/public/index-projector.html" />
+        <option value="$PROJECT_DIR$/public/css/base.less" />
+        <option value="$PROJECT_DIR$/public/partials/demo/info.html" />
+        <option value="$PROJECT_DIR$/public/css/components.less" />
       </list>
     </option>
   </component>
@@ -279,25 +248,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="big-screen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unit" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -312,6 +263,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="big-screen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tychy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -386,18 +363,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\dev\big-screen\test\unit\frontend\poll" />
+      <recent name="D:\dev\big-screen\public\img\tychy" />
       <recent name="D:\dev\big-screen\public\partials\tychy" />
+      <recent name="D:\dev\big-screen\test\unit\frontend\poll" />
       <recent name="D:\dev\big-screen\public\partials\admin" />
       <recent name="D:\dev\big-screen\test\unit\backend" />
-      <recent name="D:\dev\big-screen\boostrap-node-angular-jspm\public\js\lib\poll" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\dev\big-screen\public\img\demo" />
       <recent name="D:\dev\big-screen\test\unit\frontend\poll" />
       <recent name="D:\dev\big-screen\public\partials\tychy\img" />
       <recent name="D:\dev\big-screen\boostrap-node-angular-jspm\public\js\lib" />
       <recent name="D:\dev\big-screen\boostrap-node-angular-jspm\public\partials\tychy\img" />
-      <recent name="D:\dev\big-screen\boostrap-node-angular-jspm\public\img" />
     </key>
   </component>
   <component name="RunManager" selected="Mocha.tests:unit:frontend">
@@ -518,30 +495,6 @@
       <created>1448706800635</created>
       <option name="number" value="Default" />
       <updated>1448706800635</updated>
-    </task>
-    <task id="LOCAL-00001" summary="lkjk">
-      <created>1448745074498</created>
-      <option name="number" value="00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1448745074498</updated>
-    </task>
-    <task id="LOCAL-00002" summary="config change">
-      <created>1448800629227</created>
-      <option name="number" value="00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1448800629227</updated>
-    </task>
-    <task id="LOCAL-00003" summary="added qr">
-      <created>1448802310910</created>
-      <option name="number" value="00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1448802310910</updated>
-    </task>
-    <task id="LOCAL-00004" summary="added qr">
-      <created>1448802781482</created>
-      <option name="number" value="00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1448802781482</updated>
     </task>
     <task id="LOCAL-00005" summary="changec c onfigs">
       <created>1448802964704</created>
@@ -813,16 +766,34 @@
       <option name="project" value="LOCAL" />
       <updated>1458776565670</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="added bigscreen to vote">
+      <created>1459274885145</created>
+      <option name="number" value="00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1459274885146</updated>
+    </task>
+    <task id="LOCAL-00051" summary="added bigscreen to vote">
+      <created>1459275577171</created>
+      <option name="number" value="00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1459275577171</updated>
+    </task>
+    <task id="LOCAL-00052" summary="added bigscreen to vote">
+      <created>1459359562290</created>
+      <option name="number" value="00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1459359562290</updated>
+    </task>
+    <task id="LOCAL-00053" summary="added ad">
+      <created>1459580567380</created>
+      <option name="number" value="00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1459580567381</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="tests_unit_frontend - 2016.03.06 at 02h 14m 04s.xml">
-      <configuration name="tests:unit:frontend" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="tests_unit_frontend - 2016.03.29 at 18h 59m 04s.xml">
-      <configuration name="tests:unit:frontend" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="tests_unit_frontend - 2016.03.29 at 18h 59m 58s.xml">
       <configuration name="tests:unit:frontend" configurationId="mocha-javascript-test-runner" />
     </history-entry>
@@ -847,6 +818,12 @@
     <history-entry file="tests_unit_frontend - 2016.03.29 at 19h 13m 52s.xml">
       <configuration name="tests:unit:frontend" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="tests_unit_frontend - 2016.03.30 at 19h 26m 07s.xml">
+      <configuration name="tests:unit:frontend" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="tests_unit_frontend - 2016.03.30 at 19h 27m 22s.xml">
+      <configuration name="tests:unit:frontend" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1382" height="744" extended-state="6" />
@@ -854,17 +831,17 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20163691" sideWeight="0.60102737" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2111293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24851191" sideWeight="0.20813397" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28968903" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31493506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31423897" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18703899" sideWeight="0.3989726" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41170096" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41080198" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -904,8 +881,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added qr" />
-    <MESSAGE value="changec c onfigs" />
     <MESSAGE value="fixed fucking IE" />
     <MESSAGE value="fixed package and readme" />
     <MESSAGE value="removed unnessecary files" />
@@ -929,7 +904,9 @@
     <MESSAGE value="check what is going on with null data" />
     <MESSAGE value="fixed bug on change screen" />
     <MESSAGE value="updated screen changing" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated screen changing" />
+    <MESSAGE value="added bigscreen to vote" />
+    <MESSAGE value="added ad" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ad" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -974,52 +951,10 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/expect.js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3321918">
-          <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/dist/app.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="322" selection-start-line="0" selection-start-column="322" selection-end-line="0" selection-end-column="322" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/external/roboto.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/animation.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0017331">
-          <caret line="1100" column="0" selection-start-line="1100" selection-start-column="0" selection-end-line="1100" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index-projector.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.029462738">
-          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/theme.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45574388">
           <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/components.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="17" selection-start-line="82" selection-start-column="12" selection-end-line="82" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1308,45 +1243,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/frontend/poll/stats.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23244147">
-          <caret line="318" column="4" selection-start-line="318" selection-start-column="4" selection-end-line="318" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/base.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.028286189">
-          <caret line="21" column="10" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/lib/stats/service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="57" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/lib/projector.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/tychy/voteResults.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923">
-          <caret line="2" column="85" selection-start-line="2" selection-start-column="85" selection-end-line="2" selection-end-column="85" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1358,43 +1259,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/frontend/poll/simple.stats.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="27" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/partials/tychy/takePartWhoWin.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3076923">
           <caret line="2" column="60" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/animation.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.019562716">
+          <caret line="1100" column="0" selection-start-line="1100" selection-start-column="0" selection-end-line="1100" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/lib/stats/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="50" selection-start-line="62" selection-start-column="50" selection-end-line="62" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/frontend/poll/stats.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="224" column="4" selection-start-line="224" selection-start-column="4" selection-end-line="224" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/frontend/poll/simple.stats.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/lib/poll/directive.simplePoll.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="129" selection-start-line="31" selection-start-column="129" selection-end-line="31" selection-end-column="129" />
+          <caret line="35" column="73" selection-start-line="35" selection-start-column="73" selection-end-line="35" selection-end-column="100" />
           <folding>
-            <marker date="1459274464593" expanded="true" signature="790:1574" placeholder="..." />
-            <marker date="1459274464593" expanded="true" signature="943:955" placeholder="..." />
-            <marker date="1459274464593" expanded="true" signature="1000:1428" placeholder="..." />
-            <marker date="1459274464593" expanded="true" signature="1162:1401" placeholder="..." />
-            <marker date="1459274464593" expanded="true" signature="1428:1555" placeholder="..." />
-            <marker date="1459274464593" expanded="true" signature="1428:1574" placeholder="..." />
+            <marker date="1459359520015" expanded="true" signature="854:1692" placeholder="..." />
+            <marker date="1459359520015" expanded="true" signature="1033:1045" placeholder="..." />
+            <marker date="1459359520015" expanded="true" signature="1091:1518" placeholder="..." />
+            <marker date="1459359520015" expanded="true" signature="1253:1491" placeholder="..." />
+            <marker date="1459359520015" expanded="true" signature="1518:1673" placeholder="..." />
+            <marker date="1459359520015" expanded="true" signature="1518:1692" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/partials/tychy/adFitPoint.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2347526">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/theme.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24955116">
-          <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.21071428">
+          <caret line="81" column="31" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index-projector.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/partials/tychy/vote-konkurs1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/partials/tychy/voteResults.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.92727274">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/partials/demo/info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/base.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.4363637">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/components.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38825756">
+          <caret line="157" column="22" selection-start-line="157" selection-start-column="22" selection-end-line="157" selection-end-column="22" />
           <folding />
         </state>
       </provider>
