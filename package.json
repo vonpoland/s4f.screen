@@ -42,8 +42,10 @@
       "angular": "github:angular/bower-angular@^1.4.8",
       "angular-animate": "github:angular/bower-angular-animate@^1.4.8",
       "angular-sanitize": "github:angular/bower-angular-sanitize@^1.4.8",
+      "angular-tools/ng-jsoneditor": "github:angular-tools/ng-jsoneditor@^1.0.0",
       "angular-ui-router": "github:angular-ui/ui-router@^0.2.15",
       "cornflourblue/angulike": "github:cornflourblue/angulike@^1.2.0",
+      "josdejong/jsoneditor": "github:josdejong/jsoneditor@^5.4.0",
       "jquery": "github:components/jquery@^2.1.4",
       "restangular": "github:mgonto/restangular@^1.5.1",
       "socket.io-client": "github:socketio/socket.io-client@^1.3.7"

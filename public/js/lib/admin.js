@@ -6,6 +6,7 @@ import 'restangular';
 import 'angular-ui-router';
 import setComponents from './di';
 import ResultsCtrl from './admin/ResultsCtrl';
+import PollCtrl from './poll/ctrl.poll';
 
 angular
 	.module('bigScreen.admin', [
@@ -13,9 +14,11 @@ angular
 		'restangular',
 		'ngMaterial',
 		'ngAnimate',
+        'ng.jsoneditor',
 		'ui.router'])
 	.controller('adminCtrl', AdminCtrl)
     .controller('resultsCtrl', ResultsCtrl)
+    .controller('pollCtrl', PollCtrl)
 	.config(['$stateProvider', '$locationProvider',
 		($stateProvider, $locationProvider) => {
 			$locationProvider.html5Mode(true);
@@ -24,6 +27,11 @@ angular
 					url: '/admin/:parent',
 					controller: 'adminCtrl as Admin',
 					templateUrl: 'partials/admin/poll.html'
+				})
+				.state('edit', {
+					url: '/admin/:id/edit',
+					controller: 'pollCtrl as Poll',
+					templateUrl: 'partials/admin/edit.html'
 				})
 			.state('results', {
                 url: '/admin/:id/results',

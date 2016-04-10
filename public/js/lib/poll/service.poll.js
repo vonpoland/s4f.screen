@@ -123,6 +123,12 @@ export function register(pollName, tempVoteId, accessToken) {
 	return restangular.one('api/poll/' + pollName + '/register/' + tempVoteId + '?access_token=' + accessToken).post();
 }
 
+export function edit(pollName, poll) {
+	const restangular = getComponent('restangular');
+
+	return restangular.one('api/poll/').customPUT(poll, pollName);
+}
+
 export function voted(pollName) {
 	var users = getLocal('users');
 	var user = getLocal('lastUserId');
