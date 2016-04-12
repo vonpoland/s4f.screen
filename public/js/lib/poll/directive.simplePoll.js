@@ -23,7 +23,7 @@ class SimplePollController {
     }
 }
 
-export default class SimplePollDirective {
+export class SimplePollDirective {
     constructor() {
         this.template = `<div class="container container-row container--space-between">
                 <div class="container container-column container--vertical-center radio-question__container" ng-repeat="result in Poll.results">
@@ -34,6 +34,33 @@ export default class SimplePollDirective {
                         </div>
                     </div>
                     <span class="font--big ui-text-shadow ui-text--white radio-question__displayName">{{result.displayName}}</span>
+                </div>
+            </div>`;
+        this.scope = {
+            options: '=',
+            stats: '=',
+            width: '@',
+            height: '@'
+        };
+        this.controller = SimplePollController;
+        this.bindToController = true;
+        this.controllerAs = 'Poll';
+        this.replace = true;
+    }
+}
+
+export class DemoPollDirective {
+    constructor() {
+        this.template = `<div class="container container-row container--space-between">
+                <div class="container container-column container--vertical-center radio-question__container" ng-repeat="result in Poll.results">
+                    <div style="height:200px;" class="container container--content-to-end ">
+                        <div class="ui-text--white poll__option poll__option--first container--transition"
+                        ng-style="{ height: result.percentageCss}">
+                        <div class="font--big ui-text--white radio-question__percentage ui-text--center ui-max-width">{{result.percentage}}%</div>
+                        <div class="cool-gradient"></div>
+                        <div class="font--big ui-text--white radio-question__displayName ui-text--center">{{result.displayName}}</div>
+                        </div>
+                    </div>
                 </div>
             </div>`;
         this.scope = {

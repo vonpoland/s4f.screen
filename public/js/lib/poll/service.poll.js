@@ -206,3 +206,9 @@ export function rotateAnswers(answers) {
 	answer.user.photo = 'img/users/' + answer.user._id + '/profile.png';
 	return answers[index];
 }
+
+export function setPollOptions(poll) {
+    if(poll.data.backgroundStyle) {
+        angular.element(document.querySelector('html')).addClass(poll.data.backgroundStyle);
+    }
+}
