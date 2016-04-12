@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2966e34-3d4c-4b35-868d-8101934c3535" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/demo/f1.png" afterPath="$PROJECT_DIR$/public/img/demo/f1.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/components.less" afterPath="$PROJECT_DIR$/public/css/components.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/theme.less" afterPath="$PROJECT_DIR$/public/css/theme.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index-projector.html" afterPath="$PROJECT_DIR$/public/index-projector.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/lib/poll/ctrl.step.js" afterPath="$PROJECT_DIR$/public/js/lib/poll/ctrl.step.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/lib/poll/directive.simplePoll.js" afterPath="$PROJECT_DIR$/public/js/lib/poll/directive.simplePoll.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/lib/poll/service.poll.js" afterPath="$PROJECT_DIR$/public/js/lib/poll/service.poll.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/lib/projector.js" afterPath="$PROJECT_DIR$/public/js/lib/projector.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/partials/demo/info.html" afterPath="$PROJECT_DIR$/public/partials/demo/info.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/partials/vote-step.html" afterPath="$PROJECT_DIR$/public/partials/vote-step.html" />
     </list>
     <ignored path="bootstrap.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,6 +24,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="info.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/partials/demo/info.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.090909">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index-projector.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/index-projector.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.15260324">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="directive.simplePoll.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/lib/poll/directive.simplePoll.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,21 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="components.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="components.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/components.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66729677">
-              <caret line="207" column="45" selection-start-line="207" selection-start-column="45" selection-end-line="207" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="info.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/partials/demo/info.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.709091">
-              <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
+            <state vertical-scroll-proportion="-4.1272726">
+              <caret line="159" column="18" selection-start-line="159" selection-start-column="18" selection-end-line="159" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -167,13 +168,13 @@
         <option value="$PROJECT_DIR$/public/css/theme.less" />
         <option value="$PROJECT_DIR$/public/js/lib/projector.js" />
         <option value="$PROJECT_DIR$/public/partials/vote-step.html" />
-        <option value="$PROJECT_DIR$/public/index-projector.html" />
         <option value="$PROJECT_DIR$/public/js/lib/poll/ctrl.poll.js" />
         <option value="$PROJECT_DIR$/public/js/lib/poll/ctrl.step.js" />
         <option value="$PROJECT_DIR$/public/js/lib/poll/service.poll.js" />
-        <option value="$PROJECT_DIR$/public/partials/demo/info.html" />
         <option value="$PROJECT_DIR$/public/js/lib/poll/directive.simplePoll.js" />
         <option value="$PROJECT_DIR$/public/css/components.less" />
+        <option value="$PROJECT_DIR$/public/partials/demo/info.html" />
+        <option value="$PROJECT_DIR$/public/index-projector.html" />
       </list>
     </option>
   </component>
@@ -393,19 +394,19 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\dev\big-screen\public\js\lib" />
-      <recent name="D:\dev\big-screen\public\img\tychy" />
-      <recent name="D:\dev\big-screen\public\partials\tychy" />
-      <recent name="D:\dev\big-screen\test\unit\frontend\poll" />
-      <recent name="D:\dev\big-screen\public\partials\admin" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\dev\big-screen\public\img\demo" />
       <recent name="D:\dev\big-screen\test\unit\frontend\poll" />
       <recent name="D:\dev\big-screen\public\partials\tychy\img" />
       <recent name="D:\dev\big-screen\boostrap-node-angular-jspm\public\js\lib" />
       <recent name="D:\dev\big-screen\boostrap-node-angular-jspm\public\partials\tychy\img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\dev\big-screen\public\js\lib" />
+      <recent name="D:\dev\big-screen\public\img\tychy" />
+      <recent name="D:\dev\big-screen\public\partials\tychy" />
+      <recent name="D:\dev\big-screen\test\unit\frontend\poll" />
+      <recent name="D:\dev\big-screen\public\partials\admin" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.app-dev">
@@ -526,24 +527,6 @@
       <created>1448706800635</created>
       <option name="number" value="Default" />
       <updated>1448706800635</updated>
-    </task>
-    <task id="LOCAL-00009" summary="added tychy to config">
-      <created>1453219355281</created>
-      <option name="number" value="00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1453219355281</updated>
-    </task>
-    <task id="LOCAL-00010" summary="added tychy to config">
-      <created>1453675566670</created>
-      <option name="number" value="00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1453675566670</updated>
-    </task>
-    <task id="LOCAL-00011" summary="fixed package and readme">
-      <created>1453676297652</created>
-      <option name="number" value="00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1453676297652</updated>
     </task>
     <task id="LOCAL-00012" summary="added tychy to config">
       <created>1454367834140</created>
@@ -821,7 +804,25 @@
       <option name="project" value="LOCAL" />
       <updated>1460316992796</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="added big-cool screen">
+      <created>1460490401643</created>
+      <option name="number" value="00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1460490401644</updated>
+    </task>
+    <task id="LOCAL-00059" summary="added big-cool screen">
+      <created>1460492080454</created>
+      <option name="number" value="00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1460492080454</updated>
+    </task>
+    <task id="LOCAL-00060" summary="added big-cool screen">
+      <created>1460493083662</created>
+      <option name="number" value="00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1460493083662</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -862,6 +863,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2596726" sideWeight="0.60102737" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1396104" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24851191" sideWeight="0.20813397" order="2" side_tool="true" content_ui="tabs" />
@@ -872,7 +874,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18703899" sideWeight="0.3989726" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4101307" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1338,14 +1339,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index-projector.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="13.192307">
-          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/lib/poll/ctrl.poll.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.018973215">
@@ -1378,14 +1371,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/demo/info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.709091">
-          <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/lib/poll/directive.simplePoll.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1408,8 +1393,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/components.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66729677">
-          <caret line="207" column="45" selection-start-line="207" selection-start-column="45" selection-end-line="207" selection-end-column="45" />
+        <state vertical-scroll-proportion="-4.1272726">
+          <caret line="159" column="18" selection-start-line="159" selection-start-column="18" selection-end-line="159" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/partials/demo/info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.090909">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index-projector.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15260324">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
           <folding />
         </state>
       </provider>
