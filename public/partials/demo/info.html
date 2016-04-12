@@ -1,4 +1,4 @@
-<div class="demo-screen">
+<div class="demo-screen margin-vertical--big">
     <div class="container container-column container--vertical-center container--space-around">
         <div class="demo demo--font" ng-controller="voteResultCtrl as Result">
             <div class="container container-column" ng-init="Result.initStats(step.poll)">
@@ -6,10 +6,6 @@
                 <demo-poll data-options="step.poll.data.options" data-stats="Result.stats"
                              class="poll_result container--vertical-center padding-horizontal--small"></demo-poll>
             </div>
-        </div>
-        <div class="container container-column container--center margin-vertical--small">
-            <div class="padding-vertical--medium padding-horizontal--medium font--large ui-text-align--center margin-vertical--small ui-background--white ui-font-weight--bold border-left--black">SCAN QR CODE TO VOTE</div>
-            <div class="container container--center margin-vertical--small "><img src="/img/demo/local.png"></div>
         </div>
     </div>
 </div>
