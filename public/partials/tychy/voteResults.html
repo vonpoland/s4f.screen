@@ -1,10 +1,9 @@
 <div class="container container-column screen--tychy screen--tychy__background container--space-between ui-text--center">
     <div tychy-top-banner><span style="margin-left:40px;">WYNIKI</span></div>
     <div class="container container-column" ng-controller="voteResultCtrl as Result">
-        <div ng-init="Result.initStats(step.poll)" class="tychy-poll1">
-            <simple-poll data-options="step.poll.data.options" data-stats="Result.stats"
-                  class="poll_result container--vertical-center padding-horizontal--small"></simple-poll>
-            <div style="width:100%;height: 32px;bottom:0;" class="ui-position--absolute ui-text-highlight"></div>
+        <div ng-init="Result.initStats(step.poll)">
+            <best-team-poll data-options="step.poll.data.options" data-stats="Result.stats"
+                            class="poll_result container--vertical-center padding-horizontal--small"></best-team-poll>
         </div>
         <div style="height: 2px;" class="container container-row container--space-between">
             <div class="width-1-3 backgrouny--tychy__first">

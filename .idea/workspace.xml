@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a2966e34-3d4c-4b35-868d-8101934c3535" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index-projector.html" afterPath="$PROJECT_DIR$/public/index-projector.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/lib/projector.js" afterPath="$PROJECT_DIR$/public/js/lib/projector.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/partials/tychy/takePartWhoWin.html" afterPath="$PROJECT_DIR$/public/partials/tychy/takePartWhoWin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/partials/tychy/voteResults.html" afterPath="$PROJECT_DIR$/public/partials/tychy/voteResults.html" />
     </list>
     <ignored path="bootstrap.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,83 +26,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="info.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/partials/demo/info.html">
+      <file leaf-file-name="voteResults.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/partials/tychy/voteResults.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.090909">
-              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            <state vertical-scroll-proportion="-2.6153846">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index-projector.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/index-projector.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15260324">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="directive.simplePoll.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/lib/poll/directive.simplePoll.js">
+      <file leaf-file-name="directive.poll.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/lib/poll/directive.poll.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="49" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="54" />
               <folding>
-                <marker date="1460490228362" expanded="true" signature="846:1684" placeholder="..." />
-                <marker date="1460490228362" expanded="true" signature="1025:1037" placeholder="..." />
-                <marker date="1460490228362" expanded="true" signature="1083:1510" placeholder="..." />
-                <marker date="1460490228362" expanded="true" signature="1245:1483" placeholder="..." />
-                <marker date="1460490228362" expanded="true" signature="1510:1665" placeholder="..." />
-                <marker date="1460490228362" expanded="true" signature="1510:1684" placeholder="..." />
-                <marker date="1460490228362" expanded="true" signature="2119:2972" placeholder="..." />
-                <marker date="1460490228362" expanded="true" signature="2264:2953" placeholder="..." />
-                <marker date="1460490228362" expanded="true" signature="2298:2311" placeholder="..." />
-                <marker date="1460490228362" expanded="true" signature="2357:2930" placeholder="..." />
-                <marker date="1460490228362" expanded="true" signature="2465:2903" placeholder="..." />
+                <marker date="1459270310807" expanded="true" signature="896:3190" placeholder="..." />
+                <marker date="1459270310807" expanded="true" signature="988:2022" placeholder="..." />
+                <marker date="1459270310807" expanded="false" signature="1108:1116" placeholder="..." />
+                <marker date="1459270310807" expanded="false" signature="1273:1292" placeholder="..." />
+                <marker date="1459270310807" expanded="false" signature="1500:1530" placeholder="..." />
+                <marker date="1459270310807" expanded="true" signature="1575:1999" placeholder="..." />
+                <marker date="1459270310807" expanded="true" signature="1763:1972" placeholder="..." />
+                <marker date="1459270310807" expanded="true" signature="2115:3171" placeholder="..." />
+                <marker date="1459270310807" expanded="false" signature="2235:2253" placeholder="..." />
+                <marker date="1459270310807" expanded="false" signature="2430:2450" placeholder="..." />
+                <marker date="1459270310807" expanded="false" signature="2515:2546" placeholder="..." />
+                <marker date="1459270310807" expanded="true" signature="2591:3005" placeholder="..." />
+                <marker date="1459270310807" expanded="true" signature="2779:2978" placeholder="..." />
+                <marker date="1459270310807" expanded="true" signature="3572:5067" placeholder="..." />
+                <marker date="1459270310807" expanded="true" signature="3653:4299" placeholder="..." />
+                <marker date="1459270310807" expanded="false" signature="3830:3843" placeholder="..." />
+                <marker date="1459270310807" expanded="true" signature="3888:4276" placeholder="..." />
+                <marker date="1459270310807" expanded="true" signature="4050:4249" placeholder="..." />
+                <marker date="1459270310807" expanded="true" signature="4353:5048" placeholder="..." />
+                <marker date="1459270310807" expanded="false" signature="4387:4400" placeholder="..." />
+                <marker date="1459270310807" expanded="true" signature="4445:4859" placeholder="..." />
+                <marker date="1459270310807" expanded="true" signature="4633:4832" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="components.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/components.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.1272726">
-              <caret line="159" column="18" selection-start-line="159" selection-start-column="18" selection-end-line="159" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ctrl.step.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/lib/poll/ctrl.step.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="service.poll.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/lib/poll/service.poll.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="206" column="26" selection-start-line="206" selection-start-column="26" selection-end-line="206" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="projector.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="projector.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/lib/projector.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.6636637">
+              <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -147,14 +120,11 @@
         <option value="$PROJECT_DIR$/public/partials/tychy/bestPlayerResults.html" />
         <option value="$PROJECT_DIR$/public/js/lib/poll/ctrl.voteResult.js" />
         <option value="$PROJECT_DIR$/public/partials/admin/results.html" />
-        <option value="$PROJECT_DIR$/config/production.yaml" />
         <option value="$PROJECT_DIR$/config/tychyKonkurs.yaml" />
         <option value="$PROJECT_DIR$/public/js/lib/poll/directive.poll.js" />
         <option value="$PROJECT_DIR$/test/unit/frontend/poll/simple.stats.js" />
-        <option value="$PROJECT_DIR$/public/partials/tychy/takePartWhoWin.html" />
         <option value="$PROJECT_DIR$/public/js/lib/stats/service.js" />
         <option value="$PROJECT_DIR$/test/unit/frontend/poll/simple.stats.spec.js" />
-        <option value="$PROJECT_DIR$/public/partials/tychy/voteResults.html" />
         <option value="$PROJECT_DIR$/public/partials/tychy/adFitPoint.html" />
         <option value="$PROJECT_DIR$/public/js/lib/projectorDemo.js" />
         <option value="$PROJECT_DIR$/public/js/config.js" />
@@ -166,7 +136,6 @@
         <option value="$PROJECT_DIR$/lib/poll/service.js" />
         <option value="$PROJECT_DIR$/public/partials/admin/edit.html" />
         <option value="$PROJECT_DIR$/public/css/theme.less" />
-        <option value="$PROJECT_DIR$/public/js/lib/projector.js" />
         <option value="$PROJECT_DIR$/public/partials/vote-step.html" />
         <option value="$PROJECT_DIR$/public/js/lib/poll/ctrl.poll.js" />
         <option value="$PROJECT_DIR$/public/js/lib/poll/ctrl.step.js" />
@@ -175,6 +144,10 @@
         <option value="$PROJECT_DIR$/public/css/components.less" />
         <option value="$PROJECT_DIR$/public/partials/demo/info.html" />
         <option value="$PROJECT_DIR$/public/index-projector.html" />
+        <option value="$PROJECT_DIR$/config/production.yaml" />
+        <option value="$PROJECT_DIR$/public/partials/tychy/takePartWhoWin.html" />
+        <option value="$PROJECT_DIR$/public/partials/tychy/voteResults.html" />
+        <option value="$PROJECT_DIR$/public/js/lib/projector.js" />
       </list>
     </option>
   </component>
@@ -292,6 +265,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="big-screen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -363,7 +354,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bigscreen-proxy" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
@@ -376,21 +367,21 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="nodejs.mocha.node_interpreter_path" value="C:\Program Files\nodejs\node.exe" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="D:\dev\bootstrap\node_modules\mocha" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="134" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="136" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="163" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="164" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="165" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="167" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="839" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="834" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="157" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="160" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="156" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="159" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="157" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="161" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="831" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="834" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
@@ -527,24 +518,6 @@
       <created>1448706800635</created>
       <option name="number" value="Default" />
       <updated>1448706800635</updated>
-    </task>
-    <task id="LOCAL-00012" summary="added tychy to config">
-      <created>1454367834140</created>
-      <option name="number" value="00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1454367834140</updated>
-    </task>
-    <task id="LOCAL-00013" summary="added tychy to config">
-      <created>1454368023485</created>
-      <option name="number" value="00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1454368023485</updated>
-    </task>
-    <task id="LOCAL-00014" summary="removed unnessecary files">
-      <created>1455052515740</created>
-      <option name="number" value="00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1455052515740</updated>
     </task>
     <task id="LOCAL-00015" summary="modified packages json">
       <created>1455052912756</created>
@@ -822,7 +795,25 @@
       <option name="project" value="LOCAL" />
       <updated>1460493083662</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="added big-cool screen">
+      <created>1460493683665</created>
+      <option name="number" value="00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1460493683665</updated>
+    </task>
+    <task id="LOCAL-00062" summary="changed to tycyy1">
+      <created>1460575532544</created>
+      <option name="number" value="00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1460575532544</updated>
+    </task>
+    <task id="LOCAL-00063" summary="changed to tycyy1">
+      <created>1460575724451</created>
+      <option name="number" value="00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1460575724451</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -865,9 +856,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1396104" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7348609" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24851191" sideWeight="0.20813397" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4091653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2875817" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31423897" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -913,7 +904,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modified packages json" />
     <MESSAGE value="fixed gulp" />
     <MESSAGE value="added better logging" />
     <MESSAGE value="removed old files" />
@@ -938,7 +928,8 @@
     <MESSAGE value="added demo" />
     <MESSAGE value="moved demo to bigscreen" />
     <MESSAGE value="added big-cool screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="added big-cool screen" />
+    <MESSAGE value="changed to tycyy1" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed to tycyy1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1016,25 +1007,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/production.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08732877">
-          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/lib/poll/directive.pollClass.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.087628864">
           <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/tychyKonkurs.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -1044,37 +1020,6 @@
         <state vertical-scroll-proportion="0.12142857">
           <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/lib/poll/directive.poll.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="7.034483">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="54" />
-          <folding>
-            <marker date="1459270310807" expanded="true" signature="896:3190" placeholder="..." />
-            <marker date="1459270310807" expanded="true" signature="988:2022" placeholder="..." />
-            <marker date="1459270310807" expanded="false" signature="1108:1116" placeholder="..." />
-            <marker date="1459270310807" expanded="false" signature="1273:1292" placeholder="..." />
-            <marker date="1459270310807" expanded="false" signature="1500:1530" placeholder="..." />
-            <marker date="1459270310807" expanded="true" signature="1575:1999" placeholder="..." />
-            <marker date="1459270310807" expanded="true" signature="1763:1972" placeholder="..." />
-            <marker date="1459270310807" expanded="true" signature="2115:3171" placeholder="..." />
-            <marker date="1459270310807" expanded="false" signature="2235:2253" placeholder="..." />
-            <marker date="1459270310807" expanded="false" signature="2430:2450" placeholder="..." />
-            <marker date="1459270310807" expanded="false" signature="2515:2546" placeholder="..." />
-            <marker date="1459270310807" expanded="true" signature="2591:3005" placeholder="..." />
-            <marker date="1459270310807" expanded="true" signature="2779:2978" placeholder="..." />
-            <marker date="1459270310807" expanded="true" signature="3572:5067" placeholder="..." />
-            <marker date="1459270310807" expanded="true" signature="3653:4299" placeholder="..." />
-            <marker date="1459270310807" expanded="false" signature="3830:3843" placeholder="..." />
-            <marker date="1459270310807" expanded="true" signature="3888:4276" placeholder="..." />
-            <marker date="1459270310807" expanded="true" signature="4050:4249" placeholder="..." />
-            <marker date="1459270310807" expanded="true" signature="4353:5048" placeholder="..." />
-            <marker date="1459270310807" expanded="false" signature="4387:4400" placeholder="..." />
-            <marker date="1459270310807" expanded="true" signature="4445:4859" placeholder="..." />
-            <marker date="1459270310807" expanded="true" signature="4633:4832" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1090,13 +1035,6 @@
         <state vertical-scroll-proportion="0.40161106">
           <caret line="21" column="10" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="10" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/tychy/takePartWhoWin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923">
-          <caret line="2" column="60" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -1128,6 +1066,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1142,13 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/tychy/voteResults.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2363636">
-          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -1264,6 +1196,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26397514">
           <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1363,14 +1296,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/lib/projector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/lib/poll/directive.simplePoll.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1409,8 +1334,81 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index-projector.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15260324">
+        <state vertical-scroll-proportion="-3.2692308">
           <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/tychyKonkurs.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.083333336">
+          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/production.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/partials/tychy/takePartWhoWin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="3" column="63" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/lib/poll/directive.poll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="54" />
+          <folding>
+            <marker date="1459270310807" expanded="true" signature="896:3190" placeholder="..." />
+            <marker date="1459270310807" expanded="true" signature="988:2022" placeholder="..." />
+            <marker date="1459270310807" expanded="false" signature="1108:1116" placeholder="..." />
+            <marker date="1459270310807" expanded="false" signature="1273:1292" placeholder="..." />
+            <marker date="1459270310807" expanded="false" signature="1500:1530" placeholder="..." />
+            <marker date="1459270310807" expanded="true" signature="1575:1999" placeholder="..." />
+            <marker date="1459270310807" expanded="true" signature="1763:1972" placeholder="..." />
+            <marker date="1459270310807" expanded="true" signature="2115:3171" placeholder="..." />
+            <marker date="1459270310807" expanded="false" signature="2235:2253" placeholder="..." />
+            <marker date="1459270310807" expanded="false" signature="2430:2450" placeholder="..." />
+            <marker date="1459270310807" expanded="false" signature="2515:2546" placeholder="..." />
+            <marker date="1459270310807" expanded="true" signature="2591:3005" placeholder="..." />
+            <marker date="1459270310807" expanded="true" signature="2779:2978" placeholder="..." />
+            <marker date="1459270310807" expanded="true" signature="3572:5067" placeholder="..." />
+            <marker date="1459270310807" expanded="true" signature="3653:4299" placeholder="..." />
+            <marker date="1459270310807" expanded="false" signature="3830:3843" placeholder="..." />
+            <marker date="1459270310807" expanded="true" signature="3888:4276" placeholder="..." />
+            <marker date="1459270310807" expanded="true" signature="4050:4249" placeholder="..." />
+            <marker date="1459270310807" expanded="true" signature="4353:5048" placeholder="..." />
+            <marker date="1459270310807" expanded="false" signature="4387:4400" placeholder="..." />
+            <marker date="1459270310807" expanded="true" signature="4445:4859" placeholder="..." />
+            <marker date="1459270310807" expanded="true" signature="4633:4832" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/partials/tychy/voteResults.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6153846">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/lib/projector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6636637">
+          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
           <folding />
         </state>
       </provider>

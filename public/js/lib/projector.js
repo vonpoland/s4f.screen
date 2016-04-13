@@ -2,7 +2,7 @@ import angular from 'angular';
 import 'angular-sanitize';
 import 'angular-ui-router';
 import 'angular-animate';
-import {PollDirective} from './poll/directive.poll';
+import {PollDirective, BestTeamPollDirective} from './poll/directive.poll';
 import {SimplePollDirective, DemoPollDirective} from './poll/directive.simplePoll';
 import Roller from './poll/directive.roller';
 import PollCtrl from './poll/ctrl.poll';
@@ -18,6 +18,7 @@ import TychyTopBanner from './UI/tychyTopBanner';
 angular
     .module('app.projector', ['ngSanitize', 'ui.router', 'restangular', 'ngAnimate', 'templates'])
 	.directive('simplePoll', () => new SimplePollDirective())
+    .directive('bestTeamPoll', () => new BestTeamPollDirective())
     .directive('demoPoll', () => new DemoPollDirective())
     .directive('poll', () => new PollDirective())
     .directive('roller', () => new Roller())
