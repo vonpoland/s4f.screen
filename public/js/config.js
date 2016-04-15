@@ -1,5 +1,5 @@
 System.config({
-  baseURL: "/js",
+  baseURL: "/projector/js",
   defaultJSExtensions: true,
   transpiler: "babel",
   babelOptions: {

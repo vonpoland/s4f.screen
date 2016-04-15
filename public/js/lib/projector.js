@@ -45,7 +45,7 @@ angular
             .state('pollNameStep', {
                 templateUrl: 'partials/vote-step.html',
                 controller: 'stepCtrl as step',
-                url: '/projector/:parent/:pollName/:step?stay'
+                url: '/:parent/:pollName/:step?stay'
             });
     }])
     .run((Restangular, $stateParams, $state, $timeout) => {

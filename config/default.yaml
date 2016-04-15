@@ -10,3 +10,4 @@ user:
 security:
   user: test
   password: test
+bigscreenChannel: 'http://localhost:8085'
