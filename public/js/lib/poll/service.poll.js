@@ -84,7 +84,7 @@ export function calculate(options, poll) {
 export function getPolls(parent) {
 	const restangular = getComponent('restangular');
 
-	return restangular.all('api/poll').getList({parent : parent});
+	return restangular.all('projector/api/poll').getList({parent : parent});
 }
 
 export function getPoll(id = null, fromCache = false) {
@@ -97,7 +97,7 @@ export function getPoll(id = null, fromCache = false) {
 	if (fromCache && cached) {
 		return cached;
 	} else {
-		cache[id] = restangular.one('api/poll/' + (id || stateParams.pollName)).get();
+		cache[id] = restangular.one('projector/api/poll/' + (id || stateParams.pollName)).get();
 		return cache[id];
 	}
 }
@@ -114,19 +114,19 @@ export function goToNextStep($state, params, options = {}) {
 export function vote(pollId, option) {
 	const restangular = getComponent('restangular');
 
-	return restangular.one('api/poll/' + pollId + '/vote/' + option).post();
+	return restangular.one('projector/api/poll/' + pollId + '/vote/' + option).post();
 }
 
 export function register(pollName, tempVoteId, accessToken) {
 	const restangular = getComponent('restangular');
 
-	return restangular.one('api/poll/' + pollName + '/register/' + tempVoteId + '?access_token=' + accessToken).post();
+	return restangular.one('projector/api/poll/' + pollName + '/register/' + tempVoteId + '?access_token=' + accessToken).post();
 }
 
 export function edit(pollName, poll) {
 	const restangular = getComponent('restangular');
 
-	return restangular.one('api/poll/').customPUT(poll, pollName);
+	return restangular.one('projector/api/poll/').customPUT(poll, pollName);
 }
 
 export function voted(pollName) {
@@ -185,14 +185,14 @@ export function getParticipants() {
 	const stateParams = getComponent('stateParams');
 	const restangular = getComponent('restangular');
 
-	return restangular.all('api/poll/' + stateParams.id + '/participant').getList();
+	return restangular.all('projector/api/poll/' + stateParams.id + '/participant').getList();
 }
 
 export function getAnswers() {
 	const stateParams = getComponent('stateParams');
 	const restangular = getComponent('restangular');
 
-	return restangular.all('api/poll/' + stateParams.id + '/answer').getList();
+	return restangular.all('projector/api/poll/' + stateParams.id + '/answer').getList();
 }
 
 export function rotateAnswers(answers) {

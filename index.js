@@ -14,14 +14,10 @@ const staticFiles = require('./lib/static/router');
 
 auth.setupAuth(app);
 app.use(bodyParser.json());
-app.use('/api/poll', poll);
+app.use('/projector/api/poll', poll);
 app.use('/projector', staticFiles);
 app.all('/projector/*', function (req, res) {
 	res.sendFile(config.get('index.projector'), {root: __dirname + '/public'});
-});
-
-app.all('/admin/*', secure, function (req, res) {
-	res.sendFile('partials/admin/index.html', {root: __dirname + '/public'});
 });
 
 app.all('/favicon.ico', function (req, res) {
