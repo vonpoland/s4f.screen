@@ -76,7 +76,11 @@ gulp.task('buildProjectorIndex', function () {
 	gulp.src('./public/index-projector.html')
 		.pipe(htmlreplace({
 			'css': 'css/dist/app.min.css',
-			'js': 'js/projector.min.js'
+			'js': 'js/projector.min.js',
+			'conf': {
+				src: [['https://screen4fans.com']],
+				tpl: '<script>window.conf = { socketChannel: "%s" }</script>'
+			}
 		}))
 		.pipe(rename('index-projector-production.html'))
 		.pipe(gulp.dest('./public'));

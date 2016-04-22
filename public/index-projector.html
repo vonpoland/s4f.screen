@@ -55,6 +55,14 @@
 <body>
 <div ng-cloak ui-view>
 </div>
+<!--build:conf -->
+<script>
+    window.conf = {
+        socketChannel : 'http://localhost:8085'
+    }
+</script>
+<!--endbuild -->
+
 <!-- build:js -->
 <script>
     window._projector_dev = true;

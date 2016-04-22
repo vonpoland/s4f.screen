@@ -7,8 +7,7 @@ export default function bootstrapSocketChannel(pollId) {
 	if(socket !== null) {
 		return;
 	}
-
-    socket = IO.connect('http://localhost:8085');
+    socket = IO.connect(window.conf.socketChannel);
 
     socket.on(pollId + ':vote', pollPubSub.voted.bind(pollPubSub));
     socket.on(pollId + ':changeScreen', pollPubSub.changeScreen.bind(pollPubSub));
