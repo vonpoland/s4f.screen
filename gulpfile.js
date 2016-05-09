@@ -78,7 +78,7 @@ gulp.task('buildProjectorIndex', function () {
 			'css': 'css/dist/app.min.css',
 			'js': 'js/projector.min.js',
 			'conf': {
-				src: [['http://screen4fans.com']],
+				src: [['https://screen4fans.com']],
 				tpl: '<script>window.conf = { socketChannel: "%s" }</script>'
 			}
 		}))
