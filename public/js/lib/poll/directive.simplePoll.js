@@ -26,7 +26,7 @@ class SimplePollController {
 export class SimplePollDirective {
     constructor() {
         this.template = `<div class="container container-row container--space-between">
-                <div class="container container-column container--vertical-center radio-question__container" ng-repeat="result in Poll.results">
+                <div class="container container-column container--vertical-center simple-radio-question__container radio-question__container" ng-repeat="result in Poll.results">
                     <div style="height:80px;" class="container container--content-to-end ">
                         <div class="ui-text--white poll__option poll__option--first container container--content-to-end container--center container--transition"
                         ng-style="{ height: result.percentageCss}">
