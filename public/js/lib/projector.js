@@ -15,6 +15,14 @@ import PollClassDirective from './poll/directive.pollClass';
 import './templates';
 import TychyTopBanner from './UI/tychyTopBanner';
 
+function inIframe () {
+    try {
+        return window.self !== window.top;
+    } catch (e) {
+        return true;
+    }
+}
+
 angular
     .module('app.projector', ['ngSanitize', 'ui.router', 'restangular', 'ngAnimate', 'templates'])
 	.directive('simplePoll', () => new SimplePollDirective())
@@ -33,28 +41,37 @@ angular
         $locationProvider.html5Mode(true);
         $stateProvider
             .state('poll', {
-                url: '/projector/poll/:id',
-                controller: 'pollCtrl as poll',
-                templateUrl: 'partials/vote-result.html'
+                template: '<div ui-view></div>',
+                abstract: true,
+                url: '/:parent/:pollName?stay'
             })
-            .state('pollName', {
+            .state('poll.default', {
                 templateUrl: 'partials/vote-step.html',
                 controller: 'stepCtrl as step',
-                url: '/projector/:parent/:pollName?stay'
+                url: ''
             })
-            .state('pollNameStep', {
+            .state('poll.step', {
                 templateUrl: 'partials/vote-step.html',
                 controller: 'stepCtrl as step',
-                url: '/:parent/:pollName/:step?stay'
+                url: '/:step'
             });
     }])
-    .run((Restangular, $stateParams, $state, $timeout) => {
+    .run((Restangular, $stateParams, $state, $timeout, $rootScope) => {
         setComponents({
             restangular: Restangular,
             stateParams: $stateParams,
             state: $state,
 	        timeout: $timeout
         });
+
+        if(inIframe()) {
+            $rootScope.$on('$stateChangeStart',
+                function (event, toState, toParams) {
+                    var href = $state.href(toState.name, toParams);
+
+                    history.replaceState(null, null, href);
+                });
+        }
     });
 
 angular

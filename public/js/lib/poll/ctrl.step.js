@@ -12,7 +12,7 @@ export default class StepCtrl {
 
                 if(!stepName) {
                     stepName = this.poll.last;
-                    $state.go('pollNameStep', Object.assign($stateParams, { step : stepName }));
+                    $state.go('poll.step', Object.assign($stateParams, { step : stepName }));
                 }
 
 				let step = this.poll.data.stepTemplates[stepName];

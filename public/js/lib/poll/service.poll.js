@@ -108,7 +108,7 @@ export function goToNextStep($state, params, options = {}) {
 	}
 
 	const timeout = getComponent('timeout');
-	return timeout(() => $state.go('pollNameStep', params), options.timeout || STEP_TIMEOUT);
+	return timeout(() => $state.go('poll.step', params), options.timeout || STEP_TIMEOUT);
 }
 
 export function vote(pollId, option) {
