@@ -10,6 +10,7 @@ var rename = require('gulp-rename');
 var htmlreplace = require('gulp-html-replace');
 var runSequence = require('run-sequence');
 var exec = require('child_process').exec;
+var bigscreenChannel = require('config').bigscreenChannel;
 
 // Static server
 gulp.task('browser-sync', function () {
@@ -78,7 +79,7 @@ gulp.task('buildProjectorIndex', function () {
 			'css': 'css/dist/app.min.css',
 			'js': 'js/projector.min.js',
 			'conf': {
-				src: [['https://screen4fans.com']],
+				src: [[bigscreenChannel]],
 				tpl: '<script>window.conf = { socketChannel: "%s" }</script>'
 			}
 		}))

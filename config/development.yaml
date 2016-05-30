@@ -3,3 +3,5 @@ database:
 facebook:
   skipSecurity: false
 bigscreenChannel: 'http://40.115.23.130/'
+index:
+  projector: 'index-projector-production.html'
