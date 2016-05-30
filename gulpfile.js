@@ -20,11 +20,7 @@ gulp.task('browser-sync', function () {
 });
 
 gulp.task('test:unit:frontend', function (cb) {
-	exec('mocha test/unit/frontend/**/*.spec.js --compilers js:babel-core/register --reporter mocha-jenkins-reporter --reporter-options junit_report_path=frontend.xml', function (err, stdout, stderr) {
-		console.log(stdout);
-		console.log(stderr);
-		cb(err);
-	});
+	exec('mocha test/unit/frontend/**/*.spec.js --compilers js:babel-core/register --reporter mocha-jenkins-reporter --reporter-options junit_report_path=frontend.xml', cb);
 });
 
 gulp.task('test:unit:backend', function () {
