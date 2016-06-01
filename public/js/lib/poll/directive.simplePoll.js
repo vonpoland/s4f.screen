@@ -49,6 +49,55 @@ export class SimplePollDirective {
     }
 }
 
+class ZuzelTorunPollController {
+    constructor($element) {
+        this.calculateOptions = () => calculcateSimplePollOptions(this.options, this.stats)
+            .filter(result => result.percentage > 0)
+            .sort((a, b) => b.percentage - a.percentage)
+            .slice(0,4);
+        this.optionsOriginal = Object.assign({}, { options : this.options }).options;
+        this.options.sort((a, b) => a.order - b.order);
+        this.sorted = true;
+        this.results = this.calculateOptions();
+        this.$element = $element;
+    }
+
+    get stats() {
+        return this._stats;
+    }
+
+    set stats(data) {
+        this._stats = data;
+
+        if (this.sorted) {
+            var results = this.calculateOptions()
+            updateResults(this.results, results);
+        }
+    }
+}
+
+export class ZuzelTorunPollDirective {
+    constructor() {
+        this.template = `<div class="container container-row container--space-around">
+                <div class="container container-column container--vertical-center simple-radio-question__container radio-question__container" ng-repeat="result in Poll.results">
+                    <img ng-src="{{'/projector/' + result.picture}}"/>
+                    <span>{{result.percentage}}</span>
+                    <span class="font--big ui-text-shadow ui-text--white radio-question__displayName">{{result.displayName}}</span>
+                </div>
+            </div>`;
+        this.scope = {
+            options: '=',
+            stats: '=',
+            width: '@',
+            height: '@'
+        };
+        this.controller = ZuzelTorunPollController;
+        this.bindToController = true;
+        this.controllerAs = 'Poll';
+        this.replace = true;
+    }
+}
+
 export class DemoPollDirective {
     constructor() {
         this.template = `<div class="container container-row container--space-between">

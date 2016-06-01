@@ -47,6 +47,7 @@ function createStat(stat, answer) {
     return {
         displayName: answer.name,
         order: answer.order,
+        picture: answer.picture,
         percentageCss: stat ? stat.percentage + '%' : '0%',
         percentage: stat ? stat.percentage : 0
     };
