@@ -46,6 +46,8 @@ export function calculatePollOptions() {
 function createStat(stat, answer) {
     return {
         displayName: answer.name,
+        firstName: answer.firstName,
+        lastName: answer.lastName,
         order: answer.order,
         picture: answer.picture,
         percentageCss: stat ? stat.percentage + '%' : '0%',

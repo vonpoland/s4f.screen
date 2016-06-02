@@ -70,8 +70,7 @@ class ZuzelTorunPollController {
         this._stats = data;
 
         if (this.sorted) {
-            var results = this.calculateOptions()
-            updateResults(this.results, results);
+            this.results = this.calculateOptions();
         }
     }
 }
@@ -79,10 +78,14 @@ class ZuzelTorunPollController {
 export class ZuzelTorunPollDirective {
     constructor() {
         this.template = `<div class="container container-row container--space-around">
-                <div class="container container-column container--vertical-center simple-radio-question__container radio-question__container" ng-repeat="result in Poll.results">
-                    <img ng-src="{{'/projector/' + result.picture}}"/>
-                    <span>{{result.percentage}}</span>
-                    <span class="font--big ui-text-shadow ui-text--white radio-question__displayName">{{result.displayName}}</span>
+                <div class="container container-column"
+                    ng-repeat="result in Poll.results">
+                    <div class="container container-column radio-question__container">
+                        <div class="ui-text--center"><img ng-src="{{'/projector/' + result.picture}}"/></div>
+                        <div class="ui-text--white radio-question__displayName1 ui-text--center">{{result.firstName}}</div>
+                        <div class="ui-text--white radio-question__displayName2 ui-text--center">{{result.lastName}}</div>
+                    </div>
+                    <div class="radio-question__percentage ui-text--center">{{result.percentage}}%</div>
                 </div>
             </div>`;
         this.scope = {

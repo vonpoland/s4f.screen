@@ -2,7 +2,7 @@
     <div class="header ui-text--center">
         <span class="info-text bold">GŁOSUJ NA ZAWODNIKA MECZU</span>
     </div>
-    <div class="container container-column" ng-init="Result.initStats(step.poll)">
+    <div class="container container-column poll-container" ng-init="Result.initStats(step.poll)">
         <div ng-if="!Result.statsEmpty">
             <zuzel-poll data-options="step.poll.data.options" data-stats="Result.stats"
                          class="poll_result container--vertical-center padding-horizontal--small"></zuzel-poll>
