@@ -23,6 +23,10 @@ gulp.task('test:unit:frontend', function (cb) {
 	exec('mocha test/unit/frontend/**/*.spec.js --compilers js:babel-core/register --reporter mocha-jenkins-reporter --reporter-options junit_report_path=frontend.xml', cb);
 });
 
+gulp.task('test:unit:frontend-dev', function (cb) {
+    exec('mocha test/unit/frontend/**/*.spec.js --compilers js:babel-core/register', cb);
+});
+
 gulp.task('test:unit:backend', function () {
 	return gulp.src('test/unit/backend/**/*.spec.js', {read: false})
         .pipe(mocha({
