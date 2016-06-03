@@ -9,7 +9,6 @@ const bodyParser = require('body-parser');
 const poll = require('./lib/poll/router');
 const HttpStatus = require('http-status-codes');
 const auth = require('./lib/auth/service');
-const secure = require('./lib/auth/service').basicAuth;
 const staticFiles = require('./lib/static/router');
 
 auth.setupAuth(app);
