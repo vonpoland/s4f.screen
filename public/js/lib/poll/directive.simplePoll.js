@@ -28,7 +28,7 @@ export class SimplePollDirective {
         this.template = `<div class="container container-row container--space-between">
                 <div class="container container-column container--vertical-center simple-radio-question__container radio-question__container" ng-repeat="result in Poll.results">
                     <div style="height:80px;" class="container container--content-to-end ">
-                        <div class="ui-text--white poll__option poll__option--first container container--content-to-end container--center container--transition"
+                        <div class="ui-text--white poll__option poll__option--first container container--content-to-end container--center"
                         ng-style="{ height: result.percentageCss}">
                         <span class="font--big ui-text-shadow ui-text--white radio-question__percentage">{{result.percentage}}</br>%</span>
                         </div>
@@ -70,7 +70,8 @@ class ZuzelTorunPollController {
         this._stats = data;
 
         if (this.sorted) {
-            this.results = this.calculateOptions();
+            var results = this.calculateOptions();
+            this.results = results;
         }
     }
 }
@@ -79,7 +80,7 @@ export class ZuzelTorunPollDirective {
     constructor() {
         this.template = `<div class="container container-row container--space-around">
                 <div class="container container-column"
-                    ng-repeat="result in Poll.results">
+                    ng-repeat="result in Poll.results track by $index">
                     <div class="container container-column radio-question__container">
                         <div class="ui-text--center"><img ng-src="{{'/projector/' + result.picture}}"/></div>
                         <div class="ui-text--white radio-question__displayName1 ui-text--center">{{result.firstName}}</div>
