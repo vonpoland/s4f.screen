@@ -63,7 +63,9 @@ gulp.task('bundleScriptsProjector', function () {
 });
 
 gulp.task('concatProjectorScripts', function () {
-	return gulp.src(['./public/js/external/lodash.min.js',
+	return gulp.src([
+			'./public/js/external/weakmap.js',
+			'./public/js/external/lodash.min.js',
 			'./public/js/system-polyfills.js',
 			'./public/js/jspm_packages/system.js',
 			'./public/js/config.js',
