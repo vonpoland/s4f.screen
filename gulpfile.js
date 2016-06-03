@@ -24,7 +24,7 @@ gulp.task('test:unit:frontend', function (cb) {
 });
 
 gulp.task('test:unit:frontend-dev', function (cb) {
-    exec('mocha test/unit/frontend/**/*.spec.js --compilers js:babel-core/register', cb);
+    exec('mocha test/unit/frontend/**/simple.stat.spec.js --compilers js:babel-core/register --reporter nyan', cb);
 });
 
 gulp.task('test:unit:backend', function () {

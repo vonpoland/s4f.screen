@@ -90,3 +90,17 @@ export function updateResults(results, newResults) {
         Object.assign(stat, newResults[index]);
     });
 }
+
+export function calculcateDifference(previousValues, newValues) {
+    previousValues = previousValues || [];
+
+    return newValues.reduce((acc, nextValue, index) => {
+        var wasPresent = previousValues.filter(previousValue => previousValue.picture === nextValue.picture).pop();
+
+        if ((typeof wasPresent === 'undefined') || (nextValue.percentage > wasPresent.percentage)) {
+            acc.push(index);
+        }
+
+        return acc;
+    }, []);
+}

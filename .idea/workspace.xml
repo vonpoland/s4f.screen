@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2966e34-3d4c-4b35-868d-8101934c3535" name="Default" comment="added again tychy best team">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/external/weakmap.js" afterPath="" />
+    <list default="true" id="a2966e34-3d4c-4b35-868d-8101934c3535" name="Default" comment="push check">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/file/file.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/user/router.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/static/router.js" afterPath="$PROJECT_DIR$/lib/static/router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/base.less" afterPath="$PROJECT_DIR$/public/css/base.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/components.less" afterPath="$PROJECT_DIR$/public/css/components.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/lib/poll/directive.simplePoll.js" afterPath="$PROJECT_DIR$/public/js/lib/poll/directive.simplePoll.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/lib/stats/service.js" afterPath="$PROJECT_DIR$/public/js/lib/stats/service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/frontend/poll/simple.stats.spec.js" afterPath="$PROJECT_DIR$/test/unit/frontend/poll/simple.stats.spec.js" />
     </list>
     <ignored path="bootstrap.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,36 +31,22 @@
     <favorites_list name="bootstrap" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="directive.simplePoll.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/lib/poll/directive.simplePoll.js">
+    <leaf>
+      <file leaf-file-name="simple.stats.spec.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/unit/frontend/poll/simple.stats.spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.689655">
-              <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
-              <folding>
-                <marker date="1464974720493" expanded="true" signature="846:1695" placeholder="..." />
-                <marker date="1464974720493" expanded="true" signature="1024:1676" placeholder="..." />
-                <marker date="1464974720493" expanded="false" signature="1058:1070" placeholder="..." />
-                <marker date="1464974720493" expanded="true" signature="1116:1521" placeholder="..." />
-                <marker date="1464974720493" expanded="true" signature="1256:1494" placeholder="..." />
-                <marker date="1464974720493" expanded="true" signature="2919:3665" placeholder="..." />
-                <marker date="1464974720493" expanded="true" signature="2976:3646" placeholder="..." />
-                <marker date="1464974720493" expanded="true" signature="3134:3518" placeholder="..." />
-                <marker date="1464974720493" expanded="true" signature="4104:4957" placeholder="..." />
-                <marker date="1464974720493" expanded="true" signature="4249:4938" placeholder="..." />
-                <marker date="1464974720493" expanded="false" signature="4283:4296" placeholder="..." />
-                <marker date="1464974720493" expanded="true" signature="4342:4915" placeholder="..." />
-                <marker date="1464974720493" expanded="true" signature="4450:4888" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="210" column="28" selection-start-line="210" selection-start-column="28" selection-end-line="210" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="simple.stats.spec.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/unit/frontend/poll/simple.stats.spec.js">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8406593">
-              <caret line="81" column="7" selection-start-line="81" selection-start-column="7" selection-end-line="81" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -65,7 +56,51 @@
         <entry file="file://$PROJECT_DIR$/public/js/lib/stats/service.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+              <caret line="93" column="36" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gulpfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="directive.simplePoll.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/lib/poll/directive.simplePoll.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.37777779">
+              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <folding>
+                <marker date="1464978770331" expanded="true" signature="868:1717" placeholder="..." />
+                <marker date="1464978770331" expanded="true" signature="1046:1698" placeholder="..." />
+                <marker date="1464978770331" expanded="false" signature="1080:1092" placeholder="..." />
+                <marker date="1464978770331" expanded="true" signature="1138:1543" placeholder="..." />
+                <marker date="1464978770331" expanded="true" signature="1278:1516" placeholder="..." />
+                <marker date="1464978770331" expanded="true" signature="3330:4086" placeholder="..." />
+                <marker date="1464978770331" expanded="true" signature="3387:4067" placeholder="..." />
+                <marker date="1464978770331" expanded="true" signature="3555:3939" placeholder="..." />
+                <marker date="1464978770331" expanded="true" signature="4525:5378" placeholder="..." />
+                <marker date="1464978770331" expanded="true" signature="4670:5359" placeholder="..." />
+                <marker date="1464978770331" expanded="false" signature="4704:4717" placeholder="..." />
+                <marker date="1464978770331" expanded="true" signature="4763:5336" placeholder="..." />
+                <marker date="1464978770331" expanded="true" signature="4871:5309" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/base.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.461538">
+              <caret line="266" column="1" selection-start-line="266" selection-start-column="1" selection-end-line="266" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -74,8 +109,8 @@
       <file leaf-file-name="directive.poll.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/lib/poll/directive.poll.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.206897">
-              <caret line="14" column="47" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="47" />
+            <state vertical-scroll-proportion="-7.62069">
+              <caret line="40" column="138" selection-start-line="40" selection-start-column="129" selection-end-line="40" selection-end-column="138" />
               <folding>
                 <marker date="1464819972512" expanded="true" signature="896:3190" placeholder="..." />
                 <marker date="1464819972512" expanded="true" signature="988:2022" placeholder="..." />
@@ -104,56 +139,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="theme.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/theme.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.3818183">
-              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="78" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="components.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/components.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.3818183">
-              <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="theme.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/theme.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.076923">
-              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vote-best-player-info.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/partials/zuzel-torun/vote-best-player-info.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9230769">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="projector.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/lib/projector.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -177,8 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/partials/tychy/bestPlayerResults.html" />
-        <option value="$PROJECT_DIR$/public/js/lib/poll/ctrl.voteResult.js" />
         <option value="$PROJECT_DIR$/test/unit/frontend/poll/simple.stats.js" />
         <option value="$PROJECT_DIR$/public/partials/tychy/adFitPoint.html" />
         <option value="$PROJECT_DIR$/public/js/lib/projectorDemo.js" />
@@ -193,7 +176,6 @@
         <option value="$PROJECT_DIR$/config/production.yaml" />
         <option value="$PROJECT_DIR$/public/partials/tychy/takePartWhoWin.html" />
         <option value="$PROJECT_DIR$/public/partials/tychy/voteResults.html" />
-        <option value="$PROJECT_DIR$/lib/static/router.js" />
         <option value="$PROJECT_DIR$/public/js/config.js" />
         <option value="$PROJECT_DIR$/public/partials/tychy/step2.html" />
         <option value="$PROJECT_DIR$/lib/channel/bootstrap.js" />
@@ -218,16 +200,19 @@
         <option value="$PROJECT_DIR$/public/js/lib/poll/directive.poll.js" />
         <option value="$PROJECT_DIR$/public/js/lib/projector.js" />
         <option value="$PROJECT_DIR$/public/partials/zuzel-torun/vote-best-player-info.html" />
-        <option value="$PROJECT_DIR$/public/js/lib/stats/service.js" />
         <option value="$PROJECT_DIR$/public/index-projector.html" />
         <option value="$PROJECT_DIR$/public/js/lib/templates.js" />
         <option value="$PROJECT_DIR$/public/js/external/weakmap.js" />
-        <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/public/css/base.less" />
-        <option value="$PROJECT_DIR$/public/css/components.less" />
         <option value="$PROJECT_DIR$/public/css/theme.css" />
-        <option value="$PROJECT_DIR$/public/js/lib/poll/directive.simplePoll.js" />
+        <option value="$PROJECT_DIR$/shipitfile.js" />
+        <option value="$PROJECT_DIR$/test/unit/frontend/smoke.spec.js" />
+        <option value="$PROJECT_DIR$/public/css/components.less" />
+        <option value="$PROJECT_DIR$/public/css/base.less" />
+        <option value="$PROJECT_DIR$/lib/static/router.js" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/public/js/lib/stats/service.js" />
         <option value="$PROJECT_DIR$/test/unit/frontend/poll/simple.stats.spec.js" />
+        <option value="$PROJECT_DIR$/public/js/lib/poll/directive.simplePoll.js" />
       </list>
     </option>
   </component>
@@ -316,13 +301,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="screen4fans-tv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="big-screen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="screen4fans-tv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="big-screen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../screen4fans.com" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
@@ -335,30 +348,30 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="nodejs.mocha.node_interpreter_path" value="C:\Program Files\nodejs\node.exe" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="D:\dev\bootstrap\node_modules\mocha" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="97" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="71" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="116" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="84" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="118" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="85" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="571" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="638" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="114" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="110" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="113" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="108" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="115" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="111" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="573" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="549" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\dev\master-screen4fans\big-screen\test\unit\frontend" />
       <recent name="D:\dev\master-screen4fans\big-screen\public\partials\zuzel-torun" />
       <recent name="D:\dev\big-screen\public\partials\tychy" />
       <recent name="D:\dev\big-screen\public\js\lib" />
       <recent name="D:\dev\big-screen\public\img\tychy" />
-      <recent name="D:\dev\big-screen\test\unit\frontend\poll" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\dev\master-screen4fans\big-screen\public\css" />
@@ -368,7 +381,7 @@
       <recent name="D:\dev\big-screen\public\partials\tychy\img" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.app-dev">
+  <component name="RunManager" selected="Node.js.app-prod">
     <configuration default="false" name="poll service tests.should vote for given option" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
       <node-options />
       <working-directory>$PROJECT_DIR$</working-directory>
@@ -451,13 +464,13 @@
       <test-file>$PROJECT_DIR$/test/functional/user/userCreate.js</test-file>
       <method />
     </configuration>
-    <configuration default="false" name="app-dev" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="index.js" working-dir="$PROJECT_DIR$">
+    <configuration default="false" name="app-dev" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="app.js" working-dir="$PROJECT_DIR$">
       <envs>
         <env name="NODE_ENV" value="tychyKonkurs" />
       </envs>
       <method />
     </configuration>
-    <configuration default="false" name="app-prod" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="index.js" working-dir="$PROJECT_DIR$">
+    <configuration default="false" name="app-prod" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="app.js" working-dir="$PROJECT_DIR$">
       <envs>
         <env name="NODE_ENV" value="tychyKonkurs" />
       </envs>
@@ -486,18 +499,6 @@
       <created>1448706800635</created>
       <option name="number" value="Default" />
       <updated>1448706800635</updated>
-    </task>
-    <task id="LOCAL-00024" summary="fixed photos">
-      <created>1456359595189</created>
-      <option name="number" value="00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1456359595189</updated>
-    </task>
-    <task id="LOCAL-00025" summary="fixed photos">
-      <created>1456359739029</created>
-      <option name="number" value="00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1456359739029</updated>
     </task>
     <task id="LOCAL-00026" summary="fixed photos">
       <created>1456359874736</created>
@@ -781,7 +782,19 @@
       <option name="project" value="LOCAL" />
       <updated>1464941927159</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="added fixes to graphics">
+      <created>1464974886164</created>
+      <option name="number" value="00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1464974886164</updated>
+    </task>
+    <task id="LOCAL-00074" summary="push check">
+      <created>1464975517488</created>
+      <option name="number" value="00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1464975517488</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -816,48 +829,57 @@
       <configuration name="tests:unit:frontend" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37811485" sideWeight="0.48946258" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48320693" sideWeight="0.46996838" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37770563" sideWeight="0.48103267" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.49789253" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.482684" sideWeight="0.4678609" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21917808" sideWeight="0.60102737" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37811485" sideWeight="0.5105374" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21917808" sideWeight="0.60102737" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48320693" sideWeight="0.5321391" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24851191" sideWeight="0.20813397" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2875817" sideWeight="0.48809522" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1904762" sideWeight="0.48809522" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18703899" sideWeight="0.3989726" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42686892" sideWeight="0.49209693" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48320693" sideWeight="0.5321391" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42686892" sideWeight="0.4857745" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31423897" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37811485" sideWeight="0.48103267" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2111293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41080198" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48320693" sideWeight="0.4678609" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48320693" sideWeight="0.5321391" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24851191" sideWeight="0.20813397" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18703899" sideWeight="0.3989726" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48320693" sideWeight="0.5321391" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42686892" sideWeight="0.4857745" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.49789253" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2596726" sideWeight="0.60102737" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21917808" sideWeight="0.60102737" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2875817" sideWeight="0.48809522" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28968903" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -872,8 +894,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added who von vote." />
-    <MESSAGE value="fixed gulp file" />
     <MESSAGE value="added name to players" />
     <MESSAGE value="Add palyers" />
     <MESSAGE value="updated addresses" />
@@ -897,7 +917,9 @@
     <MESSAGE value="added raper fun" />
     <MESSAGE value="added https to sockets" />
     <MESSAGE value="added weak map" />
-    <option name="LAST_COMMIT_MESSAGE" value="added weak map" />
+    <MESSAGE value="added fixes to graphics" />
+    <MESSAGE value="push check" />
+    <option name="LAST_COMMIT_MESSAGE" value="push check" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -946,44 +968,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/partials/tychy/adFitPoint.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2347526">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/demo/telebim.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/demo/local.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/auth/service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43527737">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/lib/poll/ctrl.voteResult.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26397514">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/external/angular-material.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3534994">
-          <caret line="5" column="3284" selection-start-line="5" selection-start-column="3284" selection-end-line="5" selection-end-column="3284" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/partials/vote-step.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1026,21 +1010,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/user/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/poll/service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.5172415">
-          <caret line="180" column="18" selection-start-line="180" selection-start-column="8" selection-end-line="180" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.38746437">
@@ -1048,25 +1017,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/poll/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/lib/poll/service.poll.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.034483">
           <caret line="190" column="25" selection-start-line="190" selection-start-column="19" selection-end-line="190" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/frontend/poll/stats.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="221" column="2" selection-start-line="221" selection-start-column="2" selection-end-line="221" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -1099,13 +1053,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/default.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/tychyKonkurs.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1126,25 +1073,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.059027776">
-          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/partials/tychy/bestPlayerResults.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.9615384">
           <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/projector.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1195,7 +1127,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="5" selection-end-column="115" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1203,7 +1134,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1211,7 +1141,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="6.5384617">
           <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1219,80 +1148,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1464941850798" expanded="true" signature="2536:2553" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="2665:2677" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="3395:3406" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="3605:3617" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="4652:4664" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="5262:5290" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="5996:6013" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="6101:6119" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="6290:6309" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="7018:7030" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="7610:7627" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="7701:7719" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="8025:8037" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="8843:8860" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="9105:9123" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="9220:9232" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="9774:9791" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="9898:9916" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="10039:10064" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="10519:10531" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="11076:11093" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="11535:11547" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="13246:13263" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="13352:13370" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="13775:13787" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="14418:14444" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="14796:14813" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="14887:14905" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="15048:15067" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="15366:15378" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="15918:15935" placeholder="..." />
-            <marker date="1464941850798" expanded="true" signature="16373:16385" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9655173">
-          <caret line="68" column="46" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/lib/projector.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/theme.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3818183">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="78" selection-end-column="1" />
-          <folding />
+          <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/theme.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.076923">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/components.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3818183">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="-3.1153846">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1300,7 +1169,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.9230769">
           <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1308,14 +1176,115 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.037861917">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shipitfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/frontend/poll/stats.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.031135531">
+          <caret line="221" column="2" selection-start-line="221" selection-start-column="2" selection-end-line="221" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/base.less">
+    <entry file="file://$PROJECT_DIR$/test/unit/frontend/smoke.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33248731">
-          <caret line="174" column="0" selection-start-line="174" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.124542125">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/animation.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/theme.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.0384617">
+          <caret line="69" column="2" selection-start-line="69" selection-start-column="2" selection-end-line="69" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/components.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.3818183">
+          <caret line="88" column="4" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/default.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../screen4fans.com/lib/user/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4547619">
+          <caret line="146" column="67" selection-start-line="146" selection-start-column="67" selection-end-line="146" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/static/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../screen4fans.com/lib/poll/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="35" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../screen4fans.com/lib/poll/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.275862">
+          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/poll/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16190477">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/poll/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.6525612">
+          <caret line="180" column="18" selection-start-line="180" selection-start-column="8" selection-end-line="180" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/frontend/poll/simple.stats.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="210" column="28" selection-start-line="210" selection-start-column="28" selection-end-line="210" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -1323,15 +1292,31 @@
     <entry file="file://$PROJECT_DIR$/public/js/lib/stats/service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+          <caret line="93" column="36" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/projector.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="199" column="18534" selection-start-line="199" selection-start-column="18534" selection-end-line="199" selection-end-column="18534" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/lib/poll/directive.poll.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.206897">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="47" />
+        <state vertical-scroll-proportion="-7.62069">
+          <caret line="40" column="138" selection-start-line="40" selection-start-column="129" selection-end-line="40" selection-end-column="138" />
           <folding>
             <marker date="1464819972512" expanded="true" signature="896:3190" placeholder="..." />
             <marker date="1464819972512" expanded="true" signature="988:2022" placeholder="..." />
@@ -1359,33 +1344,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/lib/poll/directive.simplePoll.js">
+    <entry file="file://$PROJECT_DIR$/public/css/base.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.689655">
-          <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
-          <folding>
-            <marker date="1464974720493" expanded="true" signature="846:1695" placeholder="..." />
-            <marker date="1464974720493" expanded="true" signature="1024:1676" placeholder="..." />
-            <marker date="1464974720493" expanded="false" signature="1058:1070" placeholder="..." />
-            <marker date="1464974720493" expanded="true" signature="1116:1521" placeholder="..." />
-            <marker date="1464974720493" expanded="true" signature="1256:1494" placeholder="..." />
-            <marker date="1464974720493" expanded="true" signature="2919:3665" placeholder="..." />
-            <marker date="1464974720493" expanded="true" signature="2976:3646" placeholder="..." />
-            <marker date="1464974720493" expanded="true" signature="3134:3518" placeholder="..." />
-            <marker date="1464974720493" expanded="true" signature="4104:4957" placeholder="..." />
-            <marker date="1464974720493" expanded="true" signature="4249:4938" placeholder="..." />
-            <marker date="1464974720493" expanded="false" signature="4283:4296" placeholder="..." />
-            <marker date="1464974720493" expanded="true" signature="4342:4915" placeholder="..." />
-            <marker date="1464974720493" expanded="true" signature="4450:4888" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="-9.461538">
+          <caret line="266" column="1" selection-start-line="266" selection-start-column="1" selection-end-line="266" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/frontend/poll/simple.stats.spec.js">
+    <entry file="file://$PROJECT_DIR$/public/js/lib/poll/directive.simplePoll.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8406593">
-          <caret line="81" column="7" selection-start-line="81" selection-start-column="7" selection-end-line="81" selection-end-column="7" />
-          <folding />
+        <state vertical-scroll-proportion="0.37777779">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding>
+            <marker date="1464978770331" expanded="true" signature="868:1717" placeholder="..." />
+            <marker date="1464978770331" expanded="true" signature="1046:1698" placeholder="..." />
+            <marker date="1464978770331" expanded="false" signature="1080:1092" placeholder="..." />
+            <marker date="1464978770331" expanded="true" signature="1138:1543" placeholder="..." />
+            <marker date="1464978770331" expanded="true" signature="1278:1516" placeholder="..." />
+            <marker date="1464978770331" expanded="true" signature="3330:4086" placeholder="..." />
+            <marker date="1464978770331" expanded="true" signature="3387:4067" placeholder="..." />
+            <marker date="1464978770331" expanded="true" signature="3555:3939" placeholder="..." />
+            <marker date="1464978770331" expanded="true" signature="4525:5378" placeholder="..." />
+            <marker date="1464978770331" expanded="true" signature="4670:5359" placeholder="..." />
+            <marker date="1464978770331" expanded="false" signature="4704:4717" placeholder="..." />
+            <marker date="1464978770331" expanded="true" signature="4763:5336" placeholder="..." />
+            <marker date="1464978770331" expanded="true" signature="4871:5309" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

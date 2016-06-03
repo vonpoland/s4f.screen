@@ -1,4 +1,4 @@
-import {calculcateSimplePollOptions, updateResults} from '../stats/service';
+import {calculcateSimplePollOptions, updateResults, calculcateDifference} from '../stats/service';
 
 class SimplePollController {
     constructor($element) {
@@ -66,11 +66,22 @@ class ZuzelTorunPollController {
         return this._stats;
     }
 
+    rotate(index) {
+        var element = angular.element(document.querySelectorAll('.animation')[index]);
+
+        if (element.hasClass('animation--rotate')) {
+            element.removeClass('animation--rotate');
+        } else {
+            element.addClass('animation--rotate');
+        }
+    }
+
     set stats(data) {
         this._stats = data;
 
         if (this.sorted) {
             var results = this.calculateOptions();
+            calculcateDifference(this.results, results).forEach(this.rotate.bind(this));
             this.results = results;
         }
     }
@@ -81,7 +92,7 @@ export class ZuzelTorunPollDirective {
         this.template = `<div class="container container-row container--space-around">
                 <div class="container container-column"
                     ng-repeat="result in Poll.results track by $index">
-                    <div class="container container-column radio-question__container">
+                    <div class="container container-column radio-question__container animation">
                         <div class="ui-text--center"><img ng-src="{{'/projector/' + result.picture}}"/></div>
                         <div class="ui-text--white radio-question__displayName1 ui-text--center">{{result.firstName}}</div>
                         <div class="ui-text--white radio-question__displayName2 ui-text--center">{{result.lastName}}</div>
