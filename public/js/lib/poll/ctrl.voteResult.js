@@ -4,7 +4,6 @@ import {calculateStats} from '../stats/service';
 export default class VoteResultCtrl {
 	constructor($scope, $stateParams) {
 		var off = pollPubSub.onVoted(data => {
-			return;
             if(data.poll.name !== $stateParams.pollName) {
                 return;
             }
