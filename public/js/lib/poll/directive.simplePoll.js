@@ -97,7 +97,7 @@ export class ZuzelTorunPollDirective {
                         <div class="ui-text--white radio-question__displayName1 ui-text--center">{{result.firstName}}</div>
                         <div class="ui-text--white radio-question__displayName2 ui-text--center">{{result.lastName}}</div>
                     </div>
-                    <div class="radio-question__percentage ui-text--center">{{result.percentage}}%</div>
+                    <div class="radio-question__percentage ui-text--center">{{result.percentage}}<span style="font-size:100px">%</span></div>
                 </div>
             </div>`;
         this.scope = {
