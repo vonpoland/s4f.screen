@@ -15,7 +15,7 @@ import PollClassDirective from './poll/directive.pollClass';
 import './templates';
 import TychyTopBanner from './UI/tychyTopBanner';
 
-function inIframe () {
+function inIframe() {
     try {
         return window.self !== window.top;
     } catch (e) {
@@ -26,41 +26,37 @@ function inIframe () {
 angular
     .module('app.projector', ['ngSanitize', 'ui.router', 'restangular', 'ngAnimate', 'templates'])
     .directive('zuzelPoll', () => new ZuzelTorunPollDirective())
-	.directive('simplePoll', () => new SimplePollDirective())
+    .directive('simplePoll', () => new SimplePollDirective())
     .directive('bestTeamPoll', () => new BestTeamPollDirective())
     .directive('demoPoll', () => new DemoPollDirective())
     .directive('poll', () => new PollDirective())
     .directive('roller', () => new Roller())
-	.directive('pollClass', () => new PollClassDirective())
+    .directive('pollClass', () => new PollClassDirective())
     .directive('tychyTopBanner', () => new TychyTopBanner())
-	.controller('stepCtrl', StepCtrl)
+    .controller('stepCtrl', StepCtrl)
     .controller('pollCtrl', PollCtrl)
     .controller('participantsCtrl', ParticipantsCtrl)
-	.controller('voteResultCtrl', VoteResultCtrl)
-    .config(['$stateProvider', '$locationProvider', '$urlRouterProvider',
-        ($stateProvider, $locationProvider) => {
-        $locationProvider.html5Mode(true);
-        $stateProvider
-            .state('poll', {
-                template: '<div ui-view></div>',
-                abstract: true,
-                url: '/:parent/:pollName?stay&step'
-            })
-            .state('poll.step', {
-                templateUrl: 'partials/vote-step.html',
-                controller: 'stepCtrl as step',
-                url: ''
-            });
-    }])
+    .controller('voteResultCtrl', VoteResultCtrl)
+    .config(['$stateProvider', '$locationProvider', '$urlMatcherFactoryProvider',
+        ($stateProvider, $locationProvider, $urlMatcherFactoryProvider) => {
+            $urlMatcherFactoryProvider.strictMode(false);
+            $locationProvider.html5Mode(true);
+            $stateProvider
+                .state('poll', {
+                    templateUrl: 'partials/vote-step.html',
+                    controller: 'stepCtrl as step',
+                    url: '/:parent/:pollName?stay&step'
+                });
+        }])
     .run((Restangular, $stateParams, $state, $timeout, $rootScope) => {
         setComponents({
             restangular: Restangular,
             stateParams: $stateParams,
             state: $state,
-	        timeout: $timeout
+            timeout: $timeout
         });
 
-        if(inIframe()) {
+        if (inIframe()) {
             $rootScope.$on('$stateChangeStart',
                 function (event, toState, toParams) {
                     var href = $state.href(toState.name, toParams);

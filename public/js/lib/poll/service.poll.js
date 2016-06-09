@@ -1,6 +1,5 @@
 import PubSub from '../patterns/pubsub';
 import {getComponent} from '../di';
-import {getLocal, saveLocal} from '../storage/storage';
 
 const STEP_TIMEOUT = 5000;
 var cache = {};
@@ -108,67 +107,7 @@ export function goToNextStep($state, params, options = {}) {
 	}
 
 	const timeout = getComponent('timeout');
-	return timeout(() => $state.go('poll.step', params), options.timeout || STEP_TIMEOUT);
-}
-
-export function vote(pollId, option) {
-	const restangular = getComponent('restangular');
-
-	return restangular.one('projector/api/poll/' + pollId + '/vote/' + option).post();
-}
-
-export function register(pollName, tempVoteId, accessToken) {
-	const restangular = getComponent('restangular');
-
-	return restangular.one('projector/api/poll/' + pollName + '/register/' + tempVoteId + '?access_token=' + accessToken).post();
-}
-
-export function edit(pollName, poll) {
-	const restangular = getComponent('restangular');
-
-	return restangular.one('projector/api/poll/').customPUT(poll, pollName);
-}
-
-export function voted(pollName) {
-	var users = getLocal('users');
-	var user = getLocal('lastUserId');
-
-	if(!users || !user || !user.userId) {
-		return false;
-	}
-
-	var userVotes = users[user.userId] || [];
-
-	return userVotes.indexOf(pollName) >= 0;
-}
-
-export function saveLastVote(poll, vote) {
-	saveLocal('lastUserVote', {
-		poll: poll,
-		vote: vote
-	});
-}
-
-export function getLastVote() {
-	return getLocal('lastUserVote');
-}
-
-export function addLocalVote(poll) {
-	var users = getLocal('users');
-	var user = getLocal('lastUserId');
-
-	if(!user) {
-		return;
-	}
-
-	if(!users) {
-		users = {};
-		users[user.userId] = [];
-	}
-
-	users[user.userId].push(poll.name);
-
-	saveLocal('users', users);
+	return timeout(() => $state.go('poll', params), options.timeout || STEP_TIMEOUT);
 }
 
 export function cancelNextStep(step) {
