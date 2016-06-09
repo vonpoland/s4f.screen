@@ -1,4 +1,4 @@
-import {getPoll, goToNextStep, pollPubSub, cancelNextStep, setPollOptions} from './service.poll';
+import {getPoll, goToNextStep, pollPubSub, cancelNextStep, setPollOptions, getStep} from './service.poll';
 import bootstrapSocketChannel from '../socket/channel';
 
 export default class StepCtrl {
@@ -8,14 +8,7 @@ export default class StepCtrl {
 			.then(poll => this.poll = poll)
 			.then(() => {
 				setPollOptions(this.poll);
-                let stepName = $stateParams.step;
-
-                if(!stepName) {
-                    stepName = this.poll.last;
-                    $state.go('poll.step', Object.assign($stateParams, { step : stepName }));
-                }
-
-				let step = this.poll.data.stepTemplates[stepName];
+                let step = getStep(this.poll, $stateParams.step);
 				this.template = step.template;
 
 				if ($stateParams.stay === 'true') {

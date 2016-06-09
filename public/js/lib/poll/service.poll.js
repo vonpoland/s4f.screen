@@ -212,3 +212,11 @@ export function setPollOptions(poll) {
         angular.element(document.querySelector('html')).addClass(poll.data.backgroundStyle);
     }
 }
+
+export function getStep(poll, step) {
+	if(step) {
+		return poll.data.stepTemplates[step];
+	}
+
+	return poll.data.stepTemplates[Object.keys(poll.data.stepTemplates)[0]];
+}

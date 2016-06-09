@@ -44,17 +44,12 @@ angular
             .state('poll', {
                 template: '<div ui-view></div>',
                 abstract: true,
-                url: '/:parent/:pollName?stay'
-            })
-            .state('poll.default', {
-                templateUrl: 'partials/vote-step.html',
-                controller: 'stepCtrl as step',
-                url: ''
+                url: '/:parent/:pollName?stay&step'
             })
             .state('poll.step', {
                 templateUrl: 'partials/vote-step.html',
                 controller: 'stepCtrl as step',
-                url: '/:step'
+                url: ''
             });
     }])
     .run((Restangular, $stateParams, $state, $timeout, $rootScope) => {
