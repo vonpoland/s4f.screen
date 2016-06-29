@@ -1,3 +1,5 @@
+@import "theme";
+
 @poll: #100d67;
 
 .vote {
@@ -301,5 +303,111 @@ body {
 
   .poll-container {
     margin-top: 2em;
+  }
+}
+
+
+.sluzewiec-lotto__container {
+  .ui-font--lato-black--italic;
+
+  .color--primary {
+    color: #003749;
+  }
+
+  .color--secondary {
+    color: #fff;
+  }
+
+  .color--third {
+    color: #1d9eda;
+  }
+
+  .font--primary {
+    font-size: 95px;
+  }
+
+  .font--secondary {
+    font-size: 55px;
+  }
+
+  .header {
+    padding-top: 50px;
+    margin-bottom : 100px;
+
+    &.header--answer {
+      margin-bottom: 20px;
+    }
+
+    .question {
+      margin-left: 60px;
+      margin-top: 40px;
+    }
+
+    .info {
+      margin-top: 33px;
+      margin-left: 60px;
+    }
+  }
+
+  width: 1920px;
+  height: 1080px;
+  background: url('/projector/img/sluzewiec/tlo.jpg') no-repeat center center;
+
+  .header__right {
+    background: url('/projector/img/sluzewiec/logo.png') no-repeat center center;
+    width: 400px;
+    height: 211px;
+    margin-top:10px;
+    margin-right:10px;
+  }
+
+  .header__left {
+    background: url('/projector/img/sluzewiec/apla.png') no-repeat center center;
+    width: 1490px;
+    height: 276px;
+  }
+
+  .how-to-vote {
+    background: url('/projector/img/sluzewiec/apla2.png') no-repeat center center;
+    width: 1832px;
+    height: 402px;
+  }
+
+  .results__container {
+    background: url('/projector/img/sluzewiec/results_container.png') no-repeat center center;
+    width: 1767px;
+    height: 542px;
+  }
+  .footer {
+    background: url('/projector/img/sluzewiec/dol.png') no-repeat center center;
+    width: 1805px;
+    height: 113px;
+    position:absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .footer--left {
+    background: url('/projector/img/sluzewiec/lotto_footer-left.png') no-repeat center center;
+    width: 1707px;
+    height: 135px;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+
+    div {
+      padding-left: 140px;
+      margin-top: 10px;
+    }
+  }
+
+  .footer--right {
+    background: url('/projector/img/sluzewiec/lotto-footer-right.png') no-repeat center center;
+    width: 1340px;
+    height: 165px;
+    position:absolute;
+    right: 0;
+    bottom: 0;
   }
 }

@@ -1,0 +1,19 @@
+<div class="sluzewiec-lotto__container ui-relative" ng-controller="voteResultCtrl as Result">
+    <div class="header header--answer container container--space-between">
+        <div class="header__left">
+            <div class="font--primary color--primary question">{{step.poll.data.question}}</div>
+            <div class="font--secondary color--secondary info">GŁOSUJ TERAZ</div>
+        </div>
+        <div class="header__right"></div>
+    </div>
+    <div class="container container--center"  ng-init="Result.initStats(step.poll)">
+        <div class="results__container font--primary color--primary ui-text--center container container-column container--center">
+            <div ng-if="!Result.statsEmpty">
+                <sluzewiec-lotto-poll data-options="step.poll.data.options" data-stats="Result.stats"
+                            class="poll_result container--vertical-center padding-horizontal--small"></sluzewiec-lotto-poll>
+            </div>
+        </div>
+    </div>
+    <div class="footer--left font--primary"><div>GŁOSUJ NA KONIE.GLOSUJ.MOBI</div></div>
+    <div class="footer--right"></div>
+</div>

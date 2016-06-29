@@ -1,0 +1,15 @@
+<div class="sluzewiec-lotto__container ui-relative" ng-controller="voteResultCtrl as Result">
+    <div class="header container container--space-between">
+        <div class="header__left">
+            <div class="font--primary color--primary question">{{step.poll.data.question}}</div>
+            <div class="font--secondary color--secondary info">GŁOSUJ TERAZ</div>
+        </div>
+        <div class="header__right"></div>
+    </div>
+    <div class="container container--center">
+        <div class="how-to-vote font--primary color--primary ui-text--center container container-column container--center">
+            <div ng-bind-html="step.poll.data.howToVote"></div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</div>

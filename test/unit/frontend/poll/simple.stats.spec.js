@@ -39,8 +39,10 @@ describe('#simple poll logic stats tests', function () {
         var result = calculcateSimplePollOptions(OPTIONS, stats);
         expect(result).to.eql([
             {
+                display: undefined,
                 displayName: '30 lat',
                 order: 1,
+                'option': '30',
                 percentageCss: '25%',
                 percentage: 25,
                 firstName: 'FirstName',
@@ -49,17 +51,21 @@ describe('#simple poll logic stats tests', function () {
             },
             {
                 displayName: '45 lat',
+                display: undefined,
                 order: 2,
                 percentageCss: '38%',
                 percentage: 38,
+                'option': '45',
                 firstName: 'FirstName',
                 lastName: 'LastName',
                 'picture': 'img/tychy/tychy-logo.png'
             },
             {
+                display: undefined,
                 displayName: '50 lat',
                 order: 3,
                 percentageCss: '38%',
+                'option': '50',
                 percentage: 38,
                 firstName: 'FirstName',
                 'picture': 'img/tychy/tychy-logo.png',
@@ -78,6 +84,8 @@ describe('#simple poll logic stats tests', function () {
         expect(result).to.eql([
             {
                 displayName: '30 lat',
+                display: undefined,
+                'option': '30',
                 order: 1,
                 percentageCss: '25%',
                 percentage: 25,
@@ -87,6 +95,8 @@ describe('#simple poll logic stats tests', function () {
             },
             {
                 displayName: '45 lat',
+                'option': '45',
+                display: undefined,
                 order: 2,
                 percentageCss: '0%',
                 percentage: 0,
@@ -98,6 +108,8 @@ describe('#simple poll logic stats tests', function () {
                 displayName: '50 lat',
                 order: 3,
                 percentageCss: '38%',
+                display: undefined,
+                'option': '50',
                 percentage: 38,
                 firstName: 'FirstName',
                 'picture': 'img/tychy/tychy-logo.png',
@@ -113,28 +125,28 @@ describe('#simple poll logic stats tests', function () {
             "firstName": "Martin",
             "lastName": "Vaculik",
             "order": 1,
-            "picture": "img/zuzel-torun/players/SKF_4665.png",
+            "option": "img/zuzel-torun/players/SKF_4665.png",
             "percentageCss": "53%",
             "percentage": 53
         }, {
             "firstName": "Greg",
             "lastName": "Hancock",
             "order": 2,
-            "picture": "img/zuzel-torun/players/SKF_4652.png",
+            "option": "img/zuzel-torun/players/SKF_4652.png",
             "percentageCss": "19%",
             "percentage": 19
         }, {
             "firstName": "Paweł",
             "lastName": "Przedpełski",
             "order": 3,
-            "picture": "img/zuzel-torun/players/SKF_4628.png",
+            "option": "img/zuzel-torun/players/SKF_4628.png",
             "percentageCss": "11%",
             "percentage": 11
         }, {
             "firstName": "aaaaa",
             "lastName": "Kokoszka0",
             "order": 1,
-            "picture": "img/zuzel-torun/players/DSC05159.png",
+            "option": "img/zuzel-torun/players/DSC05159.png",
             "percentageCss": "6%",
             "percentage": 6
         }];
@@ -148,21 +160,21 @@ describe('#simple poll logic stats tests', function () {
             "firstName": "Martin",
             "lastName": "Vaculik",
             "order": 1,
-            "picture": "img/zuzel-torun/players/SKF_4665.png",
+            "option": "img/zuzel-torun/players/SKF_4665.png",
             "percentageCss": "53%",
             "percentage": 2
         }, {
             "firstName": "Greg",
             "lastName": "Hancock",
             "order": 2,
-            "picture": "img/zuzel-torun/players/SKF_4652.png",
+            "option": "img/zuzel-torun/players/SKF_4652.png",
             "percentageCss": "19%",
             "percentage": 19
         }, {
             "firstName": "Paweł",
             "lastName": "Przedpełski",
             "order": 3,
-            "picture": "img/zuzel-torun/players/SKF_4628.png",
+            "option": "img/zuzel-torun/players/SKF_4628.png",
             "percentageCss": "11%",
             "percentage": 1
         }];
@@ -172,28 +184,28 @@ describe('#simple poll logic stats tests', function () {
             "firstName": "Martin",
             "lastName": "Vaculik",
             "order": 1,
-            "picture": "img/zuzel-torun/players/SKF_4665.png",
+            "option": "img/zuzel-torun/players/SKF_4665.png",
             "percentageCss": "53%",
             "percentage": 53
         }, {
             "firstName": "Greg",
             "lastName": "Hancock",
             "order": 2,
-            "picture": "img/zuzel-torun/players/SKF_4652.png",
+            "option": "img/zuzel-torun/players/SKF_4652.png",
             "percentageCss": "19%",
             "percentage": 19
         }, {
             "firstName": "Paweł",
             "lastName": "Przedpełski",
             "order": 3,
-            "picture": "img/zuzel-torun/players/SKF_4628.png",
+            "option": "img/zuzel-torun/players/SKF_4628.png",
             "percentageCss": "11%",
             "percentage": 11
         }, {
             "firstName": "aaaaa",
             "lastName": "Kokoszka0",
             "order": 1,
-            "picture": "img/zuzel-torun/players/DSC05159.png",
+            "option": "img/zuzel-torun/players/DSC05159.png",
             "percentageCss": "6%",
             "percentage": 6
         }];
@@ -206,21 +218,21 @@ describe('#simple poll logic stats tests', function () {
             "firstName": "Martin",
             "lastName": "Vaculik",
             "order": 73,
-            "picture": "img/zuzel-torun/players/SKF_4665.png",
+            "option": "img/zuzel-torun/players/SKF_4665.png",
             "percentageCss": "53%",
             "percentage": 73
         }, {
             "firstName": "Greg",
             "lastName": "Hancock",
             "order": 2,
-            "picture": "img/zuzel-torun/players/SKF_4652.png",
+            "option": "img/zuzel-torun/players/SKF_4652.png",
             "percentageCss": "19%",
             "percentage": 19
         }, {
             "firstName": "Paweł",
             "lastName": "Przedpełski",
             "order": 3,
-            "picture": "img/zuzel-torun/players/SKF_4628.png",
+            "option": "img/zuzel-torun/players/SKF_4628.png",
             "percentageCss": "11%",
             "percentage": 44
         }];
@@ -230,28 +242,28 @@ describe('#simple poll logic stats tests', function () {
             "firstName": "Martin",
             "lastName": "Vaculik",
             "order": 1,
-            "picture": "img/zuzel-torun/players/SKF_4665.png",
+            "option": "img/zuzel-torun/players/SKF_4665.png",
             "percentageCss": "53%",
             "percentage": 53
         }, {
             "firstName": "Greg",
             "lastName": "Hancock",
             "order": 2,
-            "picture": "img/zuzel-torun/players/SKF_4652.png",
+            "option": "img/zuzel-torun/players/SKF_4652.png",
             "percentageCss": "19%",
             "percentage": 19
         }, {
             "firstName": "Paweł",
             "lastName": "Przedpełski",
             "order": 3,
-            "picture": "img/zuzel-torun/players/SKF_4628.png",
+            "option": "img/zuzel-torun/players/SKF_4628.png",
             "percentageCss": "11%",
             "percentage": 11
         }, {
             "firstName": "aaaaa",
             "lastName": "Kokoszka0",
             "order": 1,
-            "picture": "img/zuzel-torun/players/DSC05159.png",
+            "option": "img/zuzel-torun/players/DSC05159.png",
             "percentageCss": "6%",
             "percentage": 6
         }];

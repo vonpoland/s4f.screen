@@ -113,6 +113,30 @@ export class ZuzelTorunPollDirective {
     }
 }
 
+export class SluzewiecLottoPollDirective {
+    constructor() {
+        this.template = `<div class="container container-column container--space-around">
+                <div class="container container-row"
+                    ng-repeat="result in Poll.results track by $index">
+                    <div class="container container-column radio-question__container animation">
+                        <div class="ui-text--white radio-question__displayName1 ui-text--center">{{result.display}}</div>
+                    </div>
+                    <div class="radio-question__percentage ui-text--center">{{result.percentage}}<span style="font-size:100px">%</span></div>
+                </div>
+            </div>`;
+        this.scope = {
+            options: '=',
+            stats: '=',
+            width: '@',
+            height: '@'
+        };
+        this.controller = ZuzelTorunPollController;
+        this.bindToController = true;
+        this.controllerAs = 'Poll';
+        this.replace = true;
+    }
+}
+
 export class DemoPollDirective {
     constructor() {
         this.template = `<div class="container container-row container--space-between">

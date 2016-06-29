@@ -45,6 +45,8 @@ export function calculatePollOptions() {
 
 function createStat(stat, answer) {
     return {
+        option: answer.option,
+        display: answer.display,
         displayName: answer.name,
         firstName: answer.firstName,
         lastName: answer.lastName,
@@ -95,7 +97,7 @@ export function calculcateDifference(previousValues, newValues) {
     previousValues = previousValues || [];
 
     return newValues.reduce((acc, nextValue, index) => {
-        var wasPresent = previousValues.filter(previousValue => previousValue.picture === nextValue.picture).pop();
+        var wasPresent = previousValues.filter(previousValue => previousValue.option === nextValue.option).pop();
 
         if ((typeof wasPresent === 'undefined') || (nextValue.percentage > wasPresent.percentage)) {
             acc.push(index);
