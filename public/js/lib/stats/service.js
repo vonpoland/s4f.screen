@@ -74,7 +74,7 @@ export function calculateStats(poll = {}) {
     var votes = {};
     options.forEach(key => {
         var value = poll.data.votes[key];
-        var percentage = Math.round((value / votesSum) * 100);
+        var percentage = Math.floor((value / votesSum) * 100);
 
         votes[key] = {
             option: key,

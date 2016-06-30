@@ -157,5 +157,9 @@ export function getStep(poll, step) {
 		return poll.data.stepTemplates[step];
 	}
 
+	if(poll.last && poll.data.stepTemplates[poll.last]) {
+		return poll.data.stepTemplates[poll.last];
+	}
+
 	return poll.data.stepTemplates[Object.keys(poll.data.stepTemplates)[0]];
 }

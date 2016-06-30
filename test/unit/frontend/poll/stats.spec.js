@@ -322,6 +322,30 @@ describe('#calculate stats tests', function () {
 		});
 	});
 
+    it('#calculateStats5', function () {
+        var input = {
+            "data": {
+                "votes": {
+                    "miasto": 523,
+                    "buty": 25,
+                    "lord": 3
+                },
+                options: [
+                    { option: 'miasto', enabled: true},
+                    { option: 'lord', enabled: true},
+                    { option: 'buty', enabled: true}
+                ]
+            }
+        };
+
+        var result = calculateStats(input);
+        expect(result).to.eql({
+            miasto: {option: 'miasto', value: 523, percentage: 94},
+            lord: {option: 'lord', value: 3, percentage: 0},
+            buty: {option: 'buty', value: 25, percentage: 4}
+        });
+    });
+
 	it('#calculatePollOptions1', function () {
 		var input = {
 			"data": {
