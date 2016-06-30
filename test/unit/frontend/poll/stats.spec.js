@@ -167,7 +167,7 @@ const players = [
 		"name" : "Artur Pląsowski",
 		"picture" : "img/tychy/players/plasowski_artur.png",
 		"option" : "plasowski_artur",
-		"enabled" : false,
+		"enabled" : true,
 		"order" : 1
 	},
 	{
@@ -222,10 +222,32 @@ const players = [
 ];
 
 describe('#calculate stats tests', function () {
+	it('calculateStats should return not active records in stats', function () {
+        var poll = {
+            data: {
+                votes: {
+                    option1 : 3,
+                    option2 : 7
+                },
+                options: [
+                    { option: 'option1', enabled: false},
+                    { option: 'option2', enabled: true}
+                ]
+            }
+        };
+
+        var result = calculateStats(poll);
+
+        expect(result).to.eql({
+           option2: { value: 7, percentage : 100, option: 'option2'}
+        });
+    });
+
 	it('#calculateStats1', function () {
 		var input = {
 			"data": {
-				"votes": {}
+				"votes": {},
+                options: []
 			}
 		};
 
@@ -239,7 +261,11 @@ describe('#calculate stats tests', function () {
 				"votes": {
 					"niepolomice": 1,
 					"tychy": 9
-				}
+				},
+                options: [
+                    { option: 'niepolomice', enabled: true},
+                    { option: 'tychy', enabled: true}
+                ]
 			}
 		};
 
@@ -255,7 +281,11 @@ describe('#calculate stats tests', function () {
 			"data": {
 				"votes": {
 					"niepolomice": 5
-				}
+				},
+                options: [
+                    { option: 'niepolomice', enabled: true},
+                    { option: 'tychy', enabled: true}
+                ]
 			}
 		};
 
@@ -273,7 +303,13 @@ describe('#calculate stats tests', function () {
 					"test2": 4,
 					"test3": 1,
 					"test4": 2
-				}
+				},
+                options: [
+                    { option: 'test1', enabled: true},
+                    { option: 'test3', enabled: true},
+                    { option: 'test2', enabled: true},
+                    { option: 'test4', enabled: true}
+                ]
 			}
 		};
 
@@ -293,6 +329,7 @@ describe('#calculate stats tests', function () {
 					{
 						"order": 1,
 						"name": "Puszcza Niepołomice",
+                        enabled: true,
 						"option": "niepolomice",
 						"picture": "img/tychy/puszcza-logo.png"
 					},
@@ -300,6 +337,7 @@ describe('#calculate stats tests', function () {
 						"name": "GKS Tychy",
 						"order": 0,
 						"option": "tychy",
+                        enabled: true,
 						"picture": "img/tychy/tychy-logo.png"
 					}
 				],

@@ -1,4 +1,5 @@
 @import "theme";
+@import "base";
 
 @poll: #100d67;
 
@@ -314,6 +315,9 @@ body {
     color: #003749;
   }
 
+  .background--primary {
+    background-color: #003749;
+  }
   .color--secondary {
     color: #fff;
   }
@@ -328,6 +332,14 @@ body {
 
   .font--secondary {
     font-size: 55px;
+  }
+
+  .font--third {
+    font-size: 65px;
+  }
+
+  .padding-vertical--medium {
+    padding: 0.7rem 0;
   }
 
   .header {
@@ -409,5 +421,137 @@ body {
     position:absolute;
     right: 0;
     bottom: 0;
+  }
+}
+
+.sluzewiec-question__container {
+  width: 1920px;
+  height: 1080px;
+  background: url('/projector/img/sluzewiec/tlo_question.jpg') no-repeat center center;
+
+  .font--primary {
+    font-size: 60pt;
+  }
+
+  .font--secondary {
+    font-size: 70pt;
+  }
+
+  .color--primary {
+    color: #286328;
+  }
+
+  .color--secondary {
+    color: #2b303b;
+  }
+
+  .font--biggest {
+    font-size: 114pt;
+  }
+
+  .alpha-top {
+    background: url('/projector/img/sluzewiec/apla1.png') no-repeat center center;
+    width: 1920px;
+    height: 260px;
+    top: 330px;
+  }
+
+  .left_top {
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 349px;
+    background: url('/projector/img/sluzewiec/lewy_gorny_rog.png') no-repeat center center;
+  }
+
+  .right_bottom {
+    .ui-bring-to-top;
+    right: 0;;
+    bottom: 0;
+    width: 374px;
+    height: 675px;
+    background: url('/projector/img/sluzewiec/prawy_dolny_rog.png') no-repeat center center;
+  }
+
+  .header {
+    background: url('/projector/img/sluzewiec/grafika.png') no-repeat center center;
+    width: 1920px;
+    height: 1080px;
+
+    .text {
+      margin-left: 1100px;
+      margin-top: 115px;
+      width: 679px;
+    }
+  }
+
+  .header--lotto {
+    background: url('/projector/img/sluzewiec/wyniki.png') no-repeat center center;
+    height: 168px;
+
+    .text {
+      margin-left: -280px;
+    }
+  }
+
+  .text-shadow {
+    text-shadow: 5px 0 0 #fff,
+    -5px 0 0 #fff,
+    0 5px 0 #fff,
+      0 -5px 0 #fff,
+    5px 5px #fff,
+      -5px -5px 0 #fff,
+      5px -5px 0 #fff,
+    -5px 5px 0 #fff;
+  }
+
+  .how-to-vote {
+    letter-spacing: 10px;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+  }
+  .interaction__answers__container {
+    margin-top: 100px;
+    background: url('/projector/img/sluzewiec/apla2_question.png') no-repeat center top;
+  }
+  .interaction__answers {
+    color: white;
+    .ui-font--lato-black--italic;
+    .radio-question__container {
+      .ui-text--center;
+      width: 30%;
+    }
+    &.simple-radio-question__container {
+      .container;
+      .container-row;
+    }
+    .radio-question__percentage {
+      .margin-horizontal--big;
+      font-size: 241pt;
+      line-height: 230pt;
+
+      .percentage {
+        font-size: 125pt;
+      }
+    }
+
+    .radio-question__displayName {
+      background: url('/projector/img/sluzewiec/data.png') no-repeat center center;
+      width: 348px;
+      height: 166px;
+      margin-top: -80px;
+      margin-left: 40px;
+      .ui-text--center;
+
+      .text {
+        .color--primary;
+        font-size: 40pt;
+        width: 200px;
+        display: inline-block;
+        margin-left: -15px;
+        margin-top: 15px;
+      }
+    }
   }
 }

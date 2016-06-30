@@ -18,7 +18,18 @@ class SimplePollController {
 
         if (this.sorted) {
             var results = calculcateSimplePollOptions(this.options, this.stats);
+            calculcateDifference(this.results, results).forEach(this.rotate.bind(this));
             updateResults(this.results, results);
+        }
+    }
+
+    rotate(index) {
+        var element = angular.element(document.querySelectorAll('.animation')[index]);
+
+        if (element.hasClass('animation--rotate')) {
+            element.removeClass('animation--rotate');
+        } else {
+            element.addClass('animation--rotate');
         }
     }
 }
@@ -46,6 +57,18 @@ export class SimplePollDirective {
         this.bindToController = true;
         this.controllerAs = 'Poll';
         this.replace = true;
+    }
+}
+
+export class SluzewiecQuestionPollDirective extends SimplePollDirective {
+    constructor() {
+        super();
+        this.template = `<div class="simple-radio-question__container ">
+                <div class="radio-question__container" ng-repeat="result in Poll.results">
+                    <div class="radio-question__percentage">{{result.percentage}}<span class="percentage">%</span></div>
+                    <div class="radio-question__displayName animation"><span class="text">{{result.displayName}}</span></div>
+                </div>
+            </div>`;
     }
 }
 
@@ -87,6 +110,45 @@ class ZuzelTorunPollController {
     }
 }
 
+class SluzewiecLottoPollController {
+    constructor($element) {
+        this.calculateOptions = () => calculcateSimplePollOptions(this.options, this.stats)
+            .filter(result => result.percentage > 0)
+            .sort((a, b) => b.percentage - a.percentage)
+            .slice(0,5);
+        this.optionsOriginal = Object.assign({}, { options : this.options }).options;
+        this.options.sort((a, b) => a.order - b.order);
+        this.sorted = true;
+        this.results = this.calculateOptions();
+        this.$element = $element;
+    }
+
+    get stats() {
+        return this._stats;
+    }
+
+    rotate(index) {
+        var element = angular.element(document.querySelectorAll('.animation')[index]);
+
+        if (element.hasClass('animation--rotate')) {
+            element.removeClass('animation--rotate');
+        } else {
+            element.addClass('animation--rotate');
+        }
+    }
+
+    set stats(data) {
+        this._stats = data;
+
+        if (this.sorted) {
+            var results = this.calculateOptions();
+            calculcateDifference(this.results, results).forEach(this.rotate.bind(this));
+            this.results = results;
+        }
+    }
+}
+
+
 export class ZuzelTorunPollDirective {
     constructor() {
         this.template = `<div class="container container-row container--space-around">
@@ -115,13 +177,20 @@ export class ZuzelTorunPollDirective {
 
 export class SluzewiecLottoPollDirective {
     constructor() {
-        this.template = `<div class="container container-column container--space-around">
-                <div class="container container-row"
-                    ng-repeat="result in Poll.results track by $index">
-                    <div class="container container-column radio-question__container animation">
-                        <div class="ui-text--white radio-question__displayName1 ui-text--center">{{result.display}}</div>
+        this.template = `<div class="container container-column container--content-to-start font--third">
+                <div ng-repeat="result in Poll.results track by $index" class="ui-full--width">
+                    <div class="container container-row ui-full--width">
+                        <div class="width--1-of-2 padding-vertical--medium">
+                            <div class="radio-question__container margin-horizontal--big ui-text--right">
+                                <div class="radio-question__displayName1 animation ui-display--inline-block">{{result.displayName}}</div>
+                            </div>
+                        </div>
+                        <div class="width--1-of-2 container container-row padding-vertical--medium">
+                            <div class="ui-text--white background--primary padding-horizontal--small">{{$index + 1}}.</div>
+                            <div class="background--primary container--transition" ng-style="{width: result.percentage + '%'}"/>
+                            <div class="radio-question__percentage">{{result.percentage}}<span>%</span></div>
+                        </div>
                     </div>
-                    <div class="radio-question__percentage ui-text--center">{{result.percentage}}<span style="font-size:100px">%</span></div>
                 </div>
             </div>`;
         this.scope = {
@@ -130,7 +199,7 @@ export class SluzewiecLottoPollDirective {
             width: '@',
             height: '@'
         };
-        this.controller = ZuzelTorunPollController;
+        this.controller = SluzewiecLottoPollController;
         this.bindToController = true;
         this.controllerAs = 'Poll';
         this.replace = true;

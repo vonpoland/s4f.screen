@@ -46,8 +46,8 @@ export function calculatePollOptions() {
 function createStat(stat, answer) {
     return {
         option: answer.option,
-        display: answer.display,
-        displayName: answer.name,
+        value: stat ? stat.value : 0,
+        displayName: answer.nameAlt || answer.name,
         firstName: answer.firstName,
         lastName: answer.lastName,
         order: answer.order,
@@ -68,11 +68,10 @@ export function calculateStats(poll = {}) {
     if (!poll && !poll.data || !poll.data.votes) {
         return;
     }
-
-    var options = Object.keys(poll.data.votes);
+    var allowedOptions = poll.data.options.filter(option => option.enabled).map(option => option.option);
+    var options = Object.keys(poll.data.votes).filter(key => allowedOptions.indexOf(key) >= 0);
     var votesSum = options.reduce((sum, key) => sum + poll.data.votes[key], 0);
     var votes = {};
-
     options.forEach(key => {
         var value = poll.data.votes[key];
         var percentage = Math.round((value / votesSum) * 100);
@@ -99,7 +98,7 @@ export function calculcateDifference(previousValues, newValues) {
     return newValues.reduce((acc, nextValue, index) => {
         var wasPresent = previousValues.filter(previousValue => previousValue.option === nextValue.option).pop();
 
-        if ((typeof wasPresent === 'undefined') || (nextValue.percentage > wasPresent.percentage)) {
+        if ((typeof wasPresent === 'undefined') || (nextValue.value !== wasPresent.value) || (nextValue.percentage !== wasPresent.percentage)) {
             acc.push(index);
         }
 
