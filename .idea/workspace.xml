@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2966e34-3d4c-4b35-868d-8101934c3535" name="Default" comment="added tv changes.">
+    <list default="true" id="a2966e34-3d4c-4b35-868d-8101934c3535" name="Default" comment="removed double lato">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/sluzewiec/results_container.png" afterPath="$PROJECT_DIR$/public/img/sluzewiec/results_container.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/components.less" afterPath="$PROJECT_DIR$/public/css/components.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/theme.less" afterPath="$PROJECT_DIR$/public/css/theme.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index-projector.html" afterPath="$PROJECT_DIR$/public/index-projector.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/partials/sluzewiec/lotto-answer.html" afterPath="$PROJECT_DIR$/public/partials/sluzewiec/lotto-answer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/partials/sluzewiec/lotto.html" afterPath="$PROJECT_DIR$/public/partials/sluzewiec/lotto.html" />
     </list>
     <ignored path="bootstrap.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,12 +27,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="question-info.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/partials/sluzewiec/question-info.html">
+      <file leaf-file-name="projector.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/lib/projector.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.8461537">
-              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="34" column="70" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
+              <folding>
+                <marker date="1467307844942" expanded="true" signature="2878:2884" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="directive.simplePoll.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/lib/poll/directive.simplePoll.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.21140142">
+              <caret line="177" column="13" selection-start-line="177" selection-start-column="13" selection-end-line="177" selection-end-column="13" />
+              <folding>
+                <marker date="1467310790708" expanded="true" signature="1257:2106" placeholder="..." />
+                <marker date="1467310790708" expanded="true" signature="1435:2087" placeholder="..." />
+                <marker date="1467310790708" expanded="false" signature="1469:1481" placeholder="..." />
+                <marker date="1467310790708" expanded="true" signature="1527:1932" placeholder="..." />
+                <marker date="1467310790708" expanded="true" signature="1667:1905" placeholder="..." />
+                <marker date="1467310790708" expanded="true" signature="2584:2964" placeholder="..." />
+                <marker date="1467310790708" expanded="true" signature="2675:2945" placeholder="..." />
+                <marker date="1467310790708" expanded="true" signature="5472:6265" placeholder="..." />
+                <marker date="1467310790708" expanded="true" signature="5529:6246" placeholder="..." />
+                <marker date="1467310790708" expanded="true" signature="5697:6081" placeholder="..." />
+                <marker date="1467310790708" expanded="false" signature="6193:6208" placeholder="..." />
+                <marker date="1467310790708" expanded="true" signature="6732:6931" placeholder="..." />
+                <marker date="1467310790708" expanded="true" signature="6732:7852" placeholder="..." />
+                <marker date="1467310790708" expanded="true" signature="6828:6931" placeholder="..." />
+                <marker date="1467310790708" expanded="true" signature="6901:6931" placeholder="..." />
+                <marker date="1467310790708" expanded="true" signature="6978:7288" placeholder="..." />
+                <marker date="1467310790708" expanded="true" signature="7084:7257" placeholder="..." />
+                <marker date="1467310790708" expanded="true" signature="7389:7783" placeholder="..." />
+                <marker date="1467310790708" expanded="true" signature="8295:9148" placeholder="..." />
+                <marker date="1467310790708" expanded="true" signature="8440:9129" placeholder="..." />
+                <marker date="1467310790708" expanded="false" signature="8474:8487" placeholder="..." />
+                <marker date="1467310790708" expanded="true" signature="8533:9106" placeholder="..." />
+                <marker date="1467310790708" expanded="true" signature="8641:9079" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -41,59 +77,7 @@
         <entry file="file://$PROJECT_DIR$/public/partials/sluzewiec/lotto.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-6.5384617">
-              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gulpfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index-projector.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/index-projector.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6153846">
-              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="components.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/components.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9636364">
-              <caret line="536" column="1" selection-start-line="536" selection-start-column="1" selection-end-line="536" selection-end-column="1" />
-              <folding>
-                <marker date="1467386507505" expanded="true" signature="1649:1666" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="components.less" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/css/components.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7927928">
-              <caret line="411" column="22" selection-start-line="411" selection-start-column="22" selection-end-line="411" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="theme.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/theme.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.730769">
-              <caret line="128" column="21" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
+              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -102,8 +86,57 @@
       <file leaf-file-name="lotto-answer.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/partials/sluzewiec/lotto-answer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.423077">
-              <caret line="16" column="152" selection-start-line="16" selection-start-column="152" selection-end-line="16" selection-end-column="152" />
+            <state vertical-scroll-proportion="-7.1923075">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="components.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/components.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.2181818">
+              <caret line="392" column="63" selection-start-line="392" selection-start-column="46" selection-end-line="392" selection-end-column="63" />
+              <folding>
+                <element signature="e#7463#10062#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="results_container.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/img/sluzewiec/results_container.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="theme.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/theme.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.0384617">
+              <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index-projector.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index-projector.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.2692308">
+              <caret line="5" column="72" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="question-info.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/partials/sluzewiec/question-info.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6153846">
+              <caret line="4" column="79" selection-start-line="4" selection-start-column="79" selection-end-line="4" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -167,7 +200,6 @@
         <option value="$PROJECT_DIR$/config/tychyKonkurs.yaml" />
         <option value="$PROJECT_DIR$/public/js/lib/poll/ctrl.poll.js" />
         <option value="$PROJECT_DIR$/public/js/lib/socket/channel.js" />
-        <option value="$PROJECT_DIR$/public/partials/sluzewiec/lotto.html" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/public/css/base.css" />
         <option value="$PROJECT_DIR$/public/css/base.less" />
@@ -179,11 +211,12 @@
         <option value="$PROJECT_DIR$/public/js/lib/stats/service.js" />
         <option value="$PROJECT_DIR$/test/unit/frontend/poll/stats.spec.js" />
         <option value="$PROJECT_DIR$/public/partials/sluzewiec/question-info.html" />
-        <option value="$PROJECT_DIR$/public/index-projector.html" />
         <option value="$PROJECT_DIR$/public/css/components.css" />
         <option value="$PROJECT_DIR$/public/css/theme.less" />
-        <option value="$PROJECT_DIR$/public/partials/sluzewiec/lotto-answer.html" />
+        <option value="$PROJECT_DIR$/public/index-projector.html" />
         <option value="$PROJECT_DIR$/public/css/components.less" />
+        <option value="$PROJECT_DIR$/public/partials/sluzewiec/lotto.html" />
+        <option value="$PROJECT_DIR$/public/partials/sluzewiec/lotto-answer.html" />
       </list>
     </option>
   </component>
@@ -425,7 +458,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -598,24 +631,6 @@
       <created>1448706800635</created>
       <option name="number" value="Default" />
       <updated>1448706800635</updated>
-    </task>
-    <task id="LOCAL-00041" summary="updated addresses">
-      <created>1457911184745</created>
-      <option name="number" value="00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1457911184745</updated>
-    </task>
-    <task id="LOCAL-00042" summary="updated addresses">
-      <created>1457911914535</created>
-      <option name="number" value="00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1457911914535</updated>
-    </task>
-    <task id="LOCAL-00043" summary="updated views">
-      <created>1458068702691</created>
-      <option name="number" value="00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1458068702691</updated>
     </task>
     <task id="LOCAL-00044" summary="css fix">
       <created>1458069013070</created>
@@ -893,7 +908,25 @@
       <option name="project" value="LOCAL" />
       <updated>1467327011414</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="added tv changes.">
+      <created>1467386516092</created>
+      <option name="number" value="00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1467386516092</updated>
+    </task>
+    <task id="LOCAL-00091" summary="added tv changes.">
+      <created>1467387103844</created>
+      <option name="number" value="00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1467387103844</updated>
+    </task>
+    <task id="LOCAL-00092" summary="removed double lato">
+      <created>1467387241445</created>
+      <option name="number" value="00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1467387241445</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -944,10 +977,10 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16251354" sideWeight="0.46733403" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.49789253" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5008183" sideWeight="0.453125" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2651391" sideWeight="0.45014882" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20238096" sideWeight="0.60102737" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5008183" sideWeight="0.546875" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2651391" sideWeight="0.5498512" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24851191" sideWeight="0.20813397" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28641573" sideWeight="0.47619048" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18703899" sideWeight="0.3989726" order="2" side_tool="true" content_ui="tabs" />
@@ -993,7 +1026,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed bug on change screen" />
     <MESSAGE value="updated screen changing" />
     <MESSAGE value="added bigscreen to vote" />
     <MESSAGE value="added ad" />
@@ -1018,7 +1050,8 @@
     <MESSAGE value="litte progress" />
     <MESSAGE value="fixed displaying" />
     <MESSAGE value="added tv changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="added tv changes." />
+    <MESSAGE value="removed double lato" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed double lato" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1062,13 +1095,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/default.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27345845">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/partials/ksw33/vote.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1179,11 +1205,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/sluzewiec/results_container.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/img/sluzewiec/lotto_footer-left.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1265,16 +1286,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/lib/projector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="65" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
-          <folding>
-            <marker date="1467307844942" expanded="true" signature="2878:2884" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/partials/tychy/raperVoteResults.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45609757">
@@ -1347,10 +1358,123 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/lib/poll/service.poll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.2142856">
+          <caret line="75" column="32" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/frontend/poll/stats.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.24138">
+          <caret line="334" column="38" selection-start-line="334" selection-start-column="38" selection-end-line="334" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/lib/stats/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33660933">
+          <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/dist/app.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="136.53847">
+          <caret line="2" column="3703" selection-start-line="2" selection-start-column="3703" selection-end-line="2" selection-end-column="3703" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/components.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8909091">
+          <caret line="95" column="10" selection-start-line="95" selection-start-column="10" selection-end-line="95" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/theme.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0384617">
+          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index-projector.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308">
+          <caret line="5" column="72" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/partials/sluzewiec/question-info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6153846">
+          <caret line="4" column="79" selection-start-line="4" selection-start-column="79" selection-end-line="4" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/components.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.2181818">
+          <caret line="392" column="63" selection-start-line="392" selection-start-column="46" selection-end-line="392" selection-end-column="63" />
+          <folding>
+            <element signature="e#7463#10062#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/sluzewiec/results_container.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/partials/sluzewiec/lotto.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/partials/sluzewiec/lotto-answer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1923075">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/lib/projector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="70" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
+          <folding>
+            <marker date="1467307844942" expanded="true" signature="2878:2884" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/lib/poll/directive.simplePoll.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.1034484">
-          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="75" />
+        <state vertical-scroll-proportion="0.21140142">
+          <caret line="177" column="13" selection-start-line="177" selection-start-column="13" selection-end-line="177" selection-end-column="13" />
           <folding>
             <marker date="1467310790708" expanded="true" signature="1257:2106" placeholder="..." />
             <marker date="1467310790708" expanded="true" signature="1435:2087" placeholder="..." />
@@ -1376,96 +1500,6 @@
             <marker date="1467310790708" expanded="true" signature="8533:9106" placeholder="..." />
             <marker date="1467310790708" expanded="true" signature="8641:9079" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/lib/poll/service.poll.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2142856">
-          <caret line="75" column="32" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/frontend/poll/stats.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.24138">
-          <caret line="334" column="38" selection-start-line="334" selection-start-column="38" selection-end-line="334" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/lib/stats/service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33660933">
-          <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/sluzewiec/lotto.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/sluzewiec/question-info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index-projector.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/components.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9636364">
-          <caret line="536" column="1" selection-start-line="536" selection-start-column="1" selection-end-line="536" selection-end-column="1" />
-          <folding>
-            <marker date="1467386507505" expanded="true" signature="1649:1666" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/theme.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.730769">
-          <caret line="128" column="21" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/sluzewiec/lotto-answer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.423077">
-          <caret line="16" column="152" selection-start-line="16" selection-start-column="152" selection-end-line="16" selection-end-column="152" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/components.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7927928">
-          <caret line="411" column="22" selection-start-line="411" selection-start-column="22" selection-end-line="411" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
