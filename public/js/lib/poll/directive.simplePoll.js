@@ -181,8 +181,9 @@ export class SluzewiecLottoPollDirective {
                 <div ng-repeat="result in Poll.results track by $index" class="ui-full--width">
                     <div class="container container-row ui-full--width">
                         <div class="width--1-of-2 padding-vertical--medium">
-                            <div class="radio-question__container margin-horizontal--big ui-text--right">
-                                <div class="radio-question__displayName1 animation ui-display--inline-block">{{result.displayName}}</div>
+                            <div class="container radio-question__container margin-horizontal--big ui-text--right">
+                                <div class="number margin-horizontal--big">{{result.number}}</div>
+                                <div class="width-8-of-10 ui-text--left radio-question__displayName1 animation ui-display--inline-block">{{result.displayName}}</div>
                             </div>
                         </div>
                         <div class="width--1-of-2 container container-row padding-vertical--medium">

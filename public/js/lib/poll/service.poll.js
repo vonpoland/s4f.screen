@@ -150,6 +150,20 @@ export function setPollOptions(poll) {
     if(poll.data.backgroundStyle) {
         angular.element(document.querySelector('html')).addClass(poll.data.backgroundStyle);
     }
+
+	if(poll.data.position) {
+		var root = angular.element(document.querySelector('body'));
+		var left = poll.data.position.left;
+		var top = poll.data.position.top;
+
+		if(!isNaN(left)) {
+			root.css('margin-left', left + 'px');
+		}
+
+		if(!isNaN(top)) {
+			root.css('margin-top', top + 'px');
+		}
+	}
 }
 
 export function getStep(poll, step) {

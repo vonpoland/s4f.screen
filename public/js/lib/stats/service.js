@@ -52,6 +52,7 @@ function createStat(stat, answer) {
         lastName: answer.lastName,
         order: answer.order,
         picture: answer.picture,
+        number: answer.number,
         percentageCss: stat ? stat.percentage + '%' : '0%',
         percentage: stat ? stat.percentage : 0
     };
