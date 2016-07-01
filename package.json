@@ -62,7 +62,7 @@
   },
   "dependencies": {
     "async": "^1.5.1",
-    "bigscreen-db": "^1.0.12",
+    "bigscreen-db": "^2.0.26",
     "bigscreen-logger": "^1.0.1",
     "body-parser": "^1.14.1",
     "config": "^1.17.1",
@@ -71,8 +71,6 @@
     "http-status-codes": "^1.0.5",
     "js-yaml": "^3.4.6",
     "mongoose": "^4.3.4",
-    "passport": "^0.3.2",
-    "passport-http": "^0.3.0",
     "ramda": "^0.18.0",
     "random-js": "^1.0.8",
     "socket.io-client": "^1.4.5"

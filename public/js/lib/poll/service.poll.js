@@ -151,10 +151,10 @@ export function setPollOptions(poll) {
         angular.element(document.querySelector('html')).addClass(poll.data.backgroundStyle);
     }
 
-	if(poll.data.position) {
+	if(poll.editable && poll.editable.position) {
 		var root = angular.element(document.querySelector('body'));
-		var left = poll.data.position.left;
-		var top = poll.data.position.top;
+		var left = poll.editable.position.left;
+		var top = poll.editable.position.top;
 
 		if(!isNaN(left)) {
 			root.css('margin-left', left + 'px');
