@@ -322,7 +322,7 @@ describe('#calculate stats tests', function () {
 		});
 	});
 
-    it('#calculateStats5', function () {
+    it.only('#calculateStats5', function () {
         var input = {
             "data": {
                 "votes": {
