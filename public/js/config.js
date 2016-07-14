@@ -25,7 +25,9 @@ System.config({
     "cornflourblue/angulike": "github:cornflourblue/angulike@1.2.0",
     "josdejong/jsoneditor": "github:josdejong/jsoneditor@5.4.0",
     "jquery": "github:components/jquery@2.1.4",
+    "moment": "npm:moment@2.14.1",
     "restangular": "github:mgonto/restangular@1.5.1",
+    "screen4fans-time-master": "npm:screen4fans-time-master@1.0.1",
     "socket.io-client": "github:socketio/socket.io-client@1.3.7",
     "github:angular-ui/ui-router@0.2.15": {
       "angular": "github:angular/bower-angular@1.4.8"
@@ -75,6 +77,9 @@ System.config({
     },
     "npm:process@0.11.2": {
       "assert": "github:jspm/nodelibs-assert@0.1.0"
+    },
+    "npm:screen4fans-time-master@1.0.1": {
+      "moment": "npm:moment@2.14.1"
     },
     "npm:util@0.10.3": {
       "inherits": "npm:inherits@2.0.1",

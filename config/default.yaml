@@ -11,5 +11,6 @@ security:
   user: test
   password: test
 bigscreenChannel: 'http://localhost:8085'
+
 cache:
   maxAge: 0

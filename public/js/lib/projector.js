@@ -5,7 +5,6 @@ import 'angular-animate';
 import {PollDirective, BestTeamPollDirective} from './poll/directive.poll';
 import {SimplePollDirective, DemoPollDirective, ZuzelTorunPollDirective, SluzewiecLottoPollDirective, SluzewiecQuestionPollDirective} from './poll/directive.simplePoll';
 import Roller from './poll/directive.roller';
-import PollCtrl from './poll/ctrl.poll';
 import StepCtrl from './poll/ctrl.step';
 import ParticipantsCtrl from './poll/ctrl.participants';
 import VoteResultCtrl from './poll/ctrl.voteResult';
@@ -36,7 +35,6 @@ angular
     .directive('tychyTopBanner', () => new TychyTopBanner())
     .directive('sluzewiecQuestionPoll', () => new SluzewiecQuestionPollDirective())
     .controller('stepCtrl', StepCtrl)
-    .controller('pollCtrl', PollCtrl)
     .controller('participantsCtrl', ParticipantsCtrl)
     .controller('voteResultCtrl', VoteResultCtrl)
     .config(['$stateProvider', '$locationProvider', '$urlMatcherFactoryProvider',
