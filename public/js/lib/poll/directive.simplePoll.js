@@ -183,7 +183,7 @@ export class SluzewiecLottoPollDirective {
                         <div class="width--1-of-2 padding-vertical--medium">
                             <div class="container radio-question__container margin-horizontal--big ui-text--right">
                                 <div class="number margin-horizontal--big">{{result.number}}</div>
-                                <div class="width-8-of-10 ui-text--left radio-question__displayName1 ui-display--inline-block"><span class="animation ui-display--inline-block">{{result.displayName}}</span></div>
+                                <div class="width-8-5-of-10 ui-text--left radio-question__displayName1 ui-display--inline-block"><span class="animation ui-display--inline-block">{{result.displayName}}</span></div>
                             </div>
                         </div>
                         <div class="width--1-of-2 container container-row padding-vertical--medium">
