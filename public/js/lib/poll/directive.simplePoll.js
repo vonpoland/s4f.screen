@@ -36,15 +36,14 @@ class SimplePollController {
 
 export class SimplePollDirective {
     constructor() {
-        this.template = `<div class="container container-row container--space-between">
-                <div class="container container-column container--vertical-center simple-radio-question__container radio-question__container" ng-repeat="result in Poll.results">
-                    <div style="height:80px;" class="container container--content-to-end ">
-                        <div class="ui-text--white poll__option poll__option--first container container--content-to-end container--center"
-                        ng-style="{ height: result.percentageCss}">
-                        <span class="font--big ui-text-shadow ui-text--white radio-question__percentage">{{result.percentage}}</br>%</span>
-                        </div>
-                    </div>
-                    <span class="font--big ui-text-shadow ui-text--white radio-question__displayName">{{result.displayName}}</span>
+        this.template = `<div class="container container--space-between">
+                <div ng-repeat="result in Poll.results track by $index">
+                   <div class="image-question-container animation">
+                   		<div class="index" ng-if="Poll.showIndex">{{$index + 1}}</div>
+                   		<img ng-if="Poll.showImage" class="image" ng-src="{{'/projector/' + result.picture}}" />
+                        <span class="name" class="font--big ui-text-shadow ui-text--white radio-question__displayName">{{result.displayName}}</span>
+                        <div class="result">{{result.percentage}}<span class="percentage">%</span></div>
+					</div>
                 </div>
             </div>`;
         this.scope = {
@@ -53,7 +52,7 @@ export class SimplePollDirective {
             width: '@',
             height: '@'
         };
-        this.controller = SimplePollController;
+        this.controller = PollController;
         this.bindToController = true;
         this.controllerAs = 'Poll';
         this.replace = true;
@@ -110,12 +109,17 @@ class ZuzelTorunPollController {
     }
 }
 
-class SluzewiecLottoPollController {
+class PollController {
     constructor($element) {
+		var maxAnswer = $element.attr('max-answer') || 5;
+        this.showImage = $element.attr('image') !== 'false';
+        this.showIndex = $element.attr('index') !== 'false';
+		this.animation = $element.attr('animation') || '.animation';
+
         this.calculateOptions = () => calculcateSimplePollOptions(this.options, this.stats)
             .filter(result => result.percentage > 0)
             .sort((a, b) => b.percentage - a.percentage)
-            .slice(0,5);
+            .slice(0,maxAnswer);
         this.optionsOriginal = Object.assign({}, { options : this.options }).options;
         this.options.sort((a, b) => a.order - b.order);
         this.sorted = true;
@@ -128,7 +132,7 @@ class SluzewiecLottoPollController {
     }
 
     rotate(index) {
-        var element = angular.element(document.querySelectorAll('.animation')[index]);
+        var element = angular.element(document.querySelectorAll(this.animation)[index]);
 
         if (element.hasClass('animation--rotate')) {
             element.removeClass('animation--rotate');
@@ -176,8 +180,8 @@ export class ZuzelTorunPollDirective {
 }
 
 export class SluzewiecLottoPollDirective {
-    constructor() {
-        this.template = `<div class="container container-column container--content-to-start font--third">
+	constructor() {
+		this.template = `<div class="container container-column container--content-to-start font--third">
                 <div ng-repeat="result in Poll.results track by $index" class="ui-full--width">
                     <div class="container container-row ui-full--width">
                         <div class="width--1-of-2 padding-vertical--medium">
@@ -194,17 +198,17 @@ export class SluzewiecLottoPollDirective {
                     </div>
                 </div>
             </div>`;
-        this.scope = {
-            options: '=',
-            stats: '=',
-            width: '@',
-            height: '@'
-        };
-        this.controller = SluzewiecLottoPollController;
-        this.bindToController = true;
-        this.controllerAs = 'Poll';
-        this.replace = true;
-    }
+		this.scope = {
+			options: '=',
+			stats: '=',
+			width: '@',
+			height: '@'
+		};
+		this.controller = PollController;
+		this.bindToController = true;
+		this.controllerAs = 'Poll';
+		this.replace = true;
+	}
 }
 
 export class DemoPollDirective {

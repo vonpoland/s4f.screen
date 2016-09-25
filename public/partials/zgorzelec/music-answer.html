@@ -1,0 +1,13 @@
+<div class="zgorzelec-music-answer ui-relative" ng-controller="voteResultCtrl as Result">
+    <div class="header">JAKI UTWÓR ZAGRAMY?</div>
+    <div class="results" ng-init="Result.initStats(step.poll)">
+        <div ng-if="!Result.statsEmpty">
+            <simple-poll max-answer="3" image="false" animation=".result" data-options="step.poll.data.options" data-stats="Result.stats"
+                         class="poll_result container--vertical-center padding-horizontal--small"></simple-poll>
+        </div>
+    </div>
+    <div class="footer container">
+        <div class="info">GŁOSUJ NA</div>
+        <div class="address">PGETUROW.MOBI</div>
+    </div>
+</div>

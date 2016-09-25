@@ -308,6 +308,213 @@ body {
 }
 
 
+.text-shadow--black {
+  text-shadow: 5px 0 0 #000,
+  -5px 0 0 #000,
+  0 5px 0 #000,
+    0 -5px 0 #000,
+  5px 5px #fff,
+    -5px -5px 0 #000,
+    5px -5px 0 #000,
+  -5px 5px 0 #000;
+}
+
+.zgorzelec-music {
+  width: 1920px;
+  height: 1080px;
+  background: url('/projector/img/zgorzelec/music_question.jpg') no-repeat center center;
+
+  .address {
+    font-family: 'Play', sans-serif;
+    font-size: 95pt;
+    color: #062d74;
+    padding-top: 38.5%;
+    margin-left: 11%;
+  }
+}
+
+.zgorzelec-music-answer {
+  .text-shadow {
+    text-shadow: 10px 10px 10px #000;
+  }
+
+  width: 1920px;
+  height: 1080px;
+  background: url('/projector/img/zgorzelec/music_answer.jpg') no-repeat center center;
+  font-family: 'Play', sans-serif;
+
+  .header {
+    .text-shadow;
+    color: #fff;
+    font-size: 75pt;
+    margin-left: 19%;
+    height: 278px;
+    display: flex;
+    align-items: center;
+  }
+
+  .results {
+    height: 575px;
+    margin-top: 87px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer {
+    height: 139px;
+    font-size: 70pt;
+    display: flex;
+    align-items: center;
+
+    .info {
+      .text-shadow;
+      color: #fff;
+      margin-left: 14%;
+    }
+    .address {
+      color: #062d74;
+      margin-left: 7%;
+    }
+  }
+
+  .poll_result {
+    height: 470px;
+    flex-direction: column;
+    justify-content: space-around;
+    .image-question-container {
+      background: url('/projector/img/zgorzelec/player_answer_percentage.png') no-repeat center right;
+      height: 138px;
+      flex-direction: row;
+      display:flex;
+      width: 1800px;
+      align-items: center;
+    }
+
+    .name {
+      width: 1250px;
+      padding-left: 20px;
+      font-size: 58pt;
+      color: #021231;
+    }
+
+    .index {
+      color: #fff;
+      width: 227px;
+      height: 78px;
+      font-size: 78pt;
+      line-height: 52pt;
+      text-align: center;
+      background: url('/projector/img/zgorzelec/player_number_bg.png') no-repeat center center;
+    }
+
+    .result {
+      width: 200px;
+      transition: all 1s;
+      display: flex;
+      color: #fff;
+      font-size: 78pt;
+      line-height: 52pt;
+      justify-content: flex-end;
+      .percentage {
+        font-size: 50pt;
+        margin-top: -9px;
+      }
+    }
+  }
+}
+
+.zgorzelec-player {
+  background: url('/projector/img/zgorzelec/tlo.jpg') no-repeat center center;
+
+  &.zgorzelec-player--question {
+    background: url('/projector/img/zgorzelec/tlo_player_question.jpg') no-repeat center center;
+  }
+
+  width: 1920px;
+  height: 1080px;
+  font-family: 'Play', sans-serif;
+
+  .text-shadow {
+    text-shadow: 10px 10px 10px black;
+  }
+
+  .image-question-container {
+    &:nth-child(1) {
+      margin: 0 2rem;
+    }
+
+    background: url('/projector/img/zgorzelec/procent.png') no-repeat bottom center;
+    display: flex;
+    flex-direction: column;
+    width: 403px;
+    height: 570px;
+
+    .name {
+      .text-shadow;
+      height: 61px;
+      color: #fff;
+      font-size: 40pt;
+    }
+
+    .result {
+      font-size: 120pt;
+      color: #fff;
+      text-align: center;
+    }
+  }
+
+  .container--zgorzelec {
+    margin-left: 24%;
+
+     &.container--zgorzelec-question {
+       margin-left: 34%;
+     }
+
+    .header {
+      .text-shadow;
+      padding-top: 5%;
+      color: #fff;
+      font-size: 130pt;
+      line-height: 120pt;
+    }
+
+    .header2 {
+      .text-shadow;
+      margin-top:18%;
+      color: #fff;
+      font-size: 85pt;
+    }
+
+    .header3 {
+      margin-top: 1%;
+      color: #052058;
+      font-size: 100pt;
+    }
+
+    .header4 {
+      .text-shadow;
+      color: #fff;
+      font-size: 63pt;
+      padding-top: 2%;
+    }
+
+    .header5 {
+      margin-top: 72px;
+      margin-left: 50px;
+      color: #052058;
+      font-size: 45pt;
+    }
+
+    .header6 {
+      font-size: 100pt;
+      font-weight: bold;
+      line-height: 60pt;
+    }
+  }
+}
+
 .sluzewiec-lotto__container {
   .ui-font--lato-black--italic;
 

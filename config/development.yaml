@@ -1,7 +1,4 @@
 database:
-  connection: mongodb://localhost:27017/development
+  connection: mongodb://localhost:27017/s4f-development-web
 facebook:
   skipSecurity: false
-bigscreenChannel: 'http://40.115.23.130/'
-index:
-  projector: 'index-projector-production.html'
