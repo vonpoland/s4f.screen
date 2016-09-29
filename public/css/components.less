@@ -379,12 +379,23 @@ body {
     }
   }
 
+  .poll_result  > div:nth-child(1) .image-question-container {
+    background: url('/projector/img/zgorzelec/player_answer_percentage1.png') no-repeat center right;
+  }
+
+  .poll_result  > div:nth-child(2) .image-question-container {
+    background: url('/projector/img/zgorzelec/player_answer_percentage2.png') no-repeat center right;
+  }
+  .poll_result  > div:nth-child(3) .image-question-container {
+    background: url('/projector/img/zgorzelec/player_answer_percentage3.png') no-repeat center right;
+  }
+
   .poll_result {
     height: 470px;
     flex-direction: column;
     justify-content: space-around;
+
     .image-question-container {
-      background: url('/projector/img/zgorzelec/player_answer_percentage.png') no-repeat center right;
       height: 138px;
       flex-direction: row;
       display:flex;
@@ -410,11 +421,11 @@ body {
     }
 
     .result {
-      width: 200px;
+      width: 210px;
       transition: all 1s;
       display: flex;
       color: #fff;
-      font-size: 78pt;
+      font-size: 85pt;
       line-height: 52pt;
       justify-content: flex-end;
       .percentage {
@@ -436,6 +447,18 @@ body {
   height: 1080px;
   font-family: 'Play', sans-serif;
 
+  .poll_result  > div:nth-child(1) .name {
+      background: url('/projector/img/zgorzelec/player1.png') no-repeat bottom center;
+  }
+
+  .poll_result  > div:nth-child(2) .name {
+    background: url('/projector/img/zgorzelec/player2.png') no-repeat bottom center;
+  }
+
+  .poll_result  > div:nth-child(3) .name {
+    background: url('/projector/img/zgorzelec/player3.png') no-repeat bottom center;
+  }
+
   .text-shadow {
     text-shadow: 10px 10px 10px black;
   }
@@ -448,24 +471,41 @@ body {
       margin: 0 2rem;
     }
 
+    position: relative;
     background: url('/projector/img/zgorzelec/procent.png') no-repeat bottom center;
     display: flex;
     flex-direction: column;
-    width: 403px;
+    width: 402px;
     height: 570px;
+
+    .image {
+      z-index: 1;
+    }
 
     .name {
       .text-shadow;
-      height: 61px;
+      height: 128px;
       color: #fff;
       font-size: 40pt;
       .ui-text--center;
+      left: 0;
+      position: absolute;
+      top: 274px;
+      line-height: 3.4em;
+      .ui-full--width;
     }
 
     .result {
       font-size: 120pt;
       color: #fff;
-      text-align: center;
+      margin-top:50px;
+      display:flex;
+      justify-content: center;
+
+      .percentage {
+        font-size: 50pt;
+        margin-top: 28px;
+      }
     }
   }
 
