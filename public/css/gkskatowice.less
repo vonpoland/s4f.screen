@@ -1,0 +1,131 @@
+@import "base";
+
+.gkskatowice-player {
+  background: url('/projector/img/katowice/tlo.jpg') no-repeat center center;
+
+  &.gkskatowice-question {
+    background: url('/projector/img/katowice/tlo_good.jpg') no-repeat center center;
+  }
+
+  width: 1920px;
+  height: 1080px;
+  font-family: 'Play', sans-serif;
+
+  .poll_result  > div:nth-child(1) .name {
+    background: url('/projector/img/zgorzelec/player1.png') no-repeat bottom center;
+  }
+
+  .poll_result  > div:nth-child(2) .name {
+    background: url('/projector/img/zgorzelec/player2.png') no-repeat bottom center;
+  }
+
+  .poll_result  > div:nth-child(3) .name {
+    background: url('/projector/img/zgorzelec/player3.png') no-repeat bottom center;
+  }
+
+  .text-shadow {
+    text-shadow: 5px 5px 5px black;
+  }
+  .results__container {
+    height: 570px;
+  }
+
+  .image-question-container {
+    &:nth-child(1) {
+      margin: 0 2rem;
+    }
+
+    position: relative;
+    background: url('/projector/img/katowice/button.png') no-repeat bottom center;
+    display: flex;
+    flex-direction: column;
+    width: 402px;
+    height: 570px;
+
+    .image {
+      z-index: 1;
+    }
+
+    .name {
+      .text-shadow;
+      height: 128px;
+      color: #fff;
+      font-size: 46pt;
+      .ui-text--center;
+      left: 0;
+      position: absolute;
+      top: 274px;
+      line-height: 3em;
+      .ui-full--width;
+      z-index: 5;
+      text-transform: uppercase;
+    }
+
+    .result {
+      font-size: 130pt;
+      margin-top:50px;
+      display:flex;
+      justify-content: center;
+
+      .percentage {
+        font-size: 50pt;
+        margin-top: 28px;
+      }
+    }
+  }
+
+  .container--gkskatowice {
+    margin-left: 24%;
+
+    //&.container--zgorzelec-question {
+    //  margin-left: 34%;
+    //}
+
+    .header {
+      .text-shadow;
+      padding-top: 5%;
+      color: #fff;
+      font-size: 130pt;
+      line-height: 120pt;
+    }
+
+    .header2 {
+      .text-shadow;
+      margin-top:18%;
+      color: #fff;
+      font-size: 45pt;
+    }
+
+    .header3 {
+      .text-shadow;
+      color: #fff;
+      font-size: 100pt;
+    }
+
+    .header4 {
+      .text-shadow;
+      color: #fff;
+      font-size: 108px;
+      padding-top: 2%;
+      padding-bottom: 4%;
+    }
+
+    .header7 {
+      padding-left:15px;
+    }
+
+    .header5 {
+      .text-shadow;
+      margin-top: 72px;
+      margin-left: -30px;
+      color: #fff;
+      font-size: 45pt;
+    }
+
+    .header6 {
+      font-size: 100pt;
+      font-weight: bold;
+      line-height: 140px;
+    }
+  }
+}

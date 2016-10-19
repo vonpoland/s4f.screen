@@ -54,7 +54,7 @@ gulp.task('cssApp', function () {
 });
 
 gulp.task('cacheTemplates', function () {
-	return gulp.src('public/partials/**/*.html')
+	return gulp.src('public/partials/*.html')
 		.pipe(templateCache({
 			root: 'partials',
 			standalone: true

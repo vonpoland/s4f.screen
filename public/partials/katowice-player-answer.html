@@ -1,0 +1,19 @@
+<div class="gkskatowice-player ui-relative" ng-controller="voteResultCtrl as Result">
+    <div class="container--gkskatowice">
+        <div class="header4 ui-text--center">
+            AASEM MECZU JEST...
+        </div>
+        <div class="container container--center"  ng-init="Result.initStats(step.poll)">
+            <div class="results__container font--primary color--primary container container-column container--center">
+                <div ng-if="!Result.statsEmpty">
+                    <simple-poll max-answer="3" index="false" data-options="step.poll.data.options" data-stats="Result.stats"
+                                 class="poll_result container--vertical-center padding-horizontal--small"></simple-poll>
+                </div>
+            </div>
+        </div>
+        <div class="header5">
+            <span class="header7">GŁOSUJ TERAZ NA</span> <br />
+            <span class="header6">GKSKATOWICE.MOBI</span>
+        </div>
+    </div>
+</div>
