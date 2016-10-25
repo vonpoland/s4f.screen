@@ -1342,5 +1342,6 @@
     animation-delay: 1s;
 }
 
-.ng-enter           { animation: slideInRight 0.5s both ease-in; z-index: 8888; }
-.ng-leave           { animation: slideOutLeft 0.5s both ease-in; z-index: 9999; }
+.ng-enter           { animation: slideInRight 1s both ease-in; z-index: 8888; }
+.ng-leave { animation: slideOutLeft 1s both ease-in; z-index: 9999;top: 0;
+    position: absolute }
