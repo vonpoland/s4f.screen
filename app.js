@@ -7,7 +7,6 @@ const config = require('config');
 const logger = require('bigscreen-logger');
 const bodyParser = require('body-parser');
 const poll = require('./lib/poll/router');
-const HttpStatus = require('http-status-codes');;
 const staticFiles = require('./lib/static/router');
 
 app.use(bodyParser.json());
