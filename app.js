@@ -11,9 +11,9 @@ const HttpStatus = require('http-status-codes');;
 const staticFiles = require('./lib/static/router');
 
 app.use(bodyParser.json());
-app.use('/projector/api/poll', poll);
-app.use('/projector', staticFiles);
-app.all('/projector/*', function (req, res) {
+app.use('/api/poll', poll);
+app.use('/', staticFiles);
+app.all('*', function (req, res) {
 	res.sendFile(config.get('index.projector'), {root: __dirname + '/public'});
 });
 
@@ -21,9 +21,6 @@ app.all('/favicon.ico', function (req, res) {
 	res.sendFile('favicon.ico', {root: __dirname + '/'});
 });
 
-app.all('*', function (req, res) {
-	res.sendStatus(HttpStatus.BAD_REQUEST);
-});
 
 var server = http.listen(config.get('server.port'), function () {
 	var host = server.address().address;

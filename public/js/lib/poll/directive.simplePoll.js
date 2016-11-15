@@ -40,7 +40,7 @@ export class SimplePollDirective {
                 <div ng-repeat="result in Poll.results track by $index">
                    <div class="image-question-container animation">
                    		<div class="index" ng-if="Poll.showIndex">{{$index + 1}}</div>
-                   		<img ng-if="Poll.showImage" class="image" ng-src="{{'/projector/' + result.picture}}" />
+                   		<img ng-if="Poll.showImage" class="image" ng-src="{{'/' + result.picture}}" />
                         <span class="name" class="font--big ui-text-shadow ui-text--white radio-question__displayName">{{result.displayName}}</span>
                         <div class="result">{{result.percentage}}<span class="percentage">%</span></div>
 					</div>
@@ -159,7 +159,7 @@ export class ZuzelTorunPollDirective {
                 <div class="container container-column"
                     ng-repeat="result in Poll.results track by $index">
                     <div class="container container-column radio-question__container animation">
-                        <div class="ui-text--center"><img ng-src="{{'/projector/' + result.picture}}"/></div>
+                        <div class="ui-text--center"><img ng-src="{{'/' + result.picture}}"/></div>
                         <div class="ui-text--white radio-question__displayName1 ui-text--center">{{result.firstName}}</div>
                         <div class="ui-text--white radio-question__displayName2 ui-text--center">{{result.lastName}}</div>
                     </div>

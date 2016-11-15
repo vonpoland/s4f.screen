@@ -15,7 +15,7 @@ var bigscreenChannel = require('config').bigscreenChannel;
 // Static server
 gulp.task('browser-sync', function () {
 	browserSync.init({
-		proxy: 'localhost:8888/projector',
+		proxy: 'localhost:8888',
 		files: ['public/js/lib/**/*.js', 'public/css/*.css', 'public/partials/**/*.html']
 	});
 });

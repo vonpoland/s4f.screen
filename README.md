@@ -30,7 +30,7 @@ npm run gulp
  NODE_ENV=production node node_modules/pm2/bin/pm2 start index.js --name 'fun' 
  
  
- http://screen4fans.com:1111/projector/poll/tychy-konkurs/info?stay=true
+ http://screen4fans.com:1111/poll/tychy-konkurs/info?stay=true
  http://screen4fans.com:1111/admin/tychy-konkurs
  http://screen4fans.com:1111/vote/tychy-konkurs
   NODE_ENV=production node node_modules/pm2/bin/pm2 start index.js --name 'fun' 
