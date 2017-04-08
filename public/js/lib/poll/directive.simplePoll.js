@@ -34,6 +34,21 @@ class SimplePollController {
     }
 }
 
+
+function lisbonDifference(previousValues, newValues) {
+    previousValues = previousValues || [];
+
+    return newValues.reduce((acc, nextValue, index) => {
+        var wasPresent = previousValues.filter(previousValue => previousValue.option === nextValue.option).pop();
+
+        if ((typeof wasPresent === 'undefined') || (nextValue.value !== wasPresent.value)) {
+            acc.push(index);
+        }
+
+        return acc;
+    }, []);
+}
+
 class LisbonPollController {
     constructor($element) {
         this.optionsOriginal = Object.assign({}, { options : this.options }).options;
@@ -52,7 +67,7 @@ class LisbonPollController {
 
         if (this.sorted) {
             var results = calculcateSimplePollOptions(this.options, this.stats);
-            calculcateDifference(this.results, results).forEach(this.rotate.bind(this));
+            lisbonDifference(this.results, results).forEach(this.rotate.bind(this));
             updateResults(this.results, results);
         }
     }
@@ -64,6 +79,7 @@ class LisbonPollController {
     }
 
     rotate(index) {
+        console.info('rotate')
         var element = angular.element(document.querySelectorAll('.animation')[index]);
 
         if (element.hasClass('animation--rotate')) {
