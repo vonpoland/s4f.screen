@@ -34,6 +34,46 @@ class SimplePollController {
     }
 }
 
+class LisbonPollController {
+    constructor($element) {
+        this.optionsOriginal = Object.assign({}, { options : this.options }).options;
+        this.options.sort((a, b) => a.order - b.order);
+        this.sorted = true;
+        this.results = calculcateSimplePollOptions(this.options, this.stats);
+        this.$element = $element;
+    }
+
+    get stats() {
+        return this._stats;
+    }
+
+    set stats(data) {
+        this._stats = data;
+
+        if (this.sorted) {
+            var results = calculcateSimplePollOptions(this.options, this.stats);
+            calculcateDifference(this.results, results).forEach(this.rotate.bind(this));
+            updateResults(this.results, results);
+        }
+    }
+
+    calculateScale(percentage) {
+        percentage = percentage.slice(0, -1);
+        var scale = 1 + 0.5 * percentage/100;
+        return 'transform: scale(' + scale + ')';
+    }
+
+    rotate(index) {
+        var element = angular.element(document.querySelectorAll('.animation')[index]);
+
+        if (element.hasClass('animation--rotate')) {
+            element.removeClass('animation--rotate');
+        } else {
+            element.addClass('animation--rotate');
+        }
+    }
+}
+
 export class SimplePollDirective {
     constructor() {
         this.template = `<div class="container container--space-between">
@@ -237,3 +277,28 @@ export class DemoPollDirective {
         this.replace = true;
     }
 }
+
+export class LisbonPollDirective {
+    constructor() {
+        this.template = `<div class="container container-row container--space-between">
+                <div class="container container-column container--vertical-center radio-question__container" ng-repeat="result in Poll.results">
+                    <div>
+                        <img ng-src="{{result.picture}}"  class="animation" />
+                        <div class="ui-text--white radio-question__percentage ui-text--center ui-max-width">{{result.percentage}}%</div>
+                        <div class="ui-text--white radio-question__displayName ui-text--center">{{result.displayName}}</div>
+                    </div>
+                </div>
+            </div>`;
+        this.scope = {
+            options: '=',
+            stats: '=',
+            width: '@',
+            height: '@'
+        };
+        this.controller = LisbonPollController;
+        this.bindToController = true;
+        this.controllerAs = 'Poll';
+        this.replace = true;
+    }
+}
+

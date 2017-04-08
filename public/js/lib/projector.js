@@ -3,7 +3,7 @@ import 'angular-sanitize';
 import 'angular-ui-router';
 import 'angular-animate';
 import {PollDirective, BestTeamPollDirective} from './poll/directive.poll';
-import {SimplePollDirective, DemoPollDirective, ZuzelTorunPollDirective, SluzewiecLottoPollDirective, SluzewiecQuestionPollDirective} from './poll/directive.simplePoll';
+import {SimplePollDirective, LisbonPollDirective, DemoPollDirective, ZuzelTorunPollDirective, SluzewiecLottoPollDirective, SluzewiecQuestionPollDirective} from './poll/directive.simplePoll';
 import Roller from './poll/directive.roller';
 import StepCtrl from './poll/ctrl.step';
 import ParticipantsCtrl from './poll/ctrl.participants';
@@ -28,6 +28,7 @@ angular
     .directive('simplePoll', () => new SimplePollDirective())
     .directive('bestTeamPoll', () => new BestTeamPollDirective())
     .directive('demoPoll', () => new DemoPollDirective())
+    .directive('lisbonPoll', () => new LisbonPollDirective())
     .directive('poll', () => new PollDirective())
     .directive('roller', () => new Roller())
     .directive('pollClass', () => new PollClassDirective())

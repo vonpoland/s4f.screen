@@ -1,0 +1,14 @@
+<div class="demo-screen">
+    <div class="container container-column container--vertical-center container--space-around">
+        <div class="demo--font" ng-controller="voteResultCtrl as Result">
+            <div class="container container-column window container container-column container--vertical-center container--space-around" ng-init="Result.initStats(step.poll)">
+                <div>
+                    <div class="ui-text--center font--huge margin-vertical--big">Que equipa vai ganhar a liga NOS 16/17?</div>
+                    <div style="height: 30px"></div>
+                    <lisbon-poll data-options="step.poll.data.options" data-stats="Result.stats"
+                                 class="poll_result container--vertical-center padding-horizontal--small"></lisbon-poll>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
