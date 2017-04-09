@@ -79,7 +79,6 @@ class LisbonPollController {
     }
 
     rotate(index) {
-        console.info('rotate')
         var element = angular.element(document.querySelectorAll('.animation')[index]);
 
         if (element.hasClass('animation--rotate')) {
@@ -297,11 +296,21 @@ export class DemoPollDirective {
 export class LisbonPollDirective {
     constructor() {
         this.template = `<div class="container container-row container--space-between">
-                <div class="container container-column container--vertical-center radio-question__container" ng-repeat="result in Poll.results">
-                    <div>
+                <div class="container container-row container--vertical-center radio-question__container" ng-repeat="result in Poll.results">
+                    <div ng-if="$index % 2 === 0">
                         <img ng-src="{{result.picture}}"  class="animation" />
-                        <div class="ui-text--white radio-question__percentage ui-text--center ui-max-width">{{result.percentage}}%</div>
-                        <div class="ui-text--white radio-question__displayName ui-text--center">{{result.displayName}}</div>
+                    </div>
+                    <div>
+                        <div style="height:200px;position:relative" class="container container-column container--flex-end">
+                            <div class="ui-text--white radio-question__percentage ui-text--center ui-max-width">{{result.percentage}}%</div>
+                            <div class="ui-text--white poll__option poll__option--first container--transition container container-column container--flex-end" ng-style="{ height: result.percentageCss}">
+                                <div class="cool-gradient"></div>
+                                <div class="ui-text--white radio-question__displayName ui-text--center">{{result.displayName}}</div>
+                            </div>
+                        </div>
+                    </div>
+                     <div ng-if="$index % 2 !== 0">
+                        <img ng-src="{{result.picture}}"  class="animation" />
                     </div>
                 </div>
             </div>`;
