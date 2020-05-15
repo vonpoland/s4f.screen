@@ -5,7 +5,7 @@
 
 ## demo
 `https://poll.hooper.pl/demo/lisbon`
-![demo](https://raw.githubusercontent.com/vonpoland/s4f.screen/master/public/img/demo.png)
+![demo](https://raw.githubusercontent.com/vonpoland/s4f.screen/master/public/demo.png)
 
 
 # watch changes
